@@ -1,4 +1,4 @@
-import { MessageCircle } from 'lucide-react'
+import WhatsAppIcon from './icons/WhatsAppIcon'
 import { WHATSAPP_NUMBER } from '../main'
 import { trackEvent } from '../lib/tracking'
 
@@ -50,7 +50,7 @@ export default function WhatsAppButton({
         trackEvent('whatsapp_click', { event_category: 'conversion', event_label: 'whatsapp_button' })
       }}
     >
-      <MessageCircle className={iconSizes[size]} />
+      <WhatsAppIcon className={iconSizes[size]} />
       {showLabel && label}
     </a>
   )

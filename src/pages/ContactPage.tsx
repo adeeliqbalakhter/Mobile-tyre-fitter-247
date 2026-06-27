@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { Phone, MessageCircle, Clock, MapPin, CheckCircle } from 'lucide-react'
+import { Phone, Clock, MapPin, CheckCircle } from 'lucide-react'
+import WhatsAppIcon from '../components/icons/WhatsAppIcon'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../main'
 import { trackEvent } from '../lib/tracking'
@@ -51,7 +52,7 @@ export default function ContactPage() {
 
             {/* WhatsApp */}
             <a href={waUrl} target="_blank" rel="noopener noreferrer" className="group flex flex-col rounded-xl border border-gray-200 bg-gray-50 p-6 transition-all hover:border-[#25D366]/40 hover:shadow-md">
-              <MessageCircle className="mb-3 h-8 w-8 text-[#25D366]" />
+              <WhatsAppIcon className="mb-3 h-8 w-8 text-[#25D366]" />
               <h3 className="mb-1 font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>WhatsApp</h3>
               <p className="mb-3 text-sm text-[#6a6a6a]">Message us anytime with your location and tyre size.</p>
               <p className="mt-auto text-sm font-semibold text-[#25D366]">Click to open WhatsApp →</p>

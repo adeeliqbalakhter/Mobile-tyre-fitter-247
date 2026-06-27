@@ -60,7 +60,6 @@ export default function ServicesSection() {
               {service.image && (
                 <div className="relative h-44 overflow-hidden">
                   <img src={service.image} alt={service.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-                  <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white to-transparent" />
                   {service.badge && (
                     <span className="absolute top-3 right-3 rounded bg-[#d92a1d] px-2 py-0.5 text-[10px] font-bold tracking-wider text-white" style={{ fontFamily: 'JetBrains Mono' }}>
                       {service.badge}

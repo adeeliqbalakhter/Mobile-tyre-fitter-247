@@ -1,4 +1,5 @@
-import { Phone, MessageCircle, Clock, ArrowRight } from 'lucide-react'
+import { Phone, Clock, ArrowRight } from 'lucide-react'
+import WhatsAppIcon from '../components/icons/WhatsAppIcon'
 import { Link } from 'react-router-dom'
 import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../main'
 import { trackEvent } from '../lib/tracking'
@@ -34,7 +35,7 @@ export default function EmergencyCTA() {
 
           <div className="mb-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <a href={waUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-gray-700 bg-gray-800 px-5 py-2.5 text-sm font-semibold text-gray-300 transition-all hover:border-[#25D366] hover:text-[#25D366]">
-              <MessageCircle className="h-4 w-4" /> WhatsApp Us
+              <WhatsAppIcon className="h-4 w-4" /> WhatsApp Us
             </a>
             <Link to="/coverage-areas" className="inline-flex items-center gap-2 rounded-lg border border-gray-700 bg-gray-800 px-5 py-2.5 text-sm font-semibold text-gray-300 transition-all hover:border-white hover:text-white">
               Check Coverage <ArrowRight className="h-3.5 w-3.5" />

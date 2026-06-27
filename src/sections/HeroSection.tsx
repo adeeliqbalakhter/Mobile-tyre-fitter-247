@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
-import { Phone, MessageCircle, Clock, Shield, Star, MapPin } from 'lucide-react'
+import { Phone, Clock, Shield, Star, MapPin } from 'lucide-react'
+import WhatsAppIcon from '../components/icons/WhatsAppIcon'
 import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../main'
 import { trackEvent } from '../lib/tracking'
 
@@ -95,7 +96,7 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 backdrop-blur-sm px-6 py-4 text-sm font-semibold text-white transition-all hover:bg-white/20 active:scale-[0.98]"
             >
-              <MessageCircle className="h-4 w-4" />
+              <WhatsAppIcon className="h-4 w-4" />
               WhatsApp Us
             </a>
           </div>
