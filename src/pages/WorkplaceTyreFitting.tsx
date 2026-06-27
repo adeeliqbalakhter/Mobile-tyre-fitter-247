@@ -2,7 +2,7 @@ import ServicePageTemplate from '../components/ServicePageTemplate'
 
 const features = [
   "Fitted at your office car park or business premises",
-  "Minimal disruption to your working day — zero downtime",
+  "Minimal disruption to your working day, zero downtime",
   "Before work, during lunch, or after hours appointments",
   "All tyre brands available from our mobile stock",
   "Corporate invoicing with 30-day payment terms available",
@@ -14,18 +14,18 @@ const features = [
 const whatToExpect = [
   "Call us with your business address, vehicle details, and preferred fitting time",
   "We confirm tyre availability, provide a corporate quote, and schedule your appointment",
-  "Choose a time that minimises disruption — early morning, lunch, or after-work slots",
+  "Choose a time that minimises disruption, early morning, lunch, or after-work slots",
   "Your mobile fitter arrives at your office car park in a professional branded van",
-  "Tyres are fitted while you continue working — no need to leave your desk",
+  "Tyres are fitted while you continue working, no need to leave your desk",
   "Corporate invoicing available, or pay by card on completion. Full VAT receipt provided",
 ]
 
 const contentBlocks = [
   {
-    heading: "Tyre Fitting At Your Office — Zero Downtime",
+    heading: "Tyre Fitting At Your Office, Zero Downtime",
     paragraphs: [
       "For busy professionals, taking time out of the working day to visit a tyre garage is simply not practical. Our workplace tyre fitting service solves this problem completely. We come to your office car park and fit your tyres while you work. You do not need to take time off, arrange cover, or lose billable hours. The entire process happens in the background while you focus on what you do best.",
-      "Workplace fitting is ideal for company car drivers, sales representatives who spend their days on the road, and anyone who values their time. We offer flexible appointment slots including early morning (before 9am), lunchtime (12-2pm), and after-hours (5-7pm) options. This means your tyres can be fitted before your working day begins, during your lunch break, or after you have finished — whichever causes the least disruption.",
+      "Workplace fitting is ideal for company car drivers, sales representatives who spend their days on the road, and anyone who values their time. We offer flexible appointment slots including early morning (before 9am), lunchtime (12-2pm), and after-hours (5-7pm) options. This means your tyres can be fitted before your working day begins, during your lunch break, or after you have finished, whichever causes the least disruption.",
     ],
   },
   {
@@ -86,7 +86,7 @@ export default function WorkplaceTyreFitting() {
     <ServicePageTemplate
       title="Workplace"
       titleHighlight="Tyre Fitting"
-      description="Mobile tyre fitting at your workplace across the UK. We come to your office car park — no need to take time off. Corporate invoicing and volume discounts available. Call 0800 123 4567."
+      description="Mobile tyre fitting at your workplace across the UK. We come to your office car park, no need to take time off. Corporate invoicing and volume discounts available. Call 0800 123 4567."
       metaTitle="Workplace Tyre Fitting UK - At Your Office Car Park"
       metaDescription="Mobile tyre fitting at your workplace across the UK. Office car park service with minimal disruption. Corporate invoicing available. Call 0800 123 4567."
       heroImage="/images/service-fleet.jpg"

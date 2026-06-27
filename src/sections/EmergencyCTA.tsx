@@ -43,7 +43,7 @@ export default function EmergencyCTA() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
-            {['No call-out fee', 'All cards accepted', 'Workmanship guaranteed', 'Free old tyre disposal'].map((text) => (
+            {['Upfront pricing', 'All cards accepted', 'Workmanship guaranteed', 'Free old tyre disposal'].map((text) => (
               <span key={text} className="rounded-full border border-gray-700 bg-gray-800/50 px-3 py-1 text-xs text-gray-400">{text}</span>
             ))}
           </div>

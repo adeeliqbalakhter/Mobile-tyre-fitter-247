@@ -35,7 +35,7 @@ export default function ContactPage() {
             <Link to="/" className="hover:text-[#d92a1d]">Home</Link><span>/</span><span className="text-[#1a1a1a]">Contact</span>
           </nav>
           <h1 className="mb-4 text-3xl font-bold tracking-tight text-[#1a1a1a] sm:text-4xl" style={{ fontFamily: 'Space Grotesk' }}>Contact <span className="text-[#d92a1d]">Us</span></h1>
-          <p className="mb-8 max-w-2xl text-[#6a6a6a]">Need tyre fitting? We&apos;re here 24/7, 365 days a year. Calling gets you the fastest response — or reach out on WhatsApp and we&apos;ll get straight back to you.</p>
+          <p className="mb-8 max-w-2xl text-[#6a6a6a]">Need tyre fitting? We&apos;re here 24/7, 365 days a year. Calling gets you the fastest response, or reach out on WhatsApp and we&apos;ll get straight back to you.</p>
 
           <div className="grid gap-6 lg:grid-cols-3">
             {/* Phone */}
@@ -45,7 +45,7 @@ export default function ContactPage() {
               className="group flex flex-col rounded-xl border border-[#d92a1d]/20 bg-[#d92a1d]/5 p-6 transition-all hover:border-[#d92a1d]/40 hover:shadow-md"
             >
               <Phone className="mb-3 h-8 w-8 text-[#d92a1d]" />
-              <h3 className="mb-1 font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Call Us — Fastest Response</h3>
+              <h3 className="mb-1 font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Call Us, Fastest Response</h3>
               <p className="mb-3 text-sm text-[#6a6a6a]">24/7 emergency line, answered by a real person.</p>
               <p className="mt-auto text-2xl font-bold text-[#d92a1d]" style={{ fontFamily: 'Space Grotesk' }}>{PHONE_NUMBER}</p>
             </a>
@@ -74,21 +74,21 @@ export default function ContactPage() {
                 <Clock className="h-5 w-5 text-[#d92a1d]" /> Opening Hours
               </h2>
               <div className="flex items-center justify-between rounded-lg bg-white border border-gray-200 px-4 py-3">
-                <span className="text-sm font-medium text-[#1a1a1a]">Monday – Sunday</span>
+                <span className="text-sm font-medium text-[#1a1a1a]">Monday, Sunday</span>
                 <span className="text-sm font-bold text-[#d92a1d]" style={{ fontFamily: 'JetBrains Mono' }}>OPEN 24 HOURS</span>
               </div>
-              <p className="mt-3 text-sm text-[#6a6a6a]">Including weekends, bank holidays, and Christmas Day. There are no out-of-hours or weekend surcharges — ever. Average response time is 30-45 minutes across the UK.</p>
+              <p className="mt-3 text-sm text-[#6a6a6a]">Including weekends, bank holidays, and Christmas Day. There are no out-of-hours or weekend surcharges, ever. Average response time is 30-45 minutes across the UK.</p>
             </div>
 
             <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
               <h2 className="mb-4 text-lg font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Why Calling Is Best</h2>
               <ul className="space-y-3">
                 {[
-                  'Instant quote — no forms to fill out',
-                  'Immediate dispatch — a fitter sent within minutes',
-                  'Real-time ETA — know exactly when we\'ll arrive',
-                  'Speak to a real person — no bots or queues',
-                  'Emergency prioritisation — stranded drivers come first',
+                  'Instant quote, no forms to fill out',
+                  'Immediate dispatch, a fitter sent within minutes',
+                  'Real-time ETA, know exactly when we\'ll arrive',
+                  'Speak to a real person, no bots or queues',
+                  'Emergency prioritisation, stranded drivers come first',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-[#6a6a6a]">
                     <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#d92a1d]" />{item}

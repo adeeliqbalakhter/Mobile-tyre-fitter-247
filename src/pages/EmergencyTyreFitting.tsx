@@ -1,9 +1,9 @@
 import ServicePageTemplate from '../components/ServicePageTemplate'
 
 const features = [
-  "Emergency call-out within 30-45 minutes anywhere in the UK",
+  "Emergency response within 30-45 minutes anywhere in the UK",
   "Available 24 hours a day, 7 days a week, 365 days a year",
-  "Roadside, home, or workplace fitting — we come to you",
+  "Roadside, home, or workplace fitting, we come to you",
   "All tyre brands and sizes stocked in our mobile vans",
   "Professional fitting, balancing, and new valve included",
   "Fully insured technicians with years of experience",
@@ -12,7 +12,7 @@ const features = [
 ]
 
 const whatToExpect = [
-  "Call our 24/7 emergency line and speak directly to a dispatcher — no automated systems",
+  "Call our 24/7 emergency line and speak directly to a dispatcher, no automated systems",
   "Tell us your location, vehicle details, and tyre size. We will give you an instant quote",
   "Your nearest fully-equipped mobile fitter is dispatched immediately with the correct tyre",
   "Receive real-time SMS updates with your fitter\'s estimated arrival time",
@@ -38,7 +38,7 @@ const contentBlocks = [
   {
     heading: "Why Choose Mobile Tyre Fitter 24/7 For Emergency Tyre Replacement?",
     paragraphs: [
-      "With over 70,000 tyres fitted and a 4.9-star Google rating from more than 2,500 customers, Mobile Tyre Fitter 24/7 has established itself as the UK\'s most trusted emergency mobile tyre service. Our average response time of 30-45 minutes is among the fastest in the industry, and our 24/7 availability means you are never left waiting until morning. We have no call-out fees, no hidden charges, and all of our work is guaranteed.",
+      "With over 70,000 tyres fitted and a 4.9-star Google rating from more than 2,500 customers, Mobile Tyre Fitter 24/7 has established itself as the UK\'s most trusted emergency mobile tyre service. Our average response time of 30-45 minutes is among the fastest in the industry, and our 24/7 availability means you are never left waiting until morning. Our pricing is transparent, quoted upfront, and all of our work is guaranteed.",
       "Our coverage extends to every corner of the UK, including major motorways such as the M1, M25, M6, M40, M4, M62, M5, and M11. We understand the stress and inconvenience of a tyre emergency, which is why we have designed our entire service around speed, transparency, and quality. When you call us, you speak to a real person based in the UK who understands your situation and can dispatch help immediately.",
     ],
   },
@@ -46,8 +46,8 @@ const contentBlocks = [
 
 const serviceFaqs = [
   { question: "How quickly can you reach me in an emergency?", answer: "Our average response time is 30-45 minutes, depending on your exact location and current demand. In major cities such as London, Birmingham, and Manchester, we typically arrive within 25-35 minutes. When you call, we will give you an accurate ETA based on the location of your nearest available fitter." },
-  { question: "Do you charge extra for emergency call-outs?", answer: "No. We do not charge a separate emergency call-out fee. The price we quote over the phone is the total price you pay. Our pricing includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre. We believe in complete transparency with no hidden charges." },
-  { question: "Do I need a new tyre, or can my flat tyre be fixed?", answer: "In most cases, a flat or damaged tyre will need to be replaced with a new one for safety. If the damage is limited to the central tread area and is very small (under 6mm), a repair may be possible. However, damage to the sidewall, any blowout, or significant tread damage always requires a full replacement. We will assess your tyre on arrival and advise honestly — we never replace a tyre unless it is genuinely necessary." },
+  { question: "How is the price worked out?", answer: "When you call, we give you a clear, all-inclusive quote based on your tyre size and brand choice before any work begins. The price we quote over the phone is the price you pay. Our pricing includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre. We believe in complete transparency." },
+  { question: "Do I need a new tyre, or can my flat tyre be fixed?", answer: "In most cases, a flat or damaged tyre will need to be replaced with a new one for safety. If the damage is limited to the central tread area and is very small (under 6mm), a repair may be possible. However, damage to the sidewall, any blowout, or significant tread damage always requires a full replacement. We will assess your tyre on arrival and advise honestly, we never replace a tyre unless it is genuinely necessary." },
   { question: "What areas do you cover for emergency tyre fitting?", answer: "We cover the entire United Kingdom, including England, Scotland, Wales, and Northern Ireland. Our mobile fitters are positioned strategically across major cities and motorways to ensure the fastest possible response times wherever you are." },
   { question: "Do you stock my tyre size?", answer: "With over 70,000 tyres in stock across our fleet, we carry virtually every common tyre size and many specialist sizes too. From run-flat tyres and low-profile performance tyres to 4x4 and van tyres, our mobile vans are comprehensively stocked. If we do not have your exact size, we can source it quickly." },
   { question: "Is it safe to drive on a flat tyre?", answer: "No. Driving on a flat or severely underinflated tyre is dangerous and can cause expensive damage to your wheel rim, suspension, and braking system. If you suspect a flat tyre, pull over safely and call us. We will come to your location with a replacement tyre and fit it on the spot." },
@@ -66,11 +66,11 @@ const emergencyScenarios = [
 
 const whyChoose = [
   { title: "Fastest Response Times", description: "30-45 minute average response across the UK, with sub-30-minute times in major cities. We understand that time is critical in an emergency." },
-  { title: "No Call-Out Fees", description: "Unlike many competitors, we do not charge a separate emergency call-out fee. The price we quote is the price you pay, guaranteed." },
+  { title: "Upfront Pricing", description: "We give you a clear, all-inclusive quote over the phone before any work begins. The price we quote is the price you pay, guaranteed." },
   { title: "Fully Stocked Vans", description: "Our mobile vans carry over 70,000 tyre options including premium, mid-range, and budget brands. In most cases, we fix it on the first visit." },
   { title: "24/7 Real Human Support", description: "When you call, you speak to a UK-based operator, not an automated system. We understand your stress and act immediately." },
   { title: "Workmanship Guaranteed", description: "All our fitting work comes with a guarantee. If anything is not right, we will fix it free of charge. Your satisfaction is our priority." },
-  { title: "UK-Wide Coverage", description: "From London to Glasgow, Manchester to Cardiff — our network of mobile fitters covers the entire United Kingdom with no exceptions." },
+  { title: "UK-Wide Coverage", description: "From London to Glasgow, Manchester to Cardiff, our network of mobile fitters covers the entire United Kingdom with no exceptions." },
 ]
 
 const relatedServices = [
@@ -86,9 +86,9 @@ export default function EmergencyTyreFitting() {
     <ServicePageTemplate
       title="Emergency"
       titleHighlight="Tyre Fitting"
-      description="Stranded with a flat tyre or blowout? Our emergency mobile tyre fitting service reaches you within 30-45 minutes anywhere in the UK. Available 24/7, 365 days a year with no call-out fees. Call 0800 123 4567 now for immediate assistance."
+      description="Stranded with a flat tyre or blowout? Our emergency mobile tyre fitting service reaches you within 30-45 minutes anywhere in the UK. Available 24/7, 365 days a year. Call 0800 123 4567 now for immediate assistance."
       metaTitle="Emergency Tyre Fitting - 30-45 Min Response 24/7 UK"
-      metaDescription="Emergency mobile tyre fitting across the UK. 30-45 min response, no call-out fees, available 24/7. We come to you at home, work, or roadside. Call 0800 123 4567 now."
+      metaDescription="Emergency mobile tyre fitting across the UK. 30-45 min response, available 24/7. We come to you at home, work, or roadside. Call 0800 123 4567 now."
       heroImage="/images/service-emergency.jpg"
       features={features}
       whatToExpect={whatToExpect}

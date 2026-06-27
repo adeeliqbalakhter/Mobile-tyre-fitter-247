@@ -13,7 +13,7 @@ export default function BrandsSection() {
         </div>
       </div>
 
-      {/* Logo marquee — fades at both edges */}
+      {/* Logo marquee, fades at both edges */}
       <div className="relative">
         <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-gray-50 to-transparent sm:w-32" />
         <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-gray-50 to-transparent sm:w-32" />
@@ -37,7 +37,7 @@ export default function BrandsSection() {
       </div>
 
       <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
-        <p className="mt-10 text-center text-sm text-[#6a6a6a]">Over 70,000 tyres in stock — premium, mid-range, and budget options available for all vehicle types.</p>
+        <p className="mt-10 text-center text-sm text-[#6a6a6a]">Over 70,000 tyres in stock, premium, mid-range, and budget options available for all vehicle types.</p>
       </div>
     </section>
   )

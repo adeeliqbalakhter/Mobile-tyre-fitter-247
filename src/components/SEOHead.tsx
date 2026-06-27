@@ -39,7 +39,7 @@ export default function SEOHead({ title, description, canonical, ogImage, schema
     const fullTitle = `${title} | ${SITE_NAME}`
     document.title = fullTitle
 
-    // Resolve canonical URL — fall back to the current path on the live origin.
+    // Resolve canonical URL, fall back to the current path on the live origin.
     const path = canonical ?? `${window.location.pathname}${window.location.search}`
     const canonicalUrl = path.startsWith('http') ? path : `${SITE_URL}${path === '/' ? '' : path}` || SITE_URL
     const image = ogImage ?? DEFAULT_OG_IMAGE

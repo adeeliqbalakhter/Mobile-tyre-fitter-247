@@ -58,7 +58,7 @@ export default function Footer() {
               <img src="/images/logo.png" alt="Mobile Tyre Fitter 247" className="h-10 w-auto" />
             </div>
             <p className="mb-4 text-sm leading-relaxed text-[#6a6a6a]">
-              UK's leading mobile tyre fitting service. We come to you at home, work, or roadside — 24 hours a day, 7 days a week.
+              UK's leading mobile tyre fitting service. We come to you at home, work, or roadside, 24 hours a day, 7 days a week.
             </p>
             <a
               href={`tel:${PHONE_NUMBER.replace(/\s/g, '')}`}

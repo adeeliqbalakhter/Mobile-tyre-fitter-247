@@ -7,7 +7,6 @@ import ServicesSection from '../sections/ServicesSection'
 import WhyChooseUs from '../sections/WhyChooseUs'
 import ReviewsSection from '../sections/ReviewsSection'
 import BrandsSection from '../sections/BrandsSection'
-import FleetSection from '../sections/FleetSection'
 import FAQSection from '../sections/FAQSection'
 import EmergencyCTA from '../sections/EmergencyCTA'
 
@@ -27,7 +26,6 @@ export default function HomePage() {
       <CoverageGrid />
       <ReviewsSection />
       <BrandsSection />
-      <FleetSection />
       <FAQSection />
       <EmergencyCTA />
     </>

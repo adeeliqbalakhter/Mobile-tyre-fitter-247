@@ -147,7 +147,7 @@ export default function ServicePageTemplate({
               { icon: Star, stat: '4.9★', label: 'From 2,500+ reviews' },
               { icon: Clock, stat: '30-45 min', label: 'Average response' },
               { icon: Shield, stat: '24/7', label: 'Every day of the year' },
-              { icon: BadgeCheck, stat: '£0', label: 'Call-out fees' },
+              { icon: BadgeCheck, stat: 'Fully', label: 'Insured & guaranteed' },
             ].map(({ icon: Icon, stat, label }) => (
               <div key={label} className="flex flex-col items-center text-center">
                 <Icon className="mb-2 h-5 w-5 text-[#d92a1d]" />
@@ -205,7 +205,7 @@ export default function ServicePageTemplate({
         </section>
       )}
 
-      {/* What to Expect — process timeline */}
+      {/* What to Expect, process timeline */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <div className="mb-10">
@@ -235,7 +235,7 @@ export default function ServicePageTemplate({
               <h2 className="text-xl font-bold text-white sm:text-2xl" style={{ fontFamily: 'Space Grotesk' }}>
                 Need {title} {titleHighlight} Right Now?
               </h2>
-              <p className="mt-1 text-sm text-white/70">Call or WhatsApp for an instant quote and immediate dispatch — 24/7, anywhere in the UK.</p>
+              <p className="mt-1 text-sm text-white/70">Call or WhatsApp for an instant quote and immediate dispatch, 24/7, anywhere in the UK.</p>
             </div>
             <div className="flex w-full flex-col gap-3 sm:flex-row sm:justify-center lg:w-auto">
               <PhoneButton size="lg" eventLabel={`${title.toLowerCase().replace(/\s/g, '_')}_mid_cta`} />

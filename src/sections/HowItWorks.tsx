@@ -69,7 +69,7 @@ export default function HowItWorks() {
             ))}
           </div>
 
-          {/* Visual panel — branded icon card instead of photos */}
+          {/* Visual panel, branded icon card instead of photos */}
           <div className="relative hidden lg:block h-[480px]">
             <div className="sticky top-32 h-[480px]">
               {steps.map((step, index) => (

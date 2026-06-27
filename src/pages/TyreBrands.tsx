@@ -18,7 +18,7 @@ const specialist = [
 export default function TyreBrands() {
   return (
     <>
-      <SEOHead title="Tyre Brands - All Major Brands Stocked UK" description="All major tyre brands available for mobile fitting across the UK — Michelin, Pirelli, Continental, Bridgestone, Goodyear and more. Premium, mid-range & budget. Call now." />
+      <SEOHead title="Tyre Brands - All Major Brands Stocked UK" description="All major tyre brands available for mobile fitting across the UK, Michelin, Pirelli, Continental, Bridgestone, Goodyear and more. Premium, mid-range & budget. Call now." />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
@@ -26,7 +26,7 @@ export default function TyreBrands() {
           </nav>
           <h1 className="mb-4 text-3xl font-bold tracking-tight text-[#1a1a1a] sm:text-4xl" style={{ fontFamily: 'Space Grotesk' }}>Tyre Brands <span className="text-[#d92a1d]">We Stock</span></h1>
           <p className="mb-4 max-w-2xl text-lg leading-relaxed text-[#1a1a1a]">
-            Over 70,000 tyres in stock from the world's leading manufacturers — carried in our mobile vans so we can fit the right tyre at your location on the first visit.
+            Over 70,000 tyres in stock from the world's leading manufacturers, carried in our mobile vans so we can fit the right tyre at your location on the first visit.
           </p>
           <p className="mb-10 max-w-2xl text-base leading-relaxed text-[#6a6a6a]">
             Whether you want the ultimate in grip and longevity or a safe, legal tyre at the lowest possible price, we have an option to suit every vehicle and budget. Not sure which is right for you? Call us with your registration and we'll recommend the best tyre for your car and driving.

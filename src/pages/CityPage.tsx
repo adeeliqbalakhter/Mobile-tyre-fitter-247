@@ -65,11 +65,11 @@ export default function CityPage() {
     },
     {
       question: `Are you available 24/7 in ${name}?`,
-      answer: `Absolutely. Our ${name} mobile tyre fitting service operates 24 hours a day, 7 days a week, 365 days a year — including weekends and bank holidays. There are no out-of-hours or weekend surcharges.`,
+      answer: `Absolutely. Our ${name} mobile tyre fitting service operates 24 hours a day, 7 days a week, 365 days a year, including weekends and bank holidays. There are no out-of-hours or weekend surcharges.`,
     },
     {
       question: `How much does mobile tyre fitting cost in ${name}?`,
-      answer: `Pricing depends on your tyre size and brand choice, but every quote is fully transparent with no hidden call-out fees. The price includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre. Call us for an instant quote for your vehicle.`,
+      answer: `Pricing depends on your tyre size and brand choice, but every quote is fully transparent and given upfront before any work begins. The price includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre. Call us for an instant quote for your vehicle.`,
     },
   ]
 
@@ -113,7 +113,7 @@ export default function CityPage() {
         schema={schema}
       />
 
-      {/* Hero — dark, high-contrast for readability over the city photo */}
+      {/* Hero, dark, high-contrast for readability over the city photo */}
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-[#1a1a1a]">
           <img src={cityInfo.image} alt={`Mobile tyre fitting in ${name}`} className="absolute inset-0 h-full w-full object-cover opacity-25" />
@@ -140,7 +140,7 @@ export default function CityPage() {
                 Mobile Tyre Fitting <span className="text-[#ff4444]">{name}</span>
               </h1>
               <p className="mb-6 max-w-xl text-base leading-relaxed text-white/85 lg:text-lg">
-                Stranded with a flat in {name}? We bring the garage to you — at home, work, or roadside — 24 hours a day, 7 days a week, with an average {time} response across {region}.
+                Stranded with a flat in {name}? We bring the garage to you, at home, work, or roadside, 24 hours a day, 7 days a week, with an average {time} response across {region}.
               </p>
 
               <div className="mb-8 flex flex-wrap gap-2">
@@ -163,10 +163,10 @@ export default function CityPage() {
               <ul className="space-y-3">
                 {[
                   `Fast ${time} average response across ${name}`,
-                  'Available 24/7 — no out-of-hours or weekend surcharges',
+                  'Available 24/7, no out-of-hours or weekend surcharges',
                   'New tyres supplied, fitted & balanced at your location',
                   'All major brands plus budget options in stock',
-                  'No hidden call-out fees — the quote is the price you pay',
+                  'A clear, all-inclusive quote upfront before any work begins',
                 ].map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#ff4444]" />
@@ -190,13 +190,13 @@ export default function CityPage() {
             24/7 Mobile Tyre Fitting Across <span className="text-[#d92a1d]">{name}</span>
           </h2>
           <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
-            When you're stranded with a flat tyre or blowout in {name}, the last thing you need is a long wait for recovery or the hassle of arranging a tow to a garage. Mobile Tyre Fitter 24/7 brings a fully-equipped workshop directly to you — anywhere in {name} and across {region} — with an average response time of just {time}.
+            When you're stranded with a flat tyre or blowout in {name}, the last thing you need is a long wait for recovery or the hassle of arranging a tow to a garage. Mobile Tyre Fitter 24/7 brings a fully-equipped workshop directly to you, anywhere in {name} and across {region}, with an average response time of just {time}.
           </p>
           <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
-            Our mobile vans carry a wide range of tyres and the equipment to supply, fit, and balance a brand-new tyre at your roadside, home driveway, or workplace car park. We work right across the city — from {areas.slice(0, 4).join(', ')} and beyond — as well as the busy routes that surround it, including the {roads.slice(0, 4).join(', ')}. Whether you've suffered a blowout on the motorway or woken up to a flat on the drive, help is never far away.
+            Our mobile vans carry a wide range of tyres and the equipment to supply, fit, and balance a brand-new tyre at your roadside, home driveway, or workplace car park. We work right across the city, from {areas.slice(0, 4).join(', ')} and beyond, as well as the busy routes that surround it, including the {roads.slice(0, 4).join(', ')}. Whether you've suffered a blowout on the motorway or woken up to a flat on the drive, help is never far away.
           </p>
           <p className="text-base leading-relaxed text-[#6a6a6a]">
-            Every job is carried out by fully-insured, professionally-trained fitters, and every price we quote includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre. No hidden call-out fees, no out-of-hours premiums — just fast, honest mobile tyre fitting in {name}, day or night.
+            Every job is carried out by fully-insured, professionally-trained fitters, and every price we quote includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre. No out-of-hours premiums, just fast, honest mobile tyre fitting in {name}, day or night.
           </p>
         </div>
       </section>
@@ -255,7 +255,7 @@ export default function CityPage() {
       <section className="py-16 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-[800px] px-4 lg:px-6">
           <h2 className="mb-8 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>
-            Mobile Tyre Fitting in {name} — <span className="text-[#d92a1d]">FAQs</span>
+            Mobile Tyre Fitting in {name}, <span className="text-[#d92a1d]">FAQs</span>
           </h2>
           <div className="space-y-4">
             {localFaqs.map((faq) => (
@@ -282,7 +282,7 @@ export default function CityPage() {
         </div>
       </section>
 
-      {/* Other cities — internal linking */}
+      {/* Other cities, internal linking */}
       <section className="py-16 lg:py-20 bg-gray-50 border-t border-gray-200">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <h2 className="mb-8 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Other Areas We <span className="text-[#d92a1d]">Cover</span></h2>

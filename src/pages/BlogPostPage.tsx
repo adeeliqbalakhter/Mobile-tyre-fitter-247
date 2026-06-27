@@ -54,8 +54,10 @@ export default function BlogPostPage() {
 
       <article>
         {/* Header */}
-        <header className="relative pt-24 pb-12 lg:pt-32 lg:pb-16 bg-[#1a1a1a]">
-          <div className="mx-auto max-w-[800px] px-4 lg:px-6">
+        <header className="relative pt-24 pb-12 lg:pt-32 lg:pb-16 bg-[#1a1a1a] overflow-hidden">
+          <img src={post.image} alt={post.title} className="absolute inset-0 h-full w-full object-cover opacity-25" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/80 via-[#1a1a1a]/85 to-[#1a1a1a]" />
+          <div className="relative z-10 mx-auto max-w-[800px] px-4 lg:px-6">
             <nav className="mb-6 flex items-center gap-2 text-xs text-white/60" style={{ fontFamily: 'JetBrains Mono' }}>
               <Link to="/" className="hover:text-[#ff4444] transition-colors">Home</Link>
               <span>/</span>
@@ -101,7 +103,7 @@ export default function BlogPostPage() {
             {/* Inline CTA */}
             <div className="my-10 rounded-2xl border border-[#d92a1d]/20 bg-[#d92a1d]/5 p-6 text-center sm:p-8">
               <h2 className="mb-2 text-xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Need a Tyre Fitted Today?</h2>
-              <p className="mb-6 text-sm text-[#6a6a6a]">We come to you 24/7 — at home, work, or roadside. Average response 30-45 minutes.</p>
+              <p className="mb-6 text-sm text-[#6a6a6a]">We come to you 24/7, at home, work, or roadside. Average response 30-45 minutes.</p>
               <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <PhoneButton size="lg" eventLabel={`blog_${post.slug}`} />
                 <WhatsAppButton size="lg" variant="primary" message="Hi, I need a mobile tyre fitter. Can you help?" />
@@ -121,7 +123,9 @@ export default function BlogPostPage() {
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((p) => (
                 <Link key={p.slug} to={`/blog/${p.slug}`} className="group rounded-xl border border-gray-200 bg-white overflow-hidden transition-all hover:border-[#d92a1d]/30 hover:shadow-md">
-                  <div className="h-32 bg-gradient-to-br from-[#d92a1d]/10 to-gray-100" />
+                  <div className="relative h-32 overflow-hidden">
+                    <img src={p.image} alt={p.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  </div>
                   <div className="p-5">
                     <span className="rounded bg-[#d92a1d]/10 px-2 py-0.5 text-[10px] font-semibold text-[#d92a1d]" style={{ fontFamily: 'JetBrains Mono' }}>{p.category}</span>
                     <h3 className="mt-2 mb-2 font-semibold text-[#1a1a1a] group-hover:text-[#d92a1d] transition-colors" style={{ fontFamily: 'Space Grotesk' }}>{p.title}</h3>

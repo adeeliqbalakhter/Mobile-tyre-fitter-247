@@ -27,7 +27,7 @@ export default function HeroSection() {
       className="relative min-h-[100dvh] flex items-center overflow-hidden"
       style={{ opacity: 'calc(1 - var(--scroll-progress, 0) * 1.5)' }}
     >
-      {/* Background image — full visibility, no washout */}
+      {/* Background image, full visibility, no washout */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: 'url(/images/hero-bg.jpg)', zIndex: 1 }}

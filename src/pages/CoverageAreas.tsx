@@ -28,7 +28,7 @@ export default function CoverageAreas() {
             <Link to="/" className="hover:text-[#d92a1d]">Home</Link><span>/</span><span className="text-[#1a1a1a]">Coverage Areas</span>
           </nav>
           <h1 className="mb-4 text-3xl font-bold tracking-tight text-[#1a1a1a] sm:text-4xl" style={{ fontFamily: 'Space Grotesk' }}>UK-Wide <span className="text-[#d92a1d]">Coverage</span></h1>
-          <p className="mb-6 max-w-2xl text-[#6a6a6a]">From major cities to remote motorways, our mobile tyre fitters cover the entire United Kingdom — England, Scotland, and Wales. Wherever you've broken down, we'll come to you 24/7. Find your area below, or call to confirm we cover your postcode.</p>
+          <p className="mb-6 max-w-2xl text-[#6a6a6a]">From major cities to remote motorways, our mobile tyre fitters cover the entire United Kingdom, England, Scotland, and Wales. Wherever you've broken down, we'll come to you 24/7. Find your area below, or call to confirm we cover your postcode.</p>
           <div className="mb-10 flex flex-col gap-3 sm:flex-row">
             <PhoneButton size="lg" eventLabel="coverage_hero" />
             <WhatsAppButton size="lg" variant="primary" message="Hi, do you cover my area for mobile tyre fitting?" />
@@ -73,10 +73,10 @@ export default function CoverageAreas() {
           <div className="mt-12 max-w-[800px]">
             <h2 className="mb-4 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Not Sure If We Cover Your Area?</h2>
             <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
-              Our network of mobile tyre fitters stretches far beyond the major cities listed above. We regularly attend smaller towns, villages, business parks, and motorway services across England, Scotland, and Wales. If your location isn't shown, it almost certainly doesn't mean we can't reach you — the quickest way to check is a 30-second phone call.
+              Our network of mobile tyre fitters stretches far beyond the major cities listed above. We regularly attend smaller towns, villages, business parks, and motorway services across England, Scotland, and Wales. If your location isn't shown, it almost certainly doesn't mean we can't reach you, the quickest way to check is a 30-second phone call.
             </p>
             <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
-              When you call, just give us your postcode or motorway junction and we'll confirm coverage, give you an accurate ETA, and dispatch the nearest available van. Every fitter carries a full range of tyres and the equipment to supply, fit, and balance your new tyre on the spot — at your home, your workplace, or the roadside.
+              When you call, just give us your postcode or motorway junction and we'll confirm coverage, give you an accurate ETA, and dispatch the nearest available van. Every fitter carries a full range of tyres and the equipment to supply, fit, and balance your new tyre on the spot, at your home, your workplace, or the roadside.
             </p>
             <p className="text-base leading-relaxed text-[#6a6a6a]">
               We're available 24 hours a day, 365 days a year, with no out-of-hours or weekend surcharges anywhere in our coverage area.

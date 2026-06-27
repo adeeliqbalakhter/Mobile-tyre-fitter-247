@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 
 import App from './App'
-// HomePage is the landing/LCP route — keep it eager so it renders immediately.
+// HomePage is the landing/LCP route, keep it eager so it renders immediately.
 import HomePage from './pages/HomePage'
 
 // Secondary routes are code-split so they don't bloat the initial bundle.

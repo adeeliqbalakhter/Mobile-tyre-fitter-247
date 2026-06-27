@@ -39,7 +39,7 @@ export default function AboutPage() {
     <>
       <SEOHead
         title="About Us - UK's Leading Mobile Tyre Fitting Service"
-        description="Learn about Mobile Tyre Fitter 24/7 — the UK's trusted mobile tyre fitting service since 2015. 70,000+ tyres fitted, 4.9★ rating, 30-45 min response."
+        description="Learn about Mobile Tyre Fitter 24/7, the UK's trusted mobile tyre fitting service since 2015. 70,000+ tyres fitted, 4.9★ rating, 30-45 min response."
         schema={schema}
       />
 
@@ -53,7 +53,7 @@ export default function AboutPage() {
             About <span className="text-[#ff4444]">Mobile Tyre Fitter 24/7</span>
           </h1>
           <p className="max-w-2xl text-base leading-relaxed text-white/80 lg:text-lg">
-            Since 2015, we've made tyre replacement as fast and stress-free as possible by bringing a fully-equipped workshop directly to UK drivers — wherever and whenever they need us.
+            Since 2015, we've made tyre replacement as fast and stress-free as possible by bringing a fully-equipped workshop directly to UK drivers, wherever and whenever they need us.
           </p>
         </div>
       </section>
@@ -87,13 +87,13 @@ export default function AboutPage() {
             Mobile Tyre Fitter 24/7 began with a simple frustration: getting a tyre replaced meant losing half a day to a garage waiting room. We knew there had to be a better way.
           </p>
           <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
-            Starting with a single van in London in 2015, we set out to bring the tyre shop to the driver instead of the other way round. Word spread quickly — drivers loved being able to have a new tyre fitted on their own driveway, in the office car park, or at the roadside after a breakdown, without ever queuing at a garage. As demand grew, so did our network of fully-equipped mobile fitters.
+            Starting with a single van in London in 2015, we set out to bring the tyre shop to the driver instead of the other way round. Word spread quickly, drivers loved being able to have a new tyre fitted on their own driveway, in the office car park, or at the roadside after a breakdown, without ever queuing at a garage. As demand grew, so did our network of fully-equipped mobile fitters.
           </p>
           <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
-            Today we operate across the entire United Kingdom, 24 hours a day, 365 days a year. Our vans carry over 70,000 tyres from premium, mid-range, and budget brands, so in the vast majority of cases we can supply and fit the right tyre on the very first visit. Every job is carried out by an insured, professionally-trained fitter, and every quote is transparent — the price we give includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre, with no hidden call-out fees.
+            Today we operate across the entire United Kingdom, 24 hours a day, 365 days a year. Our vans carry over 70,000 tyres from premium, mid-range, and budget brands, so in the vast majority of cases we can supply and fit the right tyre on the very first visit. Every job is carried out by an insured, professionally-trained fitter, and every quote is transparent and given upfront, the price we give includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre.
           </p>
           <p className="text-base leading-relaxed text-[#6a6a6a]">
-            That commitment to speed, honesty, and genuine convenience has earned us a 4.9-star rating from more than 2,500 customers — and made us one of the most trusted names in mobile tyre fitting in the UK.
+            That commitment to speed, honesty, and genuine convenience has earned us a 4.9-star rating from more than 2,500 customers, and made us one of the most trusted names in mobile tyre fitting in the UK.
           </p>
         </div>
       </section>

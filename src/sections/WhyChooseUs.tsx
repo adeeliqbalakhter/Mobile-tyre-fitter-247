@@ -5,7 +5,7 @@ const reasons = [
   { icon: Shield, title: 'Fully Insured & Certified', description: 'All our technicians are fully insured, trained to industry standards, and background-checked.' },
   { icon: Star, title: '4.9\u2605 Google Rating', description: 'Over 2,500 five-star reviews from happy customers across the UK. Quality you can trust.' },
   { icon: MapPin, title: 'UK-Wide Coverage', description: 'From major cities to remote motorways, our mobile units cover the entire United Kingdom.' },
-  { icon: CreditCard, title: 'No Hidden Fees', description: 'Transparent pricing quoted upfront. Pay securely by card on completion. No call-out charges.' },
+  { icon: CreditCard, title: 'Transparent Pricing', description: 'A clear, all-inclusive quote upfront before any work begins. Pay securely by card on completion.' },
   { icon: Award, title: 'All Major Tyre Brands', description: 'From premium Michelin and Pirelli to quality budget options. We stock over 70,000 tyres.' },
   { icon: Truck, title: 'Fully Equipped Vans', description: 'Latest tyre changing and balancing equipment. Capable of handling wheels up to 24 inches.' },
   { icon: Headphones, title: '24/7 Customer Support', description: 'Our UK-based call centre is always open. Speak to a real person, not a machine.' },
