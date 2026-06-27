@@ -5,24 +5,48 @@ import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
 
-const tiers = [
+interface Brand { name: string; slug: string }
+
+const tiers: { name: string; blurb: string; brands: Brand[]; highlight: boolean }[] = [
   {
     name: 'Premium Brands',
     blurb: 'The best grip, braking, longevity, and refinement. Ideal for performance cars, high-mileage drivers, and anyone who wants maximum safety.',
-    brands: ['Michelin', 'Pirelli', 'Continental', 'Bridgestone', 'Goodyear', 'Dunlop'],
     highlight: true,
+    brands: [
+      { name: 'Michelin', slug: 'michelin' },
+      { name: 'Pirelli', slug: 'pirelli' },
+      { name: 'Continental', slug: 'continental' },
+      { name: 'Bridgestone', slug: 'bridgestone' },
+      { name: 'Goodyear', slug: 'goodyear' },
+      { name: 'Dunlop', slug: 'dunlop' },
+    ],
   },
   {
     name: 'Mid-Range Brands',
     blurb: 'A smart balance of performance and value. Excellent everyday tyres that perform well in UK conditions without the premium price tag.',
-    brands: ['Hankook', 'Yokohama', 'Kumho', 'Falken', 'Toyo', 'Nexen', 'Avon', 'Uniroyal'],
     highlight: false,
+    brands: [
+      { name: 'Hankook', slug: 'hankook' },
+      { name: 'Yokohama', slug: 'yokohama' },
+      { name: 'Toyo', slug: 'toyo' },
+      { name: 'BFGoodrich', slug: 'bfgoodrich' },
+      { name: 'General Tire', slug: 'general-tire' },
+      { name: 'Firestone', slug: 'firestone' },
+      { name: 'Avon', slug: 'avon' },
+      { name: 'Uniroyal', slug: 'uniroyal' },
+    ],
   },
   {
     name: 'Budget Brands',
     blurb: 'The most affordable way to get safe, legal, road-ready tyres fitted. Great for older vehicles, second cars, or tighter budgets.',
-    brands: ['RoadX', 'Landsail', 'Imperial', 'Windforce', 'Westlake', 'Kpatos'],
     highlight: false,
+    brands: [
+      { name: 'Kelly', slug: 'kelly' },
+      { name: 'Gislaved', slug: 'gislaved' },
+      { name: 'Rovelo', slug: 'rovelo' },
+      { name: 'Autogreen', slug: 'autogreen' },
+      { name: 'Sailun', slug: 'sailun' },
+    ],
   },
 ]
 
@@ -56,17 +80,27 @@ export default function TyreBrands() {
           <div className="space-y-6">
             {tiers.map((tier) => (
               <div key={tier.name} className={`rounded-xl border p-6 ${tier.highlight ? 'border-[#d92a1d]/30 bg-[#d92a1d]/5' : 'border-gray-200 bg-gray-50'}`}>
-                <div className="mb-2 flex flex-wrap items-center gap-3">
+                <div className="mb-4 flex flex-wrap items-center gap-3">
                   <h2 className="text-lg font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>{tier.name}</h2>
                   {tier.highlight && (
                     <span className="rounded bg-[#d92a1d] px-2 py-0.5 text-[10px] font-bold tracking-wider text-white" style={{ fontFamily: 'JetBrains Mono' }}>BEST PERFORMANCE</span>
                   )}
                 </div>
-                <p className="mb-4 max-w-2xl text-sm text-[#6a6a6a]">{tier.blurb}</p>
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+                <p className="mb-5 max-w-2xl text-sm text-[#6a6a6a]">{tier.blurb}</p>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                   {tier.brands.map((brand) => (
-                    <div key={brand} className={`rounded-lg border px-4 py-3 text-center ${tier.highlight ? 'border-[#d92a1d]/20 bg-white' : 'border-gray-200 bg-white'}`}>
-                      <span className="text-sm font-semibold text-[#1a1a1a]">{brand}</span>
+                    <div
+                      key={brand.slug}
+                      className="flex h-20 items-center justify-center rounded-lg border border-gray-200 bg-white p-4 transition-shadow hover:shadow-sm"
+                    >
+                      <img
+                        src={`/images/brands/${brand.slug}.png`}
+                        alt={`${brand.name} tyres`}
+                        width={220}
+                        height={78}
+                        loading="lazy"
+                        className="max-h-12 w-auto max-w-full object-contain"
+                      />
                     </div>
                   ))}
                 </div>
