@@ -19,10 +19,20 @@ const faqs = [
   { q: 'What payment methods do you accept?', a: 'We accept all major credit and debit cards including Visa, Mastercard, and American Express. We also accept Apple Pay and Google Pay. Payment is taken on completion of the work.' },
 ]
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
 export default function FAQPage() {
   return (
     <>
-      <SEOHead title="FAQs - Mobile Tyre Fitting Questions Answered" description="Frequently asked questions about our mobile tyre fitting service. 24/7 availability, pricing, coverage, brands, and more. Call 0800 123 4567 for immediate help." />
+      <SEOHead title="FAQs - Mobile Tyre Fitting Questions Answered" description="Frequently asked questions about our mobile tyre fitting service. 24/7 availability, pricing, coverage, brands, and more. Call 0800 123 4567 for immediate help." schema={faqSchema} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[800px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>

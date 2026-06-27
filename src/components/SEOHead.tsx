@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
-const SITE_NAME = 'Mobile Tyre Fitter 24/7'
-const SITE_URL = 'https://mobiletyrefitter24-7.co.uk'
+export const SITE_NAME = 'Mobile Tyre Fitter 24/7'
+export const SITE_URL = 'https://www.mobiletyrefitter247.co.uk'
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-bg.jpg`
 
 interface SEOHeadProps {
@@ -86,9 +86,9 @@ export const localBusinessSchema = {
   '@type': 'LocalBusiness',
   name: 'Mobile Tyre Fitter 24/7',
   description: 'UK\'s leading mobile tyre fitting service. 24/7 emergency tyre replacement at your home, work, or roadside.',
-  url: 'https://mobiletyrefitter24-7.co.uk',
+  url: 'https://www.mobiletyrefitter247.co.uk',
   telephone: '+448001234567',
-  email: 'info@mobiletyrefitter24-7.co.uk',
+  email: 'info@mobiletyrefitter247.co.uk',
   priceRange: '££',
   areaServed: 'United Kingdom',
   serviceType: 'Mobile Tyre Fitting',

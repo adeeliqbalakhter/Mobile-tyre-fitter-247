@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import SEOHead from './SEOHead'
+import SEOHead, { SITE_URL, SITE_NAME } from './SEOHead'
 import PhoneButton from './PhoneButton'
 import WhatsAppButton from './WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
@@ -33,9 +33,47 @@ export default function ServicePageTemplate({
   heroImage, features, whatToExpect, relatedServices,
   contentBlocks = [], serviceFaqs = [], emergencyScenarios = [], whyChoose = [], schema,
 }: ServicePageTemplateProps) {
+  const serviceName = `${title} ${titleHighlight}`.trim()
+  const pageUrl = typeof window !== 'undefined'
+    ? `${SITE_URL}${window.location.pathname}`
+    : SITE_URL
+
+  // Build Service + Breadcrumb (+ service FAQ, if any) structured data for richer search results.
+  const generatedSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Service',
+        name: serviceName,
+        description: metaDescription,
+        serviceType: serviceName,
+        areaServed: 'United Kingdom',
+        url: pageUrl,
+        provider: { '@type': 'LocalBusiness', name: SITE_NAME, url: SITE_URL },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+          { '@type': 'ListItem', position: 2, name: serviceName, item: pageUrl },
+        ],
+      },
+      ...(serviceFaqs.length > 0
+        ? [{
+            '@type': 'FAQPage',
+            mainEntity: serviceFaqs.map((faq) => ({
+              '@type': 'Question',
+              name: faq.question,
+              acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+            })),
+          }]
+        : []),
+    ],
+  }
+
   return (
     <>
-      <SEOHead title={metaTitle} description={metaDescription} schema={schema} />
+      <SEOHead title={metaTitle} description={metaDescription} schema={schema ?? generatedSchema} />
 
       {/* Page Hero */}
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20">
