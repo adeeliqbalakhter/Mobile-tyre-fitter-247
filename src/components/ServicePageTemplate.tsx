@@ -39,16 +39,16 @@ export default function ServicePageTemplate({
 
       {/* Page Hero */}
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20">
-        <div className="absolute inset-0">
-          <img src={heroImage} alt={title} className="h-full w-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/60 to-white" />
+        <div className="absolute inset-0 bg-[#1a1a1a]">
+          <img src={heroImage} alt={title} className="absolute inset-0 h-full w-full object-cover opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/90 via-[#1a1a1a]/80 to-[#1a1a1a]" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-[1400px] px-4 lg:px-6">
-          <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
-            <Link to="/" className="hover:text-[#d92a1d] transition-colors">Home</Link>
+          <nav className="mb-6 flex items-center gap-2 text-xs text-white/60" style={{ fontFamily: 'JetBrains Mono' }}>
+            <Link to="/" className="text-white/60 hover:text-[#ff4444] transition-colors">Home</Link>
             <span>/</span>
-            <span className="text-[#1a1a1a]">{title} {titleHighlight}</span>
+            <span className="text-white/80">{title} {titleHighlight}</span>
           </nav>
 
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
@@ -61,16 +61,16 @@ export default function ServicePageTemplate({
                 <span className="text-xs font-semibold tracking-wider text-[#d92a1d]" style={{ fontFamily: 'JetBrains Mono' }}>24/7 AVAILABLE NOW</span>
               </div>
 
-              <h1 className="mb-4 text-3xl font-bold tracking-tight text-[#1a1a1a] sm:text-4xl lg:text-5xl" style={{ fontFamily: 'Space Grotesk' }}>
-                {title} <span className="text-[#d92a1d]">{titleHighlight}</span>
+              <h1 className="mb-4 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl" style={{ fontFamily: 'Space Grotesk' }}>
+                {title} <span className="text-[#ff4444]">{titleHighlight}</span>
               </h1>
-              <p className="mb-6 text-base leading-relaxed text-[#6a6a6a] lg:text-lg">{description}</p>
+              <p className="mb-6 text-base leading-relaxed text-white/80 lg:text-lg">{description}</p>
 
               <div className="mb-8 flex flex-wrap gap-2">
                 {[{ icon: Clock, text: '30-45 min response' }, { icon: Shield, text: 'Fully insured' }, { icon: Star, text: '4.9★ rated' }, { icon: MapPin, text: 'UK-wide' }].map(({ icon: Icon, text }) => (
-                  <div key={text} className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1 shadow-sm">
-                    <Icon className="h-3 w-3 text-[#d92a1d]" />
-                    <span className="text-[11px] font-medium text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>{text}</span>
+                  <div key={text} className="flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm px-3 py-1">
+                    <Icon className="h-3 w-3 text-[#ff4444]" />
+                    <span className="text-[11px] font-medium text-white/80" style={{ fontFamily: 'JetBrains Mono' }}>{text}</span>
                   </div>
                 ))}
               </div>
@@ -81,19 +81,19 @@ export default function ServicePageTemplate({
               </div>
             </div>
 
-            <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 lg:p-8">
-              <h3 className="mb-4 text-lg font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>What&apos;s Included</h3>
+            <div className="rounded-xl border border-white/10 bg-white/10 backdrop-blur-sm p-6 lg:p-8">
+              <h3 className="mb-4 text-lg font-semibold text-white" style={{ fontFamily: 'Space Grotesk' }}>What&apos;s Included</h3>
               <ul className="space-y-3">
                 {features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
-                    <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#d92a1d]" />
-                    <span className="text-sm text-[#6a6a6a]">{feature}</span>
+                    <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#ff4444]" />
+                    <span className="text-sm text-white/80">{feature}</span>
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 rounded-lg bg-white p-4 border border-gray-200">
-                <p className="text-xs text-[#6a6a6a] mb-2" style={{ fontFamily: 'JetBrains Mono' }}>AVERAGE RESPONSE TIME</p>
-                <p className="text-2xl font-bold text-[#d92a1d]" style={{ fontFamily: 'Space Grotesk' }}>30-45 minutes</p>
+              <div className="mt-6 rounded-lg bg-white/10 border border-white/10 p-4">
+                <p className="text-xs text-white/60 mb-2" style={{ fontFamily: 'JetBrains Mono' }}>AVERAGE RESPONSE TIME</p>
+                <p className="text-2xl font-bold text-[#ff4444]" style={{ fontFamily: 'Space Grotesk' }}>30-45 minutes</p>
               </div>
             </div>
           </div>
