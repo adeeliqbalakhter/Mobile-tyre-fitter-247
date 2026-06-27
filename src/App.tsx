@@ -1,8 +1,17 @@
 import { Outlet, useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import StickyNav from './components/StickyNav'
 import StickyCallBar from './components/StickyCallBar'
 import Footer from './components/Footer'
+
+function RouteFallback() {
+  return (
+    <div className="flex min-h-[60vh] items-center justify-center" role="status" aria-live="polite">
+      <span className="h-8 w-8 animate-spin rounded-full border-2 border-gray-200 border-t-[#d92a1d]" />
+      <span className="sr-only">Loading…</span>
+    </div>
+  )
+}
 
 function App() {
   const [showCallBar, setShowCallBar] = useState(false)
@@ -22,9 +31,12 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white text-[#1a1a1a]">
+      <a href="#main" className="skip-link">Skip to main content</a>
       <StickyNav />
-      <main>
-        <Outlet />
+      <main id="main">
+        <Suspense fallback={<RouteFallback />}>
+          <Outlet />
+        </Suspense>
       </main>
       <Footer />
       {showCallBar && <StickyCallBar />}

@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Lockfile intentionally omitted for clean Vercel installs
+package-lock.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

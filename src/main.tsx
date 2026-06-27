@@ -1,26 +1,29 @@
-import { StrictMode } from 'react'
+import { StrictMode, lazy } from 'react'
 import { createRoot } from 'react-dom/client'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 
 declare const gtag: (...args: unknown[]) => void;
 
 import App from './App'
+// HomePage is the landing/LCP route — keep it eager so it renders immediately.
 import HomePage from './pages/HomePage'
-import EmergencyTyreFitting from './pages/EmergencyTyreFitting'
-import MobileTyreFitting24Hr from './pages/MobileTyreFitting24Hr'
-import SameDayTyreFitting from './pages/SameDayTyreFitting'
-import MobileTyreReplacement from './pages/MobileTyreReplacement'
-import HomeTyreFitting from './pages/HomeTyreFitting'
-import WorkplaceTyreFitting from './pages/WorkplaceTyreFitting'
-import FleetTyreServices from './pages/FleetTyreServices'
-import CoverageAreas from './pages/CoverageAreas'
-import TyreBrands from './pages/TyreBrands'
-import AboutPage from './pages/AboutPage'
-import ContactPage from './pages/ContactPage'
-import FAQPage from './pages/FAQPage'
-import BlogPage from './pages/BlogPage'
-import CityPage from './pages/CityPage'
+
+// Secondary routes are code-split so they don't bloat the initial bundle.
+const EmergencyTyreFitting = lazy(() => import('./pages/EmergencyTyreFitting'))
+const MobileTyreFitting24Hr = lazy(() => import('./pages/MobileTyreFitting24Hr'))
+const SameDayTyreFitting = lazy(() => import('./pages/SameDayTyreFitting'))
+const MobileTyreReplacement = lazy(() => import('./pages/MobileTyreReplacement'))
+const HomeTyreFitting = lazy(() => import('./pages/HomeTyreFitting'))
+const WorkplaceTyreFitting = lazy(() => import('./pages/WorkplaceTyreFitting'))
+const FleetTyreServices = lazy(() => import('./pages/FleetTyreServices'))
+const CoverageAreas = lazy(() => import('./pages/CoverageAreas'))
+const TyreBrands = lazy(() => import('./pages/TyreBrands'))
+const AboutPage = lazy(() => import('./pages/AboutPage'))
+const ContactPage = lazy(() => import('./pages/ContactPage'))
+const FAQPage = lazy(() => import('./pages/FAQPage'))
+const BlogPage = lazy(() => import('./pages/BlogPage'))
+const CityPage = lazy(() => import('./pages/CityPage'))
 
 const PHONE_NUMBER = "0800 123 4567"
 const WHATSAPP_NUMBER = "+447912345678"
@@ -29,7 +32,7 @@ export { PHONE_NUMBER, WHATSAPP_NUMBER }
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route element={<App />}>
           <Route path="/" element={<HomePage />} />
@@ -50,6 +53,6 @@ createRoot(document.getElementById('root')!).render(
           <Route path="*" element={<HomePage />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>
 )

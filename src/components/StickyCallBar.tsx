@@ -18,6 +18,7 @@ export default function StickyCallBar() {
           href={`https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, '')}`}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Contact us on WhatsApp"
           className="flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-medium text-[#6a6a6a] active:scale-[0.98] transition-transform"
         >
           <MessageCircle className="h-4 w-4" />

@@ -102,7 +102,7 @@ export default function HeroSection() {
 
           {/* Social proof mini */}
           <div className="mt-8 flex items-center gap-3">
-            <div className="flex -space-x-2">
+            <div className="flex -space-x-2" aria-hidden="true">
               {['bg-red-500', 'bg-blue-500', 'bg-green-500', 'bg-yellow-500'].map((color, i) => (
                 <div key={i} className={`h-8 w-8 rounded-full ${color} border-2 border-white/30 flex items-center justify-center text-xs font-bold text-white`}>
                   {['S', 'M', 'J', 'A'][i]}
