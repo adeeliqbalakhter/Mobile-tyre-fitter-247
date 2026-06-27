@@ -31,8 +31,8 @@ const contentBlocks = [
   {
     heading: "What Counts As A Tyre Emergency?",
     paragraphs: [
-      "A tyre emergency can take many forms. The most common is a puncture caused by nails, screws, or sharp debris on the road. In some cases, these can be repaired if the damage is in the centre tread area and smaller than 6mm. However, if the puncture is in the sidewall, or if the tyre has suffered a blowout, replacement is the only safe option. Driving on a damaged or flat tyre can cause serious damage to your wheel rims and suspension, and is extremely dangerous at speed.",
-      "We also regularly attend to drivers who have discovered a slow puncture that has worsened overnight, those who have hit a pothole and damaged their tyre, and commercial drivers who cannot afford downtime. No matter the situation, our advice is simple: if you are unsure whether your tyre is safe to drive on, call us. We will assess the situation over the phone and dispatch a fitter if needed. Your safety is our priority.",
+      "A tyre emergency can take many forms. The most common is a flat tyre or blowout caused by nails, screws, sharp debris, or potholes on the road. When a tyre loses pressure rapidly or suffers structural damage, replacement is the only safe option. Driving on a damaged or flat tyre can cause serious damage to your wheel rims and suspension, and is extremely dangerous at speed.",
+      "We also regularly attend to drivers who have discovered a flat tyre that has worsened overnight, those who have hit a pothole and damaged their tyre, and commercial drivers who cannot afford downtime. No matter the situation, our advice is simple: if you are unsure whether your tyre is safe to drive on, call us. We will assess the situation over the phone and dispatch a fitter with a replacement tyre immediately. Your safety is our priority.",
     ],
   },
   {
@@ -47,18 +47,18 @@ const contentBlocks = [
 const serviceFaqs = [
   { question: "How quickly can you reach me in an emergency?", answer: "Our average response time is 30-45 minutes, depending on your exact location and current demand. In major cities such as London, Birmingham, and Manchester, we typically arrive within 25-35 minutes. When you call, we will give you an accurate ETA based on the location of your nearest available fitter." },
   { question: "Do you charge extra for emergency call-outs?", answer: "No. We do not charge a separate emergency call-out fee. The price we quote over the phone is the total price you pay. Our pricing includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre. We believe in complete transparency with no hidden charges." },
-  { question: "Can you repair a puncture, or do I need a new tyre?", answer: "It depends on the damage. If the puncture is in the central tread area, smaller than 6mm, and the tyre has no other damage, we can usually repair it on the spot following British Standard BSAU-159 guidelines. This costs significantly less than a replacement. If the damage is in the sidewall, or the tyre has a blowout, replacement is the only safe option." },
+  { question: "Do I need a new tyre, or can my flat tyre be fixed?", answer: "In most cases, a flat or damaged tyre will need to be replaced with a new one for safety. If the damage is limited to the central tread area and is very small (under 6mm), a repair may be possible. However, damage to the sidewall, any blowout, or significant tread damage always requires a full replacement. We will assess your tyre on arrival and advise honestly — we never replace a tyre unless it is genuinely necessary." },
   { question: "What areas do you cover for emergency tyre fitting?", answer: "We cover the entire United Kingdom, including England, Scotland, Wales, and Northern Ireland. Our mobile fitters are positioned strategically across major cities and motorways to ensure the fastest possible response times wherever you are." },
   { question: "Do you stock my tyre size?", answer: "With over 70,000 tyres in stock across our fleet, we carry virtually every common tyre size and many specialist sizes too. From run-flat tyres and low-profile performance tyres to 4x4 and van tyres, our mobile vans are comprehensively stocked. If we do not have your exact size, we can source it quickly." },
-  { question: "Is it safe to drive on a flat tyre?", answer: "No. Driving on a flat or severely underinflated tyre is dangerous and can cause expensive damage to your wheel rim, suspension, and braking system. If you suspect a puncture, pull over safely and call us. We will come to your location and assess the damage. If the tyre can be repaired, we will do so on the spot." },
+  { question: "Is it safe to drive on a flat tyre?", answer: "No. Driving on a flat or severely underinflated tyre is dangerous and can cause expensive damage to your wheel rim, suspension, and braking system. If you suspect a flat tyre, pull over safely and call us. We will come to your location with a replacement tyre and fit it on the spot." },
   { question: "Can you fit tyres on motorways?", answer: "Yes, we provide emergency tyre fitting on all major UK motorways including the M1, M25, M6, M40, M4, M62, M5, M11, M20, and M56. If you break down on a motorway, pull over to the hard shoulder, switch on your hazard lights, and call us immediately. Our fitters are experienced in motorway safety procedures." },
   { question: "What payment methods do you accept?", answer: "We accept all major credit and debit cards including Visa, Mastercard, and American Express. We also accept Apple Pay and Google Pay. Payment is taken on completion of the work, and you will receive a full receipt." },
 ]
 
 const emergencyScenarios = [
-  "Puncture from nails, screws, or sharp road debris",
+  "Flat tyre from nails, screws, or sharp road debris",
   "Blowout at high speed on the motorway",
-  "Slow puncture that has worsened overnight",
+  "Flat tyre discovered in the morning after going down overnight",
   "Damaged tyre from hitting a pothole",
   "Flat tyre discovered before work or an important journey",
   "Run-flat tyre that has exceeded its safe driving distance",
