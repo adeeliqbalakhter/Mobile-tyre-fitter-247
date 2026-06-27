@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Clock, ArrowRight } from 'lucide-react'
+import { MapPin, Clock, ArrowRight, Navigation, Wrench } from 'lucide-react'
 import SEOHead from '../components/SEOHead'
 import PhoneButton from '../components/PhoneButton'
+import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
 
 const regions = [
@@ -27,7 +28,27 @@ export default function CoverageAreas() {
             <Link to="/" className="hover:text-[#d92a1d]">Home</Link><span>/</span><span className="text-[#1a1a1a]">Coverage Areas</span>
           </nav>
           <h1 className="mb-4 text-3xl font-bold tracking-tight text-[#1a1a1a] sm:text-4xl" style={{ fontFamily: 'Space Grotesk' }}>UK-Wide <span className="text-[#d92a1d]">Coverage</span></h1>
-          <p className="mb-8 max-w-2xl text-[#6a6a6a]">From major cities to remote motorways, our mobile tyre fitters cover the entire United Kingdom. Find your area below.</p>
+          <p className="mb-6 max-w-2xl text-[#6a6a6a]">From major cities to remote motorways, our mobile tyre fitters cover the entire United Kingdom — England, Scotland, and Wales. Wherever you've broken down, we'll come to you 24/7. Find your area below, or call to confirm we cover your postcode.</p>
+          <div className="mb-10 flex flex-col gap-3 sm:flex-row">
+            <PhoneButton size="lg" eventLabel="coverage_hero" />
+            <WhatsAppButton size="lg" variant="primary" message="Hi, do you cover my area for mobile tyre fitting?" />
+          </div>
+
+          {/* Quick stats */}
+          <div className="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {[
+              { icon: MapPin, stat: '8', label: 'Regions covered' },
+              { icon: Navigation, stat: '24/7', label: 'Every day of the year' },
+              { icon: Clock, stat: '30-45', label: 'Min average response' },
+              { icon: Wrench, stat: '70k+', label: 'Tyres in stock' },
+            ].map(({ icon: Icon, stat, label }) => (
+              <div key={label} className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                <Icon className="mb-2 h-5 w-5 text-[#d92a1d]" />
+                <div className="text-xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>{stat}</div>
+                <div className="text-xs text-[#6a6a6a]">{label}</div>
+              </div>
+            ))}
+          </div>
 
           <div className="mb-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {regions.map((region) => (
@@ -47,7 +68,25 @@ export default function CoverageAreas() {
             <p className="mb-4 text-sm text-[#6a6a6a]">We provide emergency tyre fitting on all major UK motorways. If you break down on a motorway, call us immediately.</p>
             <div className="flex flex-wrap gap-2">{motorways.map((m) => (<span key={m} className="rounded-lg bg-[#d92a1d]/10 border border-[#d92a1d]/20 px-3 py-1.5 text-sm font-bold text-[#d92a1d]" style={{ fontFamily: 'JetBrains Mono' }}>{m}</span>))}</div>
           </div>
-          <div className="mt-8 flex justify-center"><PhoneButton size="lg" eventLabel="coverage_page" /></div>
+
+          {/* SEO / reassurance content */}
+          <div className="mt-12 max-w-[800px]">
+            <h2 className="mb-4 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Not Sure If We Cover Your Area?</h2>
+            <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
+              Our network of mobile tyre fitters stretches far beyond the major cities listed above. We regularly attend smaller towns, villages, business parks, and motorway services across England, Scotland, and Wales. If your location isn't shown, it almost certainly doesn't mean we can't reach you — the quickest way to check is a 30-second phone call.
+            </p>
+            <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
+              When you call, just give us your postcode or motorway junction and we'll confirm coverage, give you an accurate ETA, and dispatch the nearest available van. Every fitter carries a full range of tyres and the equipment to supply, fit, and balance your new tyre on the spot — at your home, your workplace, or the roadside.
+            </p>
+            <p className="text-base leading-relaxed text-[#6a6a6a]">
+              We're available 24 hours a day, 365 days a year, with no out-of-hours or weekend surcharges anywhere in our coverage area.
+            </p>
+          </div>
+
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <PhoneButton size="lg" eventLabel="coverage_page" />
+            <WhatsAppButton size="lg" variant="primary" message="Hi, do you cover my area for mobile tyre fitting?" />
+          </div>
         </div>
       </section>
       <EmergencyCTA />

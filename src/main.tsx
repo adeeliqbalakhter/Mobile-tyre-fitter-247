@@ -3,8 +3,6 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 
-declare const gtag: (...args: unknown[]) => void;
-
 import App from './App'
 // HomePage is the landing/LCP route — keep it eager so it renders immediately.
 import HomePage from './pages/HomePage'
@@ -23,6 +21,7 @@ const AboutPage = lazy(() => import('./pages/AboutPage'))
 const ContactPage = lazy(() => import('./pages/ContactPage'))
 const FAQPage = lazy(() => import('./pages/FAQPage'))
 const BlogPage = lazy(() => import('./pages/BlogPage'))
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'))
 const CityPage = lazy(() => import('./pages/CityPage'))
 
 const PHONE_NUMBER = "0800 123 4567"
@@ -50,6 +49,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="*" element={<HomePage />} />
         </Route>
       </Routes>
