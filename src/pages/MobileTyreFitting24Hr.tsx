@@ -39,7 +39,7 @@ const contentBlocks = [
     heading: "Who Uses Our 24 Hour Tyre Fitting Service?",
     paragraphs: [
       "Our 24-hour service is used by a wide range of customers across the UK. Commercial drivers and delivery companies operating overnight shifts rely on us to keep their vehicles on the road. Shift workers in healthcare, security, and logistics often discover tyre problems when leaving work in the early hours — we are the only service that can guarantee a response at those times.",
-      "We also regularly help families with early morning emergencies — a flat tyre discovered when loading the car for a holiday, a blowout on the way to an airport, or a slow puncture that has gone flat overnight. Business travellers on early morning or late evening motorway journeys are another common customer group. Whatever your situation, if you need a tyre fitted at an unusual time, we are the service to call.",
+      "We also regularly help families with early morning emergencies — a flat tyre discovered when loading the car for a holiday, a blowout on the way to an airport, or a tyre that has gone flat overnight. Business travellers on early morning or late evening motorway journeys are another common customer group. Whatever your situation, if you need a tyre fitted at an unusual time, we are the service to call.",
     ],
   },
 ]
@@ -58,8 +58,8 @@ const serviceFaqs = [
 const emergencyScenarios = [
   "Flat tyre discovered before an early morning airport run",
   "Blowout on the motorway during a late-night journey",
-  "Puncture found after finishing a night shift",
-  "Slow puncture gone flat overnight before work",
+  "Flat tyre found after finishing a night shift",
+  "Tyre gone flat overnight before work",
   "Damaged tyre before a bank holiday road trip",
   "Commercial vehicle tyre failure during overnight delivery",
 ]
