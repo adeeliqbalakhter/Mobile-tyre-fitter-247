@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Clock, Shield, Star, MapPin, CheckCircle, ArrowRight } from 'lucide-react'
+import { Clock, Shield, Star, MapPin, CheckCircle, ArrowRight, Wrench, BadgeCheck } from 'lucide-react'
 import {
   Accordion,
   AccordionContent,
@@ -138,6 +138,27 @@ export default function ServicePageTemplate({
         </div>
       </section>
 
+      {/* Trust stats band */}
+      <section className="border-b border-gray-200 bg-gray-50 py-8">
+        <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            {[
+              { icon: Wrench, stat: '70,000+', label: 'Tyres fitted' },
+              { icon: Star, stat: '4.9★', label: 'From 2,500+ reviews' },
+              { icon: Clock, stat: '30-45 min', label: 'Average response' },
+              { icon: Shield, stat: '24/7', label: 'Every day of the year' },
+              { icon: BadgeCheck, stat: '£0', label: 'Call-out fees' },
+            ].map(({ icon: Icon, stat, label }) => (
+              <div key={label} className="flex flex-col items-center text-center">
+                <Icon className="mb-2 h-5 w-5 text-[#d92a1d]" />
+                <div className="text-xl font-bold text-[#1a1a1a] sm:text-2xl" style={{ fontFamily: 'Space Grotesk' }}>{stat}</div>
+                <div className="text-[11px] text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>{label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Rich Content Blocks */}
       {contentBlocks.length > 0 && (
         <section className="py-16 lg:py-20 bg-white">
@@ -148,7 +169,16 @@ export default function ServicePageTemplate({
                   {block.heading}
                 </h2>
                 {block.paragraphs.map((p, j) => (
-                  <p key={j} className="text-base leading-relaxed text-[#6a6a6a] mb-4">{p}</p>
+                  <p
+                    key={j}
+                    className={
+                      i === 0 && j === 0
+                        ? 'mb-4 text-lg leading-relaxed text-[#1a1a1a]'
+                        : 'mb-4 text-base leading-relaxed text-[#6a6a6a]'
+                    }
+                  >
+                    {p}
+                  </p>
                 ))}
               </div>
             ))}
@@ -175,17 +205,42 @@ export default function ServicePageTemplate({
         </section>
       )}
 
-      {/* What to Expect */}
+      {/* What to Expect — process timeline */}
       <section className="py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
-          <h2 className="mb-8 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>What to <span className="text-[#d92a1d]">Expect</span></h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mb-10">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[#d92a1d]" style={{ fontFamily: 'JetBrains Mono' }}>
+              Simple, fast, transparent
+            </p>
+            <h2 className="text-2xl font-bold text-[#1a1a1a] sm:text-3xl" style={{ fontFamily: 'Space Grotesk' }}>How It <span className="text-[#d92a1d]">Works</span></h2>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {whatToExpect.map((item, i) => (
-              <div key={i} className="flex items-start gap-3 rounded-lg border border-gray-200 bg-gray-50 p-4">
-                <span className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#d92a1d]/10 text-xs font-bold text-[#d92a1d]">{i + 1}</span>
-                <p className="text-sm text-[#6a6a6a]">{item}</p>
+              <div key={i} className="relative rounded-xl border border-gray-200 bg-gray-50 p-6">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full bg-[#d92a1d] text-base font-bold text-white shadow-lg shadow-[#d92a1d]/20" style={{ fontFamily: 'Space Grotesk' }}>
+                  {i + 1}
+                </div>
+                <p className="text-sm leading-relaxed text-[#4a4a4a]">{item}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mid-page conversion CTA */}
+      <section className="bg-[#1a1a1a] py-12 lg:py-14">
+        <div className="mx-auto max-w-[1000px] px-4 lg:px-6">
+          <div className="flex flex-col items-center gap-6 text-center lg:flex-row lg:justify-between lg:text-left">
+            <div>
+              <h2 className="text-xl font-bold text-white sm:text-2xl" style={{ fontFamily: 'Space Grotesk' }}>
+                Need {title} {titleHighlight} Right Now?
+              </h2>
+              <p className="mt-1 text-sm text-white/70">Call or WhatsApp for an instant quote and immediate dispatch — 24/7, anywhere in the UK.</p>
+            </div>
+            <div className="flex w-full flex-col gap-3 sm:flex-row sm:justify-center lg:w-auto">
+              <PhoneButton size="lg" eventLabel={`${title.toLowerCase().replace(/\s/g, '_')}_mid_cta`} />
+              <WhatsAppButton size="lg" variant="primary" message={`Hi, I need ${title.toLowerCase()} ${titleHighlight.toLowerCase()}. Can you help?`} />
+            </div>
           </div>
         </div>
       </section>
