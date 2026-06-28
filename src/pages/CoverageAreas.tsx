@@ -83,10 +83,6 @@ export default function CoverageAreas() {
             </p>
           </div>
 
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <PhoneButton size="lg" eventLabel="coverage_page" />
-            <WhatsAppButton size="lg" variant="primary" message="Hi, do you cover my area for mobile tyre fitting?" />
-          </div>
         </div>
       </section>
       <EmergencyCTA />

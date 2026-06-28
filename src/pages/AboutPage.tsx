@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Shield, Clock, Star, Truck, Wrench, BadgeCheck } from 'lucide-react'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
-import PhoneButton from '../components/PhoneButton'
-import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
 
 const milestones = [
@@ -131,10 +129,6 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <PhoneButton size="lg" eventLabel="about_page" />
-            <WhatsAppButton size="lg" variant="primary" message="Hi, I'd like to know more about your mobile tyre fitting service." />
-          </div>
         </div>
       </section>
 

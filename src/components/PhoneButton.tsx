@@ -40,7 +40,7 @@ export default function PhoneButton({
   return (
     <a
       href={`tel:${PHONE_NUMBER.replace(/\s/g, '')}`}
-      className={`inline-flex items-center justify-center rounded-lg font-semibold transition-all active:scale-[0.98] ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
+      className={`inline-flex items-center justify-center whitespace-nowrap rounded-lg font-semibold transition-all active:scale-[0.98] ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
       onClick={() => {
         trackEvent('phone_click', { event_category: 'conversion', event_label: eventLabel })
       }}

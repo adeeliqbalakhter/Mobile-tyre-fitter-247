@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import SEOHead from '../components/SEOHead'
-import PhoneButton from '../components/PhoneButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
 
 const faqs = [
@@ -48,7 +47,6 @@ export default function FAQPage() {
               </AccordionItem>
             ))}
           </Accordion>
-          <div className="mt-8 flex justify-center"><PhoneButton size="lg" eventLabel="faq_page" /></div>
         </div>
       </section>
       <EmergencyCTA />

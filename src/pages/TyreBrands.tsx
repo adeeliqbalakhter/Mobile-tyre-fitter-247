@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Gauge, Snowflake, Mountain, Truck, Zap, CircleDot } from 'lucide-react'
 import SEOHead from '../components/SEOHead'
-import PhoneButton from '../components/PhoneButton'
-import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
 import { brandTiers as tiers } from '../data/brands'
 
@@ -78,10 +76,6 @@ export default function TyreBrands() {
             ))}
           </div>
 
-          <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <PhoneButton size="lg" eventLabel="brands_page" />
-            <WhatsAppButton size="lg" variant="primary" message="Hi, can you recommend the best tyre for my car?" />
-          </div>
         </div>
       </section>
       <EmergencyCTA />

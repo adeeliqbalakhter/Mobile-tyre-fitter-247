@@ -1,5 +1,6 @@
-import { Phone, Clock, ArrowRight } from 'lucide-react'
+import { Phone, Clock, ArrowRight, Check } from 'lucide-react'
 import WhatsAppIcon from '../components/icons/WhatsAppIcon'
+import { VisaCard, MastercardCard, AmexCard, ApplePayCard, GooglePayCard } from '../components/icons/PaymentIcons'
 import { Link } from 'react-router-dom'
 import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../main'
 import { trackEvent } from '../lib/tracking'
@@ -27,7 +28,7 @@ export default function EmergencyCTA() {
           </p>
 
           <a href={`tel:${PHONE_NUMBER.replace(/\s/g, '')}`}
-            className="group mb-4 inline-flex items-center justify-center gap-3 rounded-2xl bg-[#d92a1d] px-10 py-5 text-2xl font-bold text-white shadow-2xl shadow-[#d92a1d]/40 transition-all hover:bg-[#b82418] active:scale-[0.98]"
+            className="group mb-4 inline-flex items-center justify-center gap-3 whitespace-nowrap rounded-2xl bg-[#d92a1d] px-8 py-5 text-xl font-bold text-white shadow-2xl shadow-[#d92a1d]/40 transition-all hover:bg-[#b82418] active:scale-[0.98] sm:px-10 sm:text-2xl"
             onClick={() => { trackEvent('phone_click', { event_category: 'conversion', event_label: 'emergency_cta' }) }}>
             <Phone className="h-6 w-6 transition-transform group-hover:scale-110" />
             {PHONE_NUMBER}
@@ -42,10 +43,25 @@ export default function EmergencyCTA() {
             </Link>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            {['Upfront pricing', 'All cards accepted', 'Workmanship guaranteed', 'Free old tyre disposal'].map((text) => (
-              <span key={text} className="rounded-full border border-gray-700 bg-gray-800/50 px-3 py-1 text-xs text-gray-400">{text}</span>
+          {/* Trust points */}
+          <div className="mb-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+            {['Upfront pricing', 'Workmanship guaranteed', 'Free old tyre disposal'].map((text) => (
+              <span key={text} className="flex items-center gap-1.5 text-sm text-gray-400">
+                <Check className="h-3.5 w-3.5 text-[#d92a1d]" /> {text}
+              </span>
             ))}
+          </div>
+
+          {/* Accepted payment methods */}
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <span className="text-xs uppercase tracking-widest text-gray-500" style={{ fontFamily: 'JetBrains Mono' }}>We accept</span>
+            <div className="flex items-center gap-2">
+              <VisaCard className="h-7 w-auto shadow-sm ring-1 ring-white/10" />
+              <MastercardCard className="h-7 w-auto shadow-sm ring-1 ring-white/10" />
+              <AmexCard className="h-7 w-auto shadow-sm ring-1 ring-white/10" />
+              <ApplePayCard className="h-7 w-auto shadow-sm ring-1 ring-white/10" />
+              <GooglePayCard className="h-7 w-auto shadow-sm ring-1 ring-white/10" />
+            </div>
           </div>
         </div>
       </div>
