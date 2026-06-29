@@ -18,6 +18,12 @@ function App() {
   const [showCallBar, setShowCallBar] = useState(false)
   const location = useLocation()
 
+  // Enable scroll-reveal animations only after hydration so crawlers and
+  // no-JS visitors always see fully-rendered content.
+  useEffect(() => {
+    document.documentElement.classList.add('anim-ready')
+  }, [])
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [location.pathname])
