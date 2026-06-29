@@ -152,6 +152,45 @@
 }
 .animate-ring { animation: ringPulse 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite; }
 
+/* Sticky call bar: slide-up entrance */
+@keyframes slideUpBar {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.animate-slide-up-bar { animation: slideUpBar 0.45s cubic-bezier(0.16, 1, 0.3, 1); }
+
+/* Ringing-phone wiggle for the call icon */
+@keyframes phoneRing {
+  0%, 55%, 100% { transform: rotate(0); }
+  5%, 25% { transform: rotate(-13deg); }
+  15%, 35% { transform: rotate(13deg); }
+}
+.animate-phone-ring { animation: phoneRing 1.8s ease-in-out infinite; transform-origin: center; }
+
+/* Pulsing glow on the call button to draw the eye */
+@keyframes ctaGlow {
+  0%, 100% { box-shadow: 0 6px 20px rgba(217, 42, 29, 0.28); }
+  50% { box-shadow: 0 8px 30px rgba(217, 42, 29, 0.6); }
+}
+.animate-cta-glow { animation: ctaGlow 2.2s ease-in-out infinite; }
+
+/* Heartbeat for the WhatsApp glyph */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  12% { transform: scale(1.2); }
+  24% { transform: scale(1); }
+  36% { transform: scale(1.12); }
+  48% { transform: scale(1); }
+}
+.animate-heartbeat { animation: heartbeat 2.6s ease-in-out infinite; }
+
+/* Green glow pulse for the WhatsApp button */
+@keyframes waGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+  50% { box-shadow: 0 4px 18px 0 rgba(37, 211, 102, 0.45); }
+}
+.animate-wa-glow { animation: waGlow 2.6s ease-in-out infinite; }
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
@@ -211,7 +250,12 @@
   .animate-shimmer,
   .animate-kenburns,
   .animate-scroll-hint,
-  .animate-ring {
+  .animate-ring,
+  .animate-slide-up-bar,
+  .animate-phone-ring,
+  .animate-cta-glow,
+  .animate-heartbeat,
+  .animate-wa-glow {
     animation: none !important;
   }
   /* Disable the entrance but keep content visible (inline opacity:0 is set) */
