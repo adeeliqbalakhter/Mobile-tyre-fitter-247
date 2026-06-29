@@ -82,7 +82,7 @@
       GA4 and Google Ads tags. Nothing loads until an ID is set.
     -->
     <script>
-      window.GTM_ID = ''; // <-- set to your GTM container id, e.g. 'GTM-XXXXXXX'
+      window.GTM_ID = 'GTM-KDHZR3HS'; // GTM container id
       if (window.GTM_ID) {
         (function (w, d, s, l, i) {
           w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -98,7 +98,7 @@
       Set your Measurement ID below (e.g. 'G-XXXXXXXXXX'). Nothing loads until set.
     -->
     <script>
-      window.GA_MEASUREMENT_ID = ''; // <-- set to your GA4 Measurement ID, e.g. 'G-XXXXXXXXXX'
+      window.GA_MEASUREMENT_ID = 'G-471W29B34X'; // GA4 Measurement ID
       if (window.GA_MEASUREMENT_ID) {
         var gaScript = document.createElement('script');
         gaScript.async = true;
@@ -110,11 +110,9 @@
     </script>
   </head>
   <body>
-    <!--
-      Google Tag Manager (noscript). When you set GTM_ID above, also replace
-      GTM-XXXXXXX here with the same id so it works without JavaScript.
-    -->
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDHZR3HS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
