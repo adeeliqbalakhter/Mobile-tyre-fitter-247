@@ -1,4 +1,5 @@
 import SEOHead from '../components/SEOHead'
+import Reveal from '../components/Reveal'
 import HeroSection from '../sections/HeroSection'
 import TrustBar from '../sections/TrustBar'
 import CoverageGrid from '../sections/CoverageGrid'
@@ -19,14 +20,14 @@ export default function HomePage() {
       />
       <HeroSection />
       <TrustBar />
-      <ServicesSection />
-      <HowItWorks />
-      <WhyChooseUs />
-      <CoverageGrid />
-      <ReviewsSection />
-      <BrandsSection />
-      <FAQSection />
-      <EmergencyCTA />
+      <Reveal><ServicesSection /></Reveal>
+      <Reveal><HowItWorks /></Reveal>
+      <Reveal><WhyChooseUs /></Reveal>
+      <Reveal><CoverageGrid /></Reveal>
+      <Reveal><ReviewsSection /></Reveal>
+      <Reveal><BrandsSection /></Reveal>
+      <Reveal><FAQSection /></Reveal>
+      <Reveal variant="scale"><EmergencyCTA /></Reveal>
     </>
   )
 }
