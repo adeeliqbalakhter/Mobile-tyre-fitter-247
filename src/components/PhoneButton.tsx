@@ -1,5 +1,5 @@
 import { Phone } from 'lucide-react'
-import { PHONE_NUMBER } from '../main'
+import { PHONE_NUMBER } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 
 interface PhoneButtonProps {

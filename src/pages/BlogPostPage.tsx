@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useLocation, Link } from 'react-router-dom'
 import { Calendar, Clock, ArrowLeft, ArrowRight, CheckCircle } from 'lucide-react'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import PhoneButton from '../components/PhoneButton'
@@ -8,6 +8,7 @@ import { getPostBySlug, blogPosts } from '../data/blogPosts'
 
 export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>()
+  const location = useLocation()
   const post = getPostBySlug(slug)
 
   if (!post) {
@@ -19,7 +20,7 @@ export default function BlogPostPage() {
     )
   }
 
-  const pageUrl = typeof window !== 'undefined' ? `${SITE_URL}${window.location.pathname}` : SITE_URL
+  const pageUrl = `${SITE_URL}${location.pathname}`
   const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3)
 
   const schema = {

@@ -1,4 +1,5 @@
-import { useEffect } from 'react'
+import { Head } from 'vite-react-ssg'
+import { useLocation } from 'react-router-dom'
 
 export const SITE_NAME = 'Mobile Tyre Fitter 24/7'
 export const SITE_URL = 'https://www.mobiletyrefitter247.co.uk'
@@ -13,72 +14,38 @@ interface SEOHeadProps {
   noindex?: boolean
 }
 
-/** Create or update a <meta> tag, keyed by name or property. */
-function upsertMeta(attr: 'name' | 'property', key: string, content: string) {
-  let tag = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`)
-  if (!tag) {
-    tag = document.createElement('meta')
-    tag.setAttribute(attr, key)
-    document.head.appendChild(tag)
-  }
-  tag.setAttribute('content', content)
-}
-
-/** Create or update the canonical <link>. */
-function upsertCanonical(href: string) {
-  let link = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')
-  if (!link) {
-    link = document.createElement('link')
-    link.setAttribute('rel', 'canonical')
-    document.head.appendChild(link)
-  }
-  link.setAttribute('href', href)
-}
-
 export default function SEOHead({ title, description, canonical, ogImage, schema, noindex }: SEOHeadProps) {
-  useEffect(() => {
-    const fullTitle = `${title} | ${SITE_NAME}`
-    document.title = fullTitle
+  const location = useLocation()
+  const fullTitle = `${title} | ${SITE_NAME}`
 
-    // Resolve canonical URL, fall back to the current path on the live origin.
-    const path = canonical ?? `${window.location.pathname}${window.location.search}`
-    const canonicalUrl = path.startsWith('http') ? path : `${SITE_URL}${path === '/' ? '' : path}` || SITE_URL
-    const image = ogImage ?? DEFAULT_OG_IMAGE
+  const path = canonical ?? `${location.pathname}${location.search || ''}`
+  const canonicalUrl = path.startsWith('http')
+    ? path
+    : `${SITE_URL}${path === '/' ? '' : path}`
+  const image = ogImage ?? DEFAULT_OG_IMAGE
 
-    upsertMeta('name', 'description', description)
-    upsertMeta('name', 'robots', noindex ? 'noindex, follow' : 'index, follow')
-    upsertCanonical(canonicalUrl)
+  return (
+    <Head>
+      <title>{fullTitle}</title>
+      <meta name="description" content={description} />
+      <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
+      <link rel="canonical" href={canonicalUrl} />
 
-    // Open Graph
-    upsertMeta('property', 'og:title', fullTitle)
-    upsertMeta('property', 'og:description', description)
-    upsertMeta('property', 'og:url', canonicalUrl)
-    upsertMeta('property', 'og:image', image)
-    upsertMeta('property', 'og:type', 'website')
-    upsertMeta('property', 'og:site_name', SITE_NAME)
+      <meta property="og:title" content={fullTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:image" content={image} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={SITE_NAME} />
 
-    // Twitter
-    upsertMeta('name', 'twitter:card', 'summary_large_image')
-    upsertMeta('name', 'twitter:title', fullTitle)
-    upsertMeta('name', 'twitter:description', description)
-    upsertMeta('name', 'twitter:image', image)
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={fullTitle} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
 
-    if (schema) {
-      let scriptTag = document.getElementById('json-ld-schema') as HTMLScriptElement | null
-      if (!scriptTag) {
-        scriptTag = document.createElement('script')
-        scriptTag.id = 'json-ld-schema'
-        scriptTag.type = 'application/ld+json'
-        document.head.appendChild(scriptTag)
-      }
-      scriptTag.textContent = JSON.stringify(schema)
-    }
-
-    return () => {
-      const script = document.getElementById('json-ld-schema')
-      if (script) script.remove()
-    }
-  }, [title, description, canonical, ogImage, schema, noindex])
-
-  return null
+      {schema && (
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      )}
+    </Head>
+  )
 }

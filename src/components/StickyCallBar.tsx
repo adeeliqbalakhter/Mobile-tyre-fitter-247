@@ -1,6 +1,6 @@
 import { Phone } from 'lucide-react'
 import WhatsAppIcon from './icons/WhatsAppIcon'
-import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../main'
+import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 
 export default function StickyCallBar() {

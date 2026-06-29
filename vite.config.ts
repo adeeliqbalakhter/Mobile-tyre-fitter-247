@@ -4,9 +4,10 @@ import { defineConfig } from "vite"
 import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   base: '/',
-  plugins: [inspectAttr(), react()],
+  // The inspect plugin is a dev-only helper; exclude it from the SSG/production build.
+  plugins: [...(command === 'serve' ? [inspectAttr()] : []), react()],
   server: {
     port: 3000,
   },
@@ -15,4 +16,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-});
+}));

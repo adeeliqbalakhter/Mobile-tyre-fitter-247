@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { X, Phone, ChevronDown } from 'lucide-react'
-import { PHONE_NUMBER } from '../main'
+import { PHONE_NUMBER } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 
 const navLinks = [

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Clock, Shield, Star, MapPin, CheckCircle, ArrowRight, Wrench, BadgeCheck } from 'lucide-react'
 import {
   Accordion,
@@ -34,9 +34,8 @@ export default function ServicePageTemplate({
   contentBlocks = [], serviceFaqs = [], emergencyScenarios = [], whyChoose = [], schema,
 }: ServicePageTemplateProps) {
   const serviceName = `${title} ${titleHighlight}`.trim()
-  const pageUrl = typeof window !== 'undefined'
-    ? `${SITE_URL}${window.location.pathname}`
-    : SITE_URL
+  const location = useLocation()
+  const pageUrl = `${SITE_URL}${location.pathname}`
 
   // Build Service + Breadcrumb (+ service FAQ, if any) structured data for richer search results.
   const generatedSchema = {

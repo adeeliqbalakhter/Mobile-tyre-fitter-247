@@ -2,7 +2,7 @@ import { Phone, Clock, ArrowRight, Check } from 'lucide-react'
 import WhatsAppIcon from '../components/icons/WhatsAppIcon'
 import { VisaCard, MastercardCard, AmexCard, ApplePayCard, GooglePayCard } from '../components/icons/PaymentIcons'
 import { Link } from 'react-router-dom'
-import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../main'
+import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 
 export default function EmergencyCTA() {

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Home, Phone } from 'lucide-react'
 import SEOHead from '../components/SEOHead'
-import { PHONE_NUMBER } from '../main'
+import { PHONE_NUMBER } from '../lib/config'
 
 export default function NotFound() {
   return (

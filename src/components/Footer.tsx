@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Phone, Clock, Shield, MapPin } from 'lucide-react'
-import { PHONE_NUMBER } from '../main'
+import { PHONE_NUMBER } from '../lib/config'
 
 const footerLinks = {
   services: [

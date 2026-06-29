@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Phone, Clock, Shield, Star, MapPin } from 'lucide-react'
 import WhatsAppIcon from '../components/icons/WhatsAppIcon'
-import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../main'
+import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 
 export default function HeroSection() {

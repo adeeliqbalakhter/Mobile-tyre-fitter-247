@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { Phone, Clock, MapPin, CheckCircle } from 'lucide-react'
 import WhatsAppIcon from '../components/icons/WhatsAppIcon'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
-import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../main'
+import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 import EmergencyCTA from '../sections/EmergencyCTA'
 

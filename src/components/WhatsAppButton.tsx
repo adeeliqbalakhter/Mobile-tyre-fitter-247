@@ -1,5 +1,5 @@
 import WhatsAppIcon from './icons/WhatsAppIcon'
-import { WHATSAPP_NUMBER } from '../main'
+import { WHATSAPP_NUMBER } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 
 interface WhatsAppButtonProps {
