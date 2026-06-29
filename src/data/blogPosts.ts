@@ -277,6 +277,270 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'mobile-tyre-fitting-cost',
+    image: '/images/service-emergency.jpg',
+    title: 'How Much Does Mobile Tyre Fitting Cost in the UK?',
+    excerpt: 'A clear breakdown of what mobile tyre fitting costs in the UK, what is included in the price, and how it compares to a traditional garage.',
+    date: '20 Feb 2025',
+    dateISO: '2025-02-20',
+    category: 'Guide',
+    readTime: '6 min read',
+    metaTitle: 'How Much Does Mobile Tyre Fitting Cost in the UK? (2025 Guide)',
+    metaDescription: 'How much does mobile tyre fitting cost in the UK? A transparent breakdown of tyre prices, what is included, and how mobile fitting compares to a garage.',
+    intro: 'One of the first questions drivers ask about mobile tyre fitting is what it costs, and whether having a fitter come to you is more expensive than visiting a garage. The honest answer is that the price you pay is built almost entirely around the tyre itself. Here is a transparent breakdown of what goes into a mobile tyre fitting quote in the UK.',
+    sections: [
+      {
+        heading: 'What determines the price of a fitted tyre',
+        paragraphs: [
+          'The single biggest factor in any quote is the tyre you choose. Tyre prices vary by size, brand, and performance category. A small budget tyre for a city car sits at the lower end, a mid-range tyre for a family hatchback in the middle, and a large premium or performance tyre for a 4x4 or executive car at the higher end.',
+          'Your tyre size is printed on the sidewall of your current tyres (for example 205/55 R16). Once you know that, a fitter can give you an exact, all-inclusive price for your vehicle over the phone.',
+        ],
+      },
+      {
+        heading: 'What is included in a mobile fitting price',
+        list: [
+          'The new tyre itself, in the brand and size you choose',
+          'Professional fitting at your home, work, or roadside',
+          'Wheel balancing to prevent vibration and uneven wear',
+          'A new valve fitted as standard',
+          'Disposal of your old tyre, handled responsibly for you',
+        ],
+      },
+      {
+        heading: 'Is mobile fitting more expensive than a garage?',
+        paragraphs: [
+          'A common assumption is that the convenience of mobile fitting carries a big premium. In practice, a reputable mobile service quotes a single all-inclusive price with no hidden extras, and you save the cost and time of getting a damaged car to a garage, no recovery fee, no taxi home, no day off work.',
+          'When you factor in those hidden costs of the traditional route, mobile fitting is often comparable or cheaper overall, especially in an emergency where the alternative is a tow.',
+        ],
+      },
+      {
+        heading: 'Watch out for hidden charges',
+        paragraphs: [
+          'Always ask whether the quote is fully inclusive. With us, the price we give you upfront covers the tyre, fitting, balancing, a new valve, and old tyre disposal, with no out-of-hours, weekend, or bank holiday surcharges. The price you are quoted is the price you pay.',
+        ],
+      },
+      {
+        heading: 'Getting an accurate quote',
+        paragraphs: [
+          'The quickest way to know exactly what your tyre will cost is a short phone call or WhatsApp message with your tyre size and location. We will confirm the price for your vehicle, give you an ETA, and dispatch the nearest van, often reaching you within 30 to 45 minutes.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'legal-tyre-tread-depth-uk',
+    image: '/images/step-fitting.jpg',
+    title: 'What Is the Legal Tyre Tread Depth in the UK?',
+    excerpt: 'The UK legal minimum tyre tread depth, how to check yours with the 20p test, and the penalties for driving on illegal tyres.',
+    date: '18 Feb 2025',
+    dateISO: '2025-02-18',
+    category: 'Legal',
+    readTime: '5 min read',
+    metaTitle: 'Legal Tyre Tread Depth UK: The 20p Test & Penalties Explained',
+    metaDescription: 'The legal tyre tread depth in the UK is 1.6mm. Learn how to check your tread with the 20p test and the fines and penalty points for illegal tyres.',
+    intro: 'Worn tyres are one of the most common reasons cars fail their MOT, and driving on them is both dangerous and illegal. Knowing the legal limit and how to check your own tyres takes less than a minute and could save you from a hefty fine. Here is what every UK driver needs to know.',
+    sections: [
+      {
+        heading: 'The UK legal minimum is 1.6mm',
+        paragraphs: [
+          'In the UK, the legal minimum tread depth for cars is 1.6mm across the central three-quarters of the tyre, around its entire circumference. This applies to cars, vans, and trailers up to 3,500kg. Tread is what channels water away from the contact patch, so as it wears down, your grip and braking in the wet get dramatically worse.',
+          'While 1.6mm is the legal limit, many safety experts and manufacturers recommend replacing tyres at 3mm, as wet braking performance falls off sharply below that point.',
+        ],
+      },
+      {
+        heading: 'How to check with the 20p test',
+        paragraphs: [
+          'You do not need any special tools to get a quick indication of your tread depth. Take a 20p coin and insert it into the main tread grooves of the tyre. If the outer band of the coin is hidden by the tread, your tyres are above the legal limit. If you can see the outer band, your tread may be illegal and you should have the tyres checked by a professional.',
+          'Check at several points across the width and around the tyre, as tyres often wear unevenly. Repeat for all four tyres.',
+        ],
+      },
+      {
+        heading: 'Penalties for illegal tyres',
+        paragraphs: [
+          'Driving with a tyre below 1.6mm can land you a fine of up to 2,500 pounds and 3 penalty points, per tyre. That means a car with four illegal tyres could in theory result in a 10,000 pound fine and 12 points, enough to lose your licence. Beyond the legal risk, worn tyres significantly increase your stopping distance in the wet.',
+        ],
+      },
+      {
+        heading: 'What to do if your tyres are worn',
+        paragraphs: [
+          'If your tread is near or below the limit, replace the affected tyres as soon as possible. A mobile tyre fitter can supply and fit new tyres at your home or workplace, so you do not have to drive on illegal or unsafe tyres to reach a garage. Call or WhatsApp with your tyre size for an instant quote.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'can-you-drive-on-a-flat-tyre',
+    image: '/images/hero-bg.jpg',
+    title: 'Can You Drive on a Flat Tyre? What Happens If You Do',
+    excerpt: 'Whether it is ever safe to drive on a flat tyre, how far you can go, and the damage it can cause to your wheel and car.',
+    date: '12 Feb 2025',
+    dateISO: '2025-02-12',
+    category: 'Safety',
+    readTime: '5 min read',
+    metaTitle: 'Can You Drive on a Flat Tyre? What Happens If You Do (UK)',
+    metaDescription: 'Can you drive on a flat tyre? Learn how far you can safely go, the damage driving on a flat causes, and what to do instead if you get a puncture.',
+    intro: 'It is a situation most drivers face at some point: you come back to your car and find a tyre completely flat, or you feel one deflate as you drive. The temptation is to limp to the nearest garage, but driving on a flat tyre can be dangerous and costly. Here is what you need to know.',
+    sections: [
+      {
+        heading: 'The short answer: avoid it if you can',
+        paragraphs: [
+          'Driving on a fully flat tyre is strongly discouraged. Without air, the tyre cannot support the weight of the car, the rubber overheats and breaks up, and you are effectively running on the metal wheel. Even a short distance can destroy the tyre beyond repair and damage the wheel itself.',
+          'You also lose a significant amount of steering and braking control, particularly in a corner or emergency, which makes driving on a flat a genuine safety hazard to you and others.',
+        ],
+      },
+      {
+        heading: 'How far can you actually drive?',
+        paragraphs: [
+          'If you absolutely must move the car a few metres to reach a safe spot, do so slowly and carefully. Beyond that, you should not drive on a flat. What may feel like a small saving in time often turns a repairable puncture into a write-off, and can add the cost of a new wheel, or even suspension damage, on top of a new tyre.',
+        ],
+      },
+      {
+        heading: 'Run-flat tyres are different',
+        paragraphs: [
+          'If your car is fitted with run-flat tyres, they are designed to be driven on for a limited distance after a loss of pressure, typically up to around 50 miles at a reduced speed of around 50mph. Check your handbook for the exact figures. Even so, a run-flat that has been driven on usually needs replacing rather than repairing.',
+        ],
+      },
+      {
+        heading: 'The safer alternative',
+        paragraphs: [
+          'Instead of risking further damage, stay put and call a mobile tyre fitter. We come to your location with a new tyre, fit and balance it on the spot, and have you back on the road, often within 30 to 45 minutes. It saves your wheel, avoids a tow, and is usually quicker than driving to a garage on a ruined tyre.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'correct-tyre-pressure-guide',
+    image: '/images/step-drive.jpg',
+    title: 'Tyre Pressure Guide: Finding the Correct PSI for Your Car',
+    excerpt: 'How to find the right tyre pressure for your vehicle, why it matters, and how often you should check it.',
+    date: '8 Feb 2025',
+    dateISO: '2025-02-08',
+    category: 'Maintenance',
+    readTime: '5 min read',
+    metaTitle: 'Correct Tyre Pressure Guide: Find the Right PSI for Your Car',
+    metaDescription: 'How to find the correct tyre pressure for your car, where to check it, and why the right PSI improves safety, fuel economy, and tyre life.',
+    intro: 'Correct tyre pressure is one of the simplest and most overlooked parts of car maintenance. Get it right and your tyres last longer, your car is safer, and you use less fuel. Get it wrong and you risk uneven wear, poor handling, and even a blowout. Here is how to find and maintain the right pressure.',
+    sections: [
+      {
+        heading: 'Where to find your correct pressure',
+        paragraphs: [
+          'The recommended pressures for your car are set by the manufacturer, not the tyre maker. You will usually find them on a sticker inside the driver\'s door shut, inside the fuel filler flap, or in the owner\'s handbook. Pressures are given in PSI or bar, and often list different figures for front and rear, and for a fully loaded car.',
+          'Always set pressures to the vehicle manufacturer\'s figures for your specific load, not a generic number.',
+        ],
+      },
+      {
+        heading: 'Why correct pressure matters',
+        list: [
+          'Safety: correct pressure gives the best grip, braking, and steering response',
+          'Tyre life: under or over-inflation causes uneven wear and shortens tyre life',
+          'Fuel economy: under-inflated tyres increase rolling resistance and fuel use',
+          'Comfort: the right pressure gives a balanced, controlled ride',
+        ],
+      },
+      {
+        heading: 'How often to check',
+        paragraphs: [
+          'Check your tyre pressures at least once a month and before any long journey. Always check when the tyres are cold (driven less than a couple of miles), as warm tyres read higher and give a false figure. Do not forget the spare, if your car has one.',
+          'If you find a tyre repeatedly low on air, it may have a slow puncture and should be inspected by a professional.',
+        ],
+      },
+      {
+        heading: 'Signs your pressure is wrong',
+        paragraphs: [
+          'Wear on both outer edges of the tread points to under-inflation, while wear concentrated in the centre suggests over-inflation. Pulling to one side, vibration, or a soft, vague feel through the steering can all indicate a pressure problem. If a tyre will not hold its pressure, call a mobile fitter who can inspect, repair, or replace it at your location.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'part-worn-vs-new-tyres',
+    image: '/images/service-fleet.jpg',
+    title: 'Part-Worn vs New Tyres: Which Should You Buy?',
+    excerpt: 'The real cost, safety, and value differences between part-worn and new tyres, and why new is usually the smarter buy.',
+    date: '4 Feb 2025',
+    dateISO: '2025-02-04',
+    category: 'Guide',
+    readTime: '6 min read',
+    metaTitle: 'Part-Worn vs New Tyres: Which Is Better Value? (UK Guide)',
+    metaDescription: 'Are part-worn tyres worth it? Compare the cost, safety, and value of part-worn vs new tyres in the UK and find out which is the smarter choice.',
+    intro: 'Part-worn tyres can look like a bargain, often advertised at half the price of a new tyre. But once you account for the tread you are actually getting and the unknowns that come with a used tyre, the maths rarely adds up. Here is an honest comparison to help you decide.',
+    sections: [
+      {
+        heading: 'You pay more per millimetre of tread',
+        paragraphs: [
+          'A new tyre starts life with around 8mm of tread. A part-worn tyre, by law, must have at least 2mm, and many are sold close to that. That means a part-worn tyre may have only a quarter of the usable tread of a new one, yet often costs more than a quarter of the price. Measured by cost per millimetre of tread, part-worns are frequently the more expensive option.',
+        ],
+      },
+      {
+        heading: 'The hidden risks of used tyres',
+        list: [
+          'Unknown history: previous impacts, punctures, or kerbing may be hidden',
+          'Internal damage that is not visible from the outside',
+          'Uneven or irregular wear from the previous vehicle',
+          'Age: rubber degrades over time even with plenty of tread left',
+          'Improperly repaired punctures that are unsafe',
+        ],
+      },
+      {
+        heading: 'What the law requires',
+        paragraphs: [
+          'Part-worn tyres are legal to sell in the UK, but they must meet strict conditions: a minimum of 2mm tread, no dangerous damage, and they must be marked PART-WORN clearly and permanently. Many tyres sold do not meet these standards, so buying part-worn means trusting the seller to have inspected and graded them correctly.',
+        ],
+      },
+      {
+        heading: 'The verdict',
+        paragraphs: [
+          'For most drivers, new tyres offer better value, longer life, and complete peace of mind about safety. You know exactly what you are getting, the full tread, a clean history, and a manufacturer warranty. When you factor in the longer replacement interval, new tyres usually cost less per mile.',
+          'A mobile fitter can supply and fit quality new tyres, from budget to premium, at your home or workplace, with a clear all-inclusive price. Call or WhatsApp with your tyre size for a quote.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'slow-puncture-causes',
+    image: '/images/service-home.jpg',
+    title: 'Tyre Losing Air Slowly? Common Causes of a Slow Puncture',
+    excerpt: 'Why your tyre keeps going down, how to spot a slow puncture, and whether it can be repaired or needs replacing.',
+    date: '30 Jan 2025',
+    dateISO: '2025-01-30',
+    category: 'Maintenance',
+    readTime: '5 min read',
+    metaTitle: 'Slow Puncture: Causes, Signs & How to Fix a Tyre Losing Air',
+    metaDescription: 'Tyre losing air slowly? Learn the common causes of a slow puncture, how to spot one, and whether it can be repaired or needs replacing.',
+    intro: 'A tyre that is fine one day and noticeably soft the next is the classic sign of a slow puncture. Unlike a blowout, it can go unnoticed for weeks, quietly affecting your handling, fuel economy, and safety. Here is what causes a slow puncture and what to do about it.',
+    sections: [
+      {
+        heading: 'Common causes of a slow puncture',
+        list: [
+          'A nail, screw, or shard of glass embedded in the tread',
+          'A damaged or corroded valve that leaks air',
+          'A poor seal between the tyre and the wheel rim',
+          'Kerbing or pothole damage to the wheel or tyre bead',
+          'Cracked or perished rubber on an older tyre',
+        ],
+      },
+      {
+        heading: 'How to spot a slow puncture',
+        paragraphs: [
+          'The most obvious sign is one tyre that repeatedly reads lower than the others when you check pressures. You might also notice the car pulling gently to one side, a soft or vague feel through the steering, or your tyre pressure warning light coming on intermittently. A tyre that looks slightly flatter than its neighbours is worth investigating.',
+        ],
+      },
+      {
+        heading: 'Can a slow puncture be repaired?',
+        paragraphs: [
+          'It depends where the damage is. A puncture in the central tread area, within the repairable zone and under a certain size, can often be safely repaired to British Standard. Damage to the sidewall or shoulder, or a tyre that has been driven on while flat, cannot be safely repaired and needs replacing.',
+          'Never rely on a tyre sealant as a permanent fix, it is only ever a temporary, get-you-home measure.',
+        ],
+      },
+      {
+        heading: 'Do not ignore it',
+        paragraphs: [
+          'A slow puncture rarely fixes itself and usually gets worse, sometimes failing suddenly at speed. The safest approach is to have the tyre inspected promptly. A mobile fitter can come to your home or workplace, assess whether the tyre is repairable, and either repair it or fit a replacement on the spot, so a small problem never becomes a roadside emergency.',
+        ],
+      },
+    ],
+  },
 ]
 
 export function getPostBySlug(slug: string | undefined): BlogPost | undefined {
