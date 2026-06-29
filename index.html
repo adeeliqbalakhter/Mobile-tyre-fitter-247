@@ -69,6 +69,9 @@
         security_storage: 'granted',
         wait_for_update: 500
       });
+      // Privacy-safe Google Ads measurement while consent is denied.
+      gtag('set', 'url_passthrough', true);
+      gtag('set', 'ads_data_redaction', true);
       // Re-apply a returning visitor's saved choice as early as possible.
       try {
         var saved = JSON.parse(localStorage.getItem('cookie-consent') || 'null');
