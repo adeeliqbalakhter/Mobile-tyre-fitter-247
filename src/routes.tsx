@@ -7,6 +7,7 @@ import HomeTyreFitting from './pages/HomeTyreFitting'
 import WorkplaceTyreFitting from './pages/WorkplaceTyreFitting'
 import FleetTyreServices from './pages/FleetTyreServices'
 import CoverageAreas from './pages/CoverageAreas'
+import NearMe from './pages/NearMe'
 import CityPage from './pages/CityPage'
 import TyreBrands from './pages/TyreBrands'
 import AboutPage from './pages/AboutPage'
@@ -35,6 +36,7 @@ export const routes: RouteRecord[] = [
 
       // Coverage hub + local city pages: /mobile-tyre-fitting-[city]
       { path: 'coverage-areas', element: <CoverageAreas /> },
+      { path: 'mobile-tyre-fitting-near-me', element: <NearMe /> },
       {
         path: ':citySlug',
         element: <CityPage />,

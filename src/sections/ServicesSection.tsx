@@ -30,7 +30,7 @@ const services = [
   {
     icon: MapPin, title: 'Mobile Tyre Fitting Near You',
     description: 'We cover the whole UK. Find your city and check the response time in your area.',
-    href: '/coverage-areas', image: '/images/city-london.jpg',
+    href: '/mobile-tyre-fitting-near-me', image: '/images/city-london.jpg',
   },
 ]
 

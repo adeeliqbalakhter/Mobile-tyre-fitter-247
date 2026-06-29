@@ -17,6 +17,13 @@ export const cityData: Record<string, CityInfo> = {
   bristol: { name: 'Bristol', region: 'South West England', time: '35-50 min', areas: ['City Centre', 'Bath', 'Weston-super-Mare', 'Gloucester', 'Cheltenham', 'Swindon'], roads: ['M5', 'M4', 'M32', 'A4', 'A38', 'A370'], image: '/images/city-london.jpg' },
   leicester: { name: 'Leicester', region: 'East Midlands', time: '35-50 min', areas: ['City Centre', 'Nottingham', 'Derby', 'Northampton', 'Loughborough'], roads: ['M1', 'M69', 'A6', 'A46', 'A47', 'A50'], image: '/images/city-manchester.jpg' },
   newcastle: { name: 'Newcastle', region: 'North East England', time: '35-50 min', areas: ['City Centre', 'Sunderland', 'Middlesbrough', 'Durham', 'Gateshead'], roads: ['A1(M)', 'A19', 'A69', 'A167', 'A184'], image: '/images/city-birmingham.jpg' },
+  'milton-keynes': { name: 'Milton Keynes', region: 'Buckinghamshire', time: '30-40 min', areas: ['City Centre', 'Bletchley', 'Wolverton', 'Newport Pagnell', 'Stony Stratford', 'Wavendon'], roads: ['M1', 'A5', 'A509', 'A421', 'A422'], image: '/images/city-london.jpg' },
+  swindon: { name: 'Swindon', region: 'Wiltshire', time: '35-45 min', areas: ['Town Centre', 'Old Town', 'Stratton', 'Highworth', 'Wroughton', 'Royal Wootton Bassett'], roads: ['M4', 'A419', 'A420', 'A4259', 'A3102'], image: '/images/city-manchester.jpg' },
+  edinburgh: { name: 'Edinburgh', region: 'Scotland', time: '35-50 min', areas: ['City Centre', 'Leith', 'Portobello', 'Corstorphine', 'Morningside', 'Musselburgh'], roads: ['M8', 'M9', 'A1', 'A720 City Bypass', 'A90'], image: '/images/city-birmingham.jpg' },
+  coventry: { name: 'Coventry', region: 'West Midlands', time: '30-40 min', areas: ['City Centre', 'Foleshill', 'Tile Hill', 'Earlsdon', 'Bedworth', 'Nuneaton'], roads: ['M6', 'M69', 'M45', 'A45', 'A46', 'A444'], image: '/images/city-london.jpg' },
+  reading: { name: 'Reading', region: 'Berkshire', time: '30-40 min', areas: ['Town Centre', 'Caversham', 'Tilehurst', 'Earley', 'Woodley', 'Wokingham'], roads: ['M4', 'A33', 'A329(M)', 'A4', 'A327'], image: '/images/city-manchester.jpg' },
+  cardiff: { name: 'Cardiff', region: 'Wales', time: '35-50 min', areas: ['City Centre', 'Cardiff Bay', 'Llanishen', 'Cyncoed', 'Penarth', 'Barry'], roads: ['M4', 'A48', 'A470', 'A4232', 'A4161'], image: '/images/city-birmingham.jpg' },
+  nottingham: { name: 'Nottingham', region: 'Nottinghamshire', time: '30-45 min', areas: ['City Centre', 'West Bridgford', 'Beeston', 'Arnold', 'Carlton', 'Mansfield'], roads: ['M1', 'A52', 'A60', 'A610', 'A453', 'A6514'], image: '/images/city-london.jpg' },
 }
 
 export const citySlugs = Object.keys(cityData)

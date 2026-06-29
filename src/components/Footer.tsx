@@ -12,6 +12,7 @@ const footerLinks = {
   ],
   company: [
     { label: 'About Us', href: '/about' },
+    { label: 'Mobile Tyre Fitting Near Me', href: '/mobile-tyre-fitting-near-me' },
     { label: 'Coverage Areas', href: '/coverage-areas' },
     { label: 'Tyre Brands', href: '/tyre-brands' },
     { label: 'FAQs', href: '/faq' },
@@ -20,11 +21,15 @@ const footerLinks = {
   ],
   cities: [
     { label: 'London', href: '/mobile-tyre-fitting-london' },
-    { label: 'Manchester', href: '/mobile-tyre-fitting-manchester' },
     { label: 'Birmingham', href: '/mobile-tyre-fitting-birmingham' },
-    { label: 'Glasgow', href: '/mobile-tyre-fitting-glasgow' },
+    { label: 'Manchester', href: '/mobile-tyre-fitting-manchester' },
     { label: 'Leeds', href: '/mobile-tyre-fitting-leeds' },
+    { label: 'Glasgow', href: '/mobile-tyre-fitting-glasgow' },
     { label: 'Liverpool', href: '/mobile-tyre-fitting-liverpool' },
+    { label: 'Bristol', href: '/mobile-tyre-fitting-bristol' },
+    { label: 'Edinburgh', href: '/mobile-tyre-fitting-edinburgh' },
+    { label: 'Cardiff', href: '/mobile-tyre-fitting-cardiff' },
+    { label: 'Nottingham', href: '/mobile-tyre-fitting-nottingham' },
   ],
 }
 

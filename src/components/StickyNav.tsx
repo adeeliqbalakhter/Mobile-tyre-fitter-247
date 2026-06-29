@@ -16,6 +16,7 @@ const navLinks = [
 const serviceLinks = [
   { label: 'Emergency Mobile Tyre Fitting', href: '/emergency-mobile-tyre-fitting' },
   { label: 'Mobile Tyre Replacement', href: '/mobile-tyre-replacement' },
+  { label: 'Mobile Tyre Fitting Near Me', href: '/mobile-tyre-fitting-near-me' },
   { label: 'Home Tyre Fitting', href: '/home-tyre-fitting' },
   { label: 'Workplace Tyre Fitting', href: '/workplace-tyre-fitting' },
   { label: 'Fleet Tyre Services', href: '/fleet-tyre-services' },
