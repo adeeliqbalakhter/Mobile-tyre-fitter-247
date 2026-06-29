@@ -126,7 +126,7 @@ export default function Footer() {
           <div className="flex gap-4 text-xs text-[#6a6a6a]">
             <span>Privacy Policy</span>
             <span>Terms of Service</span>
-            <span>Cookies</span>
+            <Link to="/cookies" className="hover:text-[#d92a1d] transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

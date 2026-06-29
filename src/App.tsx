@@ -3,6 +3,7 @@ import { Suspense, useEffect, useState } from 'react'
 import StickyNav from './components/StickyNav'
 import StickyCallBar from './components/StickyCallBar'
 import Footer from './components/Footer'
+import CookieConsent from './components/CookieConsent'
 
 function RouteFallback() {
   return (
@@ -40,6 +41,7 @@ function App() {
       </main>
       <Footer />
       {showCallBar && <StickyCallBar />}
+      <CookieConsent />
     </div>
   )
 }

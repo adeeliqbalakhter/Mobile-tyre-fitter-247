@@ -52,9 +52,50 @@
     <link rel="preload" as="image" href="/images/hero-bg.jpg" fetchpriority="high" />
 
     <!--
-      Google Analytics 4, ready to activate.
-      Paste your Measurement ID (e.g. 'G-XXXXXXXXXX') below to switch tracking on.
-      Until an ID is set, nothing loads and no requests are made.
+      Google Consent Mode v2 (EU/GDPR).
+      Consent defaults to DENIED for all non-essential storage until the visitor
+      opts in via the cookie banner. This block must run before any Google tag.
+    -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        functionality_storage: 'granted',
+        security_storage: 'granted',
+        wait_for_update: 500
+      });
+      // Re-apply a returning visitor's saved choice as early as possible.
+      try {
+        var saved = JSON.parse(localStorage.getItem('cookie-consent') || 'null');
+        if (saved && saved.consent) { gtag('consent', 'update', saved.consent); }
+      } catch (e) {}
+    </script>
+
+    <!--
+      Google Tag Manager, ready to activate.
+      Set your container ID below (e.g. 'GTM-XXXXXXX'). GTM is where you add your
+      GA4 and Google Ads tags. Nothing loads until an ID is set.
+    -->
+    <script>
+      window.GTM_ID = ''; // <-- set to your GTM container id, e.g. 'GTM-XXXXXXX'
+      if (window.GTM_ID) {
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+          var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', window.GTM_ID);
+      }
+    </script>
+
+    <!--
+      Google Analytics 4 (optional, if you load GA4 directly instead of via GTM).
+      Set your Measurement ID below (e.g. 'G-XXXXXXXXXX'). Nothing loads until set.
     -->
     <script>
       window.GA_MEASUREMENT_ID = ''; // <-- set to your GA4 Measurement ID, e.g. 'G-XXXXXXXXXX'
@@ -63,14 +104,17 @@
         gaScript.async = true;
         gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA_MEASUREMENT_ID;
         document.head.appendChild(gaScript);
-        window.dataLayer = window.dataLayer || [];
-        window.gtag = function () { window.dataLayer.push(arguments); };
-        window.gtag('js', new Date());
-        window.gtag('config', window.GA_MEASUREMENT_ID);
+        gtag('js', new Date());
+        gtag('config', window.GA_MEASUREMENT_ID);
       }
     </script>
   </head>
   <body>
+    <!--
+      Google Tag Manager (noscript). When you set GTM_ID above, also replace
+      GTM-XXXXXXX here with the same id so it works without JavaScript.
+    -->
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
