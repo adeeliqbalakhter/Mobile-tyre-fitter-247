@@ -4,6 +4,11 @@ import SEOHead from '../components/SEOHead'
 import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import { cityData } from '../data/cities'
+
+const allCityLinks = Object.entries(cityData)
+  .map(([slug, info]) => ({ slug, name: info.name, region: info.region }))
+  .sort((a, b) => a.name.localeCompare(b.name))
 
 const regions = [
   { name: 'London & Greater London', cities: ['Central London', 'North London', 'South London', 'East London', 'West London', 'Croydon', 'Bromley', 'Enfield'], time: '25-35 min', slug: 'london' },
@@ -61,6 +66,21 @@ export default function CoverageAreas() {
                 <div className="flex items-center gap-1.5 text-xs text-[#d92a1d]" style={{ fontFamily: 'JetBrains Mono' }}><Clock className="h-3 w-3" />{region.time} avg response</div>
               </Link>
             ))}
+          </div>
+
+          {/* Full A-Z city directory: links every local page from the hub */}
+          <div className="mb-12">
+            <h2 className="mb-2 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Cities &amp; Towns We <span className="text-[#d92a1d]">Cover</span></h2>
+            <p className="mb-5 text-sm text-[#6a6a6a]">Tap your city for local response times, areas covered, and an instant quote.</p>
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+              {allCityLinks.map((c) => (
+                <Link key={c.slug} to={`/mobile-tyre-fitting-${c.slug}`} className="group flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 transition-all hover:border-[#d92a1d]/30 hover:bg-white hover:shadow-sm">
+                  <MapPin className="h-3.5 w-3.5 flex-shrink-0 text-[#d92a1d]" />
+                  <span className="flex-1 text-sm font-medium text-[#6a6a6a] group-hover:text-[#1a1a1a] transition-colors">Mobile Tyre Fitting {c.name}</span>
+                  <ArrowRight className="h-3.5 w-3.5 flex-shrink-0 text-gray-300 group-hover:text-[#d92a1d] transition-colors" />
+                </Link>
+              ))}
+            </div>
           </div>
 
           <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">

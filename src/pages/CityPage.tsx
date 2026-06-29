@@ -32,7 +32,12 @@ export default function CityPage() {
   }
 
   const { name, region, time, areas, roads } = cityInfo
-  const otherCities = Object.entries(cityData).filter(([slug]) => slug !== city).slice(0, 6)
+  // Rotating window of nearby entries so internal links spread across the whole
+  // city network instead of every page pointing at the same first six.
+  const allCities = Object.entries(cityData)
+  const currentIndex = allCities.findIndex(([slug]) => slug === city)
+  const otherCities = Array.from({ length: 8 }, (_, i) => allCities[(currentIndex + i + 1) % allCities.length])
+    .filter(([slug]) => slug !== city)
 
   const localFaqs = [
     {
