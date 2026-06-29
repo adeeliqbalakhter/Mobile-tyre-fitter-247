@@ -14,9 +14,7 @@ const navLinks = [
 ]
 
 const serviceLinks = [
-  { label: 'Emergency Tyre Fitting', href: '/emergency-tyre-fitting' },
-  { label: '24 Hour Tyre Fitting', href: '/24-hour-tyre-fitting' },
-  { label: 'Same Day Tyre Fitting', href: '/same-day-tyre-fitting' },
+  { label: 'Emergency Mobile Tyre Fitting', href: '/emergency-mobile-tyre-fitting' },
   { label: 'Mobile Tyre Replacement', href: '/mobile-tyre-replacement' },
   { label: 'Home Tyre Fitting', href: '/home-tyre-fitting' },
   { label: 'Workplace Tyre Fitting', href: '/workplace-tyre-fitting' },

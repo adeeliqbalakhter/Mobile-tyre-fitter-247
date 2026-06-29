@@ -7,29 +7,28 @@ import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
-import { cityData } from '../data/cities'
+import NotFound from './NotFound'
+import { cityData, CITY_URL_PREFIX } from '../data/cities'
 
 const cityServices = [
-  { icon: AlertTriangle, title: 'Emergency Tyre Fitting', href: '/emergency-tyre-fitting' },
-  { icon: Clock, title: '24 Hour Tyre Fitting', href: '/24-hour-tyre-fitting' },
-  { icon: Zap, title: 'Same Day Tyre Fitting', href: '/same-day-tyre-fitting' },
+  { icon: AlertTriangle, title: 'Emergency Tyre Fitting', href: '/emergency-mobile-tyre-fitting' },
+  { icon: Zap, title: 'Mobile Tyre Replacement', href: '/mobile-tyre-replacement' },
   { icon: Home, title: 'Home Tyre Fitting', href: '/home-tyre-fitting' },
   { icon: Building2, title: 'Workplace Tyre Fitting', href: '/workplace-tyre-fitting' },
   { icon: Truck, title: 'Fleet Tyre Services', href: '/fleet-tyre-services' },
 ]
 
 export default function CityPage() {
-  const { city } = useParams<{ city: string }>()
+  const { citySlug } = useParams<{ citySlug: string }>()
   const location = useLocation()
+  const city = citySlug?.startsWith(CITY_URL_PREFIX)
+    ? citySlug.slice(CITY_URL_PREFIX.length)
+    : undefined
   const cityInfo = city ? cityData[city as keyof typeof cityData] : null
 
+  // Any unknown top-level slug renders the 404 page.
   if (!cityInfo) {
-    return (
-      <div className="pt-32 pb-20 text-center bg-white">
-        <h1 className="text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Area Not Found</h1>
-        <Link to="/coverage-areas" className="mt-4 inline-block text-[#d92a1d]">View all coverage areas</Link>
-      </div>
-    )
+    return <NotFound />
   }
 
   const { name, region, time, areas, roads } = cityInfo
@@ -269,7 +268,7 @@ export default function CityPage() {
           <h2 className="mb-8 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Other Areas We <span className="text-[#d92a1d]">Cover</span></h2>
           <div className="flex flex-wrap gap-3">
             {otherCities.map(([slug, info]) => (
-              <Link key={slug} to={`/coverage/${slug}`} className="group flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 transition-all hover:border-[#d92a1d]/30 hover:shadow-sm">
+              <Link key={slug} to={`/mobile-tyre-fitting-${slug}`} className="group flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 transition-all hover:border-[#d92a1d]/30 hover:shadow-sm">
                 <MapPin className="h-3.5 w-3.5 text-[#d92a1d]" />
                 <span className="text-sm font-medium text-[#6a6a6a] group-hover:text-[#1a1a1a] transition-colors">{info.name}</span>
                 <ArrowRight className="h-3.5 w-3.5 text-gray-300 group-hover:text-[#d92a1d] transition-colors" />

@@ -20,3 +20,12 @@ export const cityData: Record<string, CityInfo> = {
 }
 
 export const citySlugs = Object.keys(cityData)
+
+/** City pages live at /mobile-tyre-fitting-[city] to match the target keyword. */
+export const CITY_URL_PREFIX = 'mobile-tyre-fitting-'
+
+/** Full path for a city, e.g. 'london' -> '/mobile-tyre-fitting-london'. */
+export function cityPath(slug: string): string {
+  return `/${CITY_URL_PREFIX}${slug}`
+}
+

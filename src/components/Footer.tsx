@@ -4,9 +4,7 @@ import { PHONE_NUMBER } from '../lib/config'
 
 const footerLinks = {
   services: [
-    { label: 'Emergency Tyre Fitting', href: '/emergency-tyre-fitting' },
-    { label: '24 Hour Tyre Fitting', href: '/24-hour-tyre-fitting' },
-    { label: 'Same Day Tyre Fitting', href: '/same-day-tyre-fitting' },
+    { label: 'Emergency Mobile Tyre Fitting', href: '/emergency-mobile-tyre-fitting' },
     { label: 'Mobile Tyre Replacement', href: '/mobile-tyre-replacement' },
     { label: 'Home Tyre Fitting', href: '/home-tyre-fitting' },
     { label: 'Workplace Tyre Fitting', href: '/workplace-tyre-fitting' },
@@ -21,12 +19,12 @@ const footerLinks = {
     { label: 'Contact', href: '/contact' },
   ],
   cities: [
-    { label: 'London', href: '/coverage/london' },
-    { label: 'Manchester', href: '/coverage/manchester' },
-    { label: 'Birmingham', href: '/coverage/birmingham' },
-    { label: 'Glasgow', href: '/coverage/glasgow' },
-    { label: 'Leeds', href: '/coverage/leeds' },
-    { label: 'Liverpool', href: '/coverage/liverpool' },
+    { label: 'London', href: '/mobile-tyre-fitting-london' },
+    { label: 'Manchester', href: '/mobile-tyre-fitting-manchester' },
+    { label: 'Birmingham', href: '/mobile-tyre-fitting-birmingham' },
+    { label: 'Glasgow', href: '/mobile-tyre-fitting-glasgow' },
+    { label: 'Leeds', href: '/mobile-tyre-fitting-leeds' },
+    { label: 'Liverpool', href: '/mobile-tyre-fitting-liverpool' },
   ],
 }
 

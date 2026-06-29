@@ -34,7 +34,7 @@ export default function CoverageGrid() {
 
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
           {cities.map((city) => (
-            <Link key={city.name} to={`/coverage/${city.slug}`} className="group relative overflow-hidden rounded-lg aspect-[4/3]"
+            <Link key={city.name} to={`/mobile-tyre-fitting-${city.slug}`} className="group relative overflow-hidden rounded-lg aspect-[4/3]"
               onMouseEnter={() => setHoveredCity(city.name)} onMouseLeave={() => setHoveredCity(null)}>
               <img src={city.image} alt={`${city.name} mobile tyre fitting coverage`} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/5 to-transparent" />

@@ -28,7 +28,7 @@ export default function NotFound() {
           </div>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm">
             {[
-              { label: 'Services', href: '/emergency-tyre-fitting' },
+              { label: 'Services', href: '/emergency-mobile-tyre-fitting' },
               { label: 'Coverage Areas', href: '/coverage-areas' },
               { label: 'Tyre Brands', href: '/tyre-brands' },
               { label: 'FAQs', href: '/faq' },

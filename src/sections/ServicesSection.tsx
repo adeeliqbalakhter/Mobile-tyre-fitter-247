@@ -1,21 +1,16 @@
 import { Link } from 'react-router-dom'
-import { AlertTriangle, Clock, Zap, Home, Building2, Truck, ArrowRight } from 'lucide-react'
+import { AlertTriangle, Zap, Home, Building2, Truck, MapPin, ArrowRight } from 'lucide-react'
 
 const services = [
   {
-    icon: AlertTriangle, title: 'Emergency Tyre Fitting',
-    description: 'Stranded with a flat? Our emergency team reaches you within 30-45 minutes, anywhere in the UK.',
-    href: '/emergency-tyre-fitting', image: '/images/service-emergency.jpg', badge: 'MOST POPULAR',
+    icon: AlertTriangle, title: 'Emergency Mobile Tyre Fitting',
+    description: 'Flat or blowout? Our emergency team reaches you within 30-45 minutes, 24/7 and same day, anywhere in the UK.',
+    href: '/emergency-mobile-tyre-fitting', image: '/images/service-emergency.jpg', badge: 'MOST POPULAR',
   },
   {
-    icon: Clock, title: '24 Hour Tyre Fitting',
-    description: 'Day or night, weekday or weekend. Our mobile fitters operate round the clock, every day of the year.',
-    href: '/24-hour-tyre-fitting', image: '/images/hero-bg.jpg',
-  },
-  {
-    icon: Zap, title: 'Same Day Tyre Fitting',
-    description: 'Need a tyre replaced today? Book before 6pm and we guarantee same-day fitting at your location.',
-    href: '/same-day-tyre-fitting', image: '/images/step-fitting.jpg',
+    icon: Zap, title: 'Mobile Tyre Replacement',
+    description: 'New tyres supplied and fitted at your location. All brands, all sizes, all vehicle types.',
+    href: '/mobile-tyre-replacement', image: '/images/step-fitting.jpg',
   },
   {
     icon: Home, title: 'Home Tyre Fitting',
@@ -31,6 +26,11 @@ const services = [
     icon: Truck, title: 'Fleet Tyre Services',
     description: 'Dedicated fleet management for businesses. Volume discounts and scheduled maintenance.',
     href: '/fleet-tyre-services', image: '/images/service-fleet.jpg', badge: 'BUSINESS',
+  },
+  {
+    icon: MapPin, title: 'Mobile Tyre Fitting Near You',
+    description: 'We cover the whole UK. Find your city and check the response time in your area.',
+    href: '/coverage-areas', image: '/images/city-london.jpg',
   },
 ]
 

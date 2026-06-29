@@ -2,6 +2,12 @@
   "outputDirectory": "dist",
   "framework": "vite",
   "cleanUrls": true,
+  "redirects": [
+    { "source": "/emergency-tyre-fitting", "destination": "/emergency-mobile-tyre-fitting", "permanent": true },
+    { "source": "/24-hour-tyre-fitting", "destination": "/emergency-mobile-tyre-fitting", "permanent": true },
+    { "source": "/same-day-tyre-fitting", "destination": "/emergency-mobile-tyre-fitting", "permanent": true },
+    { "source": "/coverage/:slug", "destination": "/mobile-tyre-fitting-:slug", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
   ],

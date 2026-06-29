@@ -52,7 +52,7 @@ export default function CoverageAreas() {
 
           <div className="mb-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {regions.map((region) => (
-              <Link key={region.slug} to={`/coverage/${region.slug}`} className="group rounded-xl border border-gray-200 bg-gray-50 p-5 transition-all hover:border-[#d92a1d]/30 hover:bg-white hover:shadow-md">
+              <Link key={region.slug} to={`/mobile-tyre-fitting-${region.slug}`} className="group rounded-xl border border-gray-200 bg-gray-50 p-5 transition-all hover:border-[#d92a1d]/30 hover:bg-white hover:shadow-md">
                 <div className="mb-3 flex items-center justify-between">
                   <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-[#d92a1d]" /><h3 className="font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>{region.name}</h3></div>
                   <ArrowRight className="h-4 w-4 text-gray-300 group-hover:text-[#d92a1d] transition-colors" />

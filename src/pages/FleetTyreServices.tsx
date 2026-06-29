@@ -75,8 +75,7 @@ const whyChoose = [
 
 const relatedServices = [
   { title: 'Workplace Tyre Fitting', href: '/workplace-tyre-fitting' },
-  { title: 'Emergency Tyre Fitting', href: '/emergency-tyre-fitting' },
-  { title: '24 Hour Tyre Fitting', href: '/24-hour-tyre-fitting' },
+  { title: 'Emergency Tyre Fitting', href: '/emergency-mobile-tyre-fitting' },
   { title: 'Mobile Tyre Replacement', href: '/mobile-tyre-replacement' },
   { title: 'Home Tyre Fitting', href: '/home-tyre-fitting' },
 ]

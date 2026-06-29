@@ -74,21 +74,20 @@ const whyChoose = [
 ]
 
 const relatedServices = [
-  { title: '24 Hour Tyre Fitting', href: '/24-hour-tyre-fitting' },
-  { title: 'Same Day Tyre Fitting', href: '/same-day-tyre-fitting' },
   { title: 'Mobile Tyre Replacement', href: '/mobile-tyre-replacement' },
   { title: 'Home Tyre Fitting', href: '/home-tyre-fitting' },
-  { title: 'Roadside Tyre Replacement', href: '/mobile-tyre-replacement' },
+  { title: 'Workplace Tyre Fitting', href: '/workplace-tyre-fitting' },
+  { title: 'Fleet Tyre Services', href: '/fleet-tyre-services' },
 ]
 
 export default function EmergencyTyreFitting() {
   return (
     <ServicePageTemplate
-      title="Emergency"
+      title="Emergency Mobile"
       titleHighlight="Tyre Fitting"
-      description="Stranded with a flat tyre or blowout? Our emergency mobile tyre fitting service reaches you within 30-45 minutes anywhere in the UK. Available 24/7, 365 days a year. Call 0800 123 4567 now for immediate assistance."
-      metaTitle="Emergency Tyre Fitting - 30-45 Min Response 24/7 UK"
-      metaDescription="Emergency mobile tyre fitting across the UK. 30-45 min response, available 24/7. We come to you at home, work, or roadside. Call 0800 123 4567 now."
+      description="Stranded with a flat tyre or blowout? Our emergency mobile tyre fitting service reaches you within 30-45 minutes anywhere in the UK. Available 24/7, same day, every day of the year. Call 0800 123 4567 now for immediate assistance."
+      metaTitle="Emergency Mobile Tyre Fitting - 24 Hour & Same Day UK"
+      metaDescription="Emergency mobile tyre fitting across the UK. 24 hour, same day, 30-45 min response, available 24/7. We come to you at home, work, or roadside. Call 0800 123 4567 now."
       heroImage="/images/service-emergency.jpg"
       features={features}
       whatToExpect={whatToExpect}
