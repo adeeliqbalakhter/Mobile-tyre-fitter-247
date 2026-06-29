@@ -10,6 +10,7 @@ interface SEOHeadProps {
   canonical?: string
   ogImage?: string
   schema?: Record<string, unknown>
+  noindex?: boolean
 }
 
 /** Create or update a <meta> tag, keyed by name or property. */
@@ -34,7 +35,7 @@ function upsertCanonical(href: string) {
   link.setAttribute('href', href)
 }
 
-export default function SEOHead({ title, description, canonical, ogImage, schema }: SEOHeadProps) {
+export default function SEOHead({ title, description, canonical, ogImage, schema, noindex }: SEOHeadProps) {
   useEffect(() => {
     const fullTitle = `${title} | ${SITE_NAME}`
     document.title = fullTitle
@@ -45,6 +46,7 @@ export default function SEOHead({ title, description, canonical, ogImage, schema
     const image = ogImage ?? DEFAULT_OG_IMAGE
 
     upsertMeta('name', 'description', description)
+    upsertMeta('name', 'robots', noindex ? 'noindex, follow' : 'index, follow')
     upsertCanonical(canonicalUrl)
 
     // Open Graph
@@ -76,39 +78,7 @@ export default function SEOHead({ title, description, canonical, ogImage, schema
       const script = document.getElementById('json-ld-schema')
       if (script) script.remove()
     }
-  }, [title, description, canonical, ogImage, schema])
+  }, [title, description, canonical, ogImage, schema, noindex])
 
   return null
-}
-
-export const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Mobile Tyre Fitter 24/7',
-  description: 'UK\'s leading mobile tyre fitting service. 24/7 emergency tyre replacement at your home, work, or roadside.',
-  url: 'https://www.mobiletyrefitter247.co.uk',
-  telephone: '+448001234567',
-  email: 'info@mobiletyrefitter247.co.uk',
-  priceRange: '££',
-  areaServed: 'United Kingdom',
-  serviceType: 'Mobile Tyre Fitting',
-  openingHours: 'Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '2500',
-  },
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Tyre Services',
-    itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Emergency Mobile Tyre Fitting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '24 Hour Tyre Fitting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Same Day Tyre Fitting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Mobile Tyre Replacement' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Home Tyre Fitting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Workplace Tyre Fitting' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Fleet Tyre Services' } },
-    ],
-  },
 }

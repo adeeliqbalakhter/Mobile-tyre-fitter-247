@@ -1,4 +1,4 @@
-import SEOHead, { localBusinessSchema } from '../components/SEOHead'
+import SEOHead from '../components/SEOHead'
 import HeroSection from '../sections/HeroSection'
 import TrustBar from '../sections/TrustBar'
 import CoverageGrid from '../sections/CoverageGrid'
@@ -16,7 +16,6 @@ export default function HomePage() {
       <SEOHead
         title="24/7 Mobile Tyre Fitting UK - Emergency Tyre Replacement"
         description="UK's leading mobile tyre fitting service. 24/7 emergency tyre replacement at your home, work, or roadside. Average 30-45 min response. Call 0800 123 4567 now."
-        schema={localBusinessSchema}
       />
       <HeroSection />
       <TrustBar />

@@ -24,6 +24,7 @@ const BlogPage = lazy(() => import('./pages/BlogPage'))
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'))
 const CityPage = lazy(() => import('./pages/CityPage'))
 const CookiePolicy = lazy(() => import('./pages/CookiePolicy'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 
 const PHONE_NUMBER = "0800 123 4567"
 const WHATSAPP_NUMBER = "+447912345678"
@@ -52,7 +53,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/cookies" element={<CookiePolicy />} />
-          <Route path="*" element={<HomePage />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
