@@ -65,9 +65,9 @@ export default function HeroSection() {
             className="animate-fade-up mb-4 max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl drop-shadow-lg"
             style={{ fontFamily: 'Space Grotesk', opacity: 0, animationDelay: '0.15s' }}
           >
-            ROADSIDE TYRE
+            ROADSIDE TYRE REPLACEMENT
             <br />
-            <span className="text-[#ff4444]">REPLACEMENT</span>
+            IN <span className="text-[#ff4444]">30 MINUTES</span>
           </h1>
 
           <p className="animate-fade-up mb-8 max-w-xl text-base leading-relaxed text-white/90 drop-shadow-md sm:text-lg" style={{ opacity: 0, animationDelay: '0.25s' }}>
