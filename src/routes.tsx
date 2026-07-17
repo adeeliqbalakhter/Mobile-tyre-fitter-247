@@ -16,6 +16,7 @@ import FAQPage from './pages/FAQPage'
 import BlogPage from './pages/BlogPage'
 import BlogPostPage from './pages/BlogPostPage'
 import CookiePolicy from './pages/CookiePolicy'
+import TermsConditions from './pages/TermsConditions'
 import NotFound from './pages/NotFound'
 import { citySlugs, CITY_URL_PREFIX } from './data/cities'
 import { blogPosts } from './data/blogPosts'
@@ -54,6 +55,7 @@ export const routes: RouteRecord[] = [
         getStaticPaths: () => blogPosts.map((post) => `blog/${post.slug}`),
       },
       { path: 'cookies', element: <CookiePolicy /> },
+      { path: 'terms-and-conditions', element: <TermsConditions /> },
       { path: '*', element: <NotFound /> },
     ],
   },
