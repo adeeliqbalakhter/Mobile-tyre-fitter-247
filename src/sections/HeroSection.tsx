@@ -32,8 +32,11 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center animate-kenburns"
         style={{ backgroundImage: 'url(/images/hero-bg.jpg)', zIndex: 1 }}
       />
-      {/* Very subtle dark overlay for text contrast */}
-      <div className="absolute inset-0 bg-black/30" style={{ zIndex: 2 }} />
+      {/* Readability scrims: a horizontal one darkens the text side while
+          keeping the image visible on the right, plus a vertical one for
+          mobile where the text sits over the whole frame. */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/25" style={{ zIndex: 2 }} />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40" style={{ zIndex: 2 }} />
 
       {/* Floating glow accents (decorative) */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" style={{ zIndex: 2 }} aria-hidden="true">
@@ -49,7 +52,7 @@ export default function HeroSection() {
       <div className="relative z-10 w-full pt-20 pb-16 px-4 lg:px-6" style={{ zIndex: 4 }}>
         <div className="mx-auto max-w-[1400px]">
           {/* Emergency badge */}
-          <div className="animate-fade-up mb-6 inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-md border border-white/20 px-4 py-2" style={{ opacity: 0, animationDelay: '0.05s' }}>
+          <div className="animate-fade-up mb-6 inline-flex items-center gap-2 rounded-full bg-black/45 backdrop-blur-md border border-white/25 px-4 py-2" style={{ opacity: 0, animationDelay: '0.05s' }}>
             <span className="relative flex h-2 w-2">
               <span className="animate-ring absolute inline-flex h-full w-full rounded-full bg-[#22c55e]" />
               <span className="animate-pulse-live absolute inline-flex h-full w-full rounded-full bg-[#22c55e] opacity-75" />
@@ -70,7 +73,7 @@ export default function HeroSection() {
             IN <span className="text-[#ff4444]">30 MINUTES</span>
           </h1>
 
-          <p className="animate-fade-up mb-8 max-w-xl text-base leading-relaxed text-white/90 drop-shadow-md sm:text-lg" style={{ opacity: 0, animationDelay: '0.25s' }}>
+          <p className="animate-fade-up mb-8 max-w-xl text-base font-medium leading-relaxed text-white sm:text-lg" style={{ opacity: 0, animationDelay: '0.25s', textShadow: '0 2px 10px rgba(0,0,0,0.7)' }}>
             24/7 Mobile tyre fitting across the UK. We come to you at home, work, or roadside. Average response time: 30-45 minutes.
           </p>
 
@@ -82,9 +85,9 @@ export default function HeroSection() {
               { icon: Star, text: '4.9★ Google rating' },
               { icon: MapPin, text: 'UK-wide coverage' },
             ].map(({ icon: Icon, text }) => (
-              <div key={text} className="flex items-center gap-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 px-3 py-1.5 transition-transform hover:-translate-y-0.5 hover:bg-white/25">
-                <Icon className="h-3.5 w-3.5 text-[#ff4444]" />
-                <span className="text-xs font-medium text-white/90" style={{ fontFamily: 'JetBrains Mono' }}>{text}</span>
+              <div key={text} className="flex items-center gap-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/25 px-3 py-1.5 transition-transform hover:-translate-y-0.5 hover:bg-black/55">
+                <Icon className="h-3.5 w-3.5 text-[#ff5a4d]" />
+                <span className="text-xs font-semibold text-white" style={{ fontFamily: 'JetBrains Mono' }}>{text}</span>
               </div>
             ))}
           </div>
@@ -130,7 +133,7 @@ export default function HeroSection() {
                 ))}
                 <span className="ml-1 text-xs font-bold text-white">4.9</span>
               </div>
-              <p className="text-xs text-white/70">2,500+ happy customers this year</p>
+              <p className="text-xs font-medium text-white/90" style={{ textShadow: '0 1px 6px rgba(0,0,0,0.7)' }}>2,500+ happy customers this year</p>
             </div>
           </div>
         </div>
