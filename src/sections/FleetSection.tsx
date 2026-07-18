@@ -40,7 +40,7 @@ export default function FleetSection() {
               </a>
             </div>
             <div className="relative hidden lg:block">
-              <img src="/images/service-fleet.jpg" alt="Fleet tyre fitting service" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+              <img src="/images/service-fleet.webp" alt="Fleet tyre fitting service" width={400} height={240} className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-r from-gray-50 via-gray-50/80 to-transparent" />
             </div>
           </div>

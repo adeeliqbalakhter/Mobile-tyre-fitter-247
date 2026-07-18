@@ -9,10 +9,10 @@ export interface CityInfo {
 
 // Only 3 city-specific images exist in /public/images/ — all other cities use the
 // generic hero background so we never show a misleading city photograph.
-const LONDON_IMG = '/images/city-london.jpg'
-const MANCHESTER_IMG = '/images/city-manchester.jpg'
-const BIRMINGHAM_IMG = '/images/city-birmingham.jpg'
-const GENERIC_IMG = '/images/hero-bg.jpg'
+const LONDON_IMG = '/images/city-london.webp'
+const MANCHESTER_IMG = '/images/city-manchester.webp'
+const BIRMINGHAM_IMG = '/images/city-birmingham.webp'
+const GENERIC_IMG = '/images/hero-bg.webp'
 
 export const cityData: Record<string, CityInfo> = {
   london: { name: 'London', region: 'Greater London', time: '25-35 min', areas: ['Central London', 'North London', 'South London', 'East London', 'West London', 'Croydon', 'Bromley', 'Greenwich', 'Enfield', 'Wembley'], roads: ['M25', 'M4', 'M1', 'A406 North Circular', 'A40', 'M11'], image: LONDON_IMG },

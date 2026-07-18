@@ -80,7 +80,7 @@ export default function BlogPostPage() {
       <article>
         {/* Header */}
         <header className="relative pt-24 pb-12 lg:pt-32 lg:pb-16 bg-[#1a1a1a] overflow-hidden">
-          <img src={post.image} alt={post.title} className="absolute inset-0 h-full w-full object-cover opacity-25" />
+          <img src={post.image} alt={post.title} width={800} height={400} className="absolute inset-0 h-full w-full object-cover opacity-25" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/80 via-[#1a1a1a]/85 to-[#1a1a1a]" />
           <div className="relative z-10 mx-auto max-w-[800px] px-4 lg:px-6">
             <nav className="mb-6 flex items-center gap-2 text-xs text-white/60" style={{ fontFamily: 'JetBrains Mono' }}>
@@ -149,7 +149,7 @@ export default function BlogPostPage() {
               {related.map((p) => (
                 <Link key={p.slug} to={`/blog/${p.slug}`} className="group rounded-xl border border-gray-200 bg-white overflow-hidden transition-all hover:border-[#d92a1d]/30 hover:shadow-md">
                   <div className="relative h-32 overflow-hidden">
-                    <img src={p.image} alt={p.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                    <img src={p.image} alt={p.title} width={800} height={400} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                   </div>
                   <div className="p-5">
                     <span className="rounded bg-[#d92a1d]/10 px-2 py-0.5 text-[10px] font-semibold text-[#d92a1d]" style={{ fontFamily: 'JetBrains Mono' }}>{p.category}</span>

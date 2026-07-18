@@ -76,7 +76,7 @@ export default function NearMe() {
       {/* Hero */}
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-[#1a1a1a]">
-          <img src="/images/hero-bg.jpg" alt="Mobile tyre fitting near you" className="absolute inset-0 h-full w-full object-cover opacity-25" />
+          <img src="/images/hero-bg.webp" alt="Mobile tyre fitting near you" className="absolute inset-0 h-full w-full object-cover opacity-25" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/85 via-[#1a1a1a]/80 to-[#1a1a1a]" />
         </div>
         <div className="relative z-10 mx-auto max-w-[1400px] px-4 lg:px-6">

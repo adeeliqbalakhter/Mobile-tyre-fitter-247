@@ -114,6 +114,8 @@ export default function StickyNav() {
               <img
                 src="/images/logo.png"
                 alt="Mobile Tyre Fitter 247"
+                width={150}
+                height={50}
                 className="h-11 w-auto sm:h-12"
               />
             </Link>
@@ -194,10 +196,11 @@ export default function StickyNav() {
       >
         {/* Menu Header */}
         <div className="flex h-[72px] items-center justify-between border-b border-gray-200 px-4">
-          <img src="/images/logo.png" alt="Mobile Tyre Fitter 247" className="h-14 w-auto" />
+          <img src="/images/logo.png" alt="Mobile Tyre Fitter 247" width={150} height={50} className="h-14 w-auto" />
           <button
             onClick={() => setMenuOpen(false)}
             className="h-12 w-12 flex items-center justify-center"
+            aria-label="Close menu"
             type="button"
           >
             <X className="h-6 w-6 text-[#1a1a1a]" />

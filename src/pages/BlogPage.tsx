@@ -30,7 +30,7 @@ export default function BlogPage() {
           {/* Featured post */}
           <Link to={`/blog/${featured.slug}`} className="group mb-10 grid overflow-hidden rounded-2xl border border-gray-200 bg-gray-50 transition-all hover:border-[#d92a1d]/30 hover:shadow-lg lg:grid-cols-2">
             <div className="relative min-h-[200px] overflow-hidden lg:min-h-[280px]">
-              <img src={featured.image} alt={featured.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <img src={featured.image} alt={featured.title} width={800} height={400} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
             </div>
             <div className="p-6 lg:p-10">
               <div className="mb-3 flex flex-wrap items-center gap-3">
@@ -48,7 +48,7 @@ export default function BlogPage() {
             {rest.map((post) => (
               <Link key={post.slug} to={`/blog/${post.slug}`} className="group flex flex-col rounded-xl border border-gray-200 bg-gray-50 overflow-hidden transition-all hover:border-[#d92a1d]/30 hover:bg-white hover:shadow-md">
                 <div className="relative h-40 overflow-hidden">
-                  <img src={post.image} alt={post.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  <img src={post.image} alt={post.title} width={800} height={400} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <div className="mb-2 flex items-center gap-2">

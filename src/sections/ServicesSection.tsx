@@ -5,32 +5,32 @@ const services = [
   {
     icon: AlertTriangle, title: 'Emergency Mobile Tyre Fitting',
     description: 'Flat or blowout? Our emergency team reaches you within 30-45 minutes, 24/7 and same day, anywhere in the UK.',
-    href: '/emergency-mobile-tyre-fitting', image: '/images/service-emergency.jpg', badge: 'MOST POPULAR',
+    href: '/emergency-mobile-tyre-fitting', image: '/images/service-emergency.webp', badge: 'MOST POPULAR',
   },
   {
     icon: Zap, title: 'Mobile Tyre Replacement',
     description: 'New tyres supplied and fitted at your location. All brands, all sizes, all vehicle types.',
-    href: '/mobile-tyre-replacement', image: '/images/step-fitting.jpg',
+    href: '/mobile-tyre-replacement', image: '/images/step-fitting.webp',
   },
   {
     icon: Home, title: 'Home Tyre Fitting',
     description: 'We come to your driveway. No need to visit a garage. Fitting while you relax at home.',
-    href: '/home-tyre-fitting', image: '/images/service-home.jpg',
+    href: '/home-tyre-fitting', image: '/images/service-home.webp',
   },
   {
     icon: Building2, title: 'Workplace Tyre Fitting',
     description: 'Tyre replacement at your office car park. Minimal disruption to your working day.',
-    href: '/workplace-tyre-fitting', image: '/images/step-fitting.jpg',
+    href: '/workplace-tyre-fitting', image: '/images/step-fitting.webp',
   },
   {
     icon: Truck, title: 'Fleet Tyre Services',
     description: 'Dedicated fleet management for businesses. Volume discounts and scheduled maintenance.',
-    href: '/fleet-tyre-services', image: '/images/service-fleet.jpg', badge: 'BUSINESS',
+    href: '/fleet-tyre-services', image: '/images/service-fleet.webp', badge: 'BUSINESS',
   },
   {
     icon: MapPin, title: 'Mobile Tyre Fitting Near You',
     description: 'We cover the whole UK. Find your city and check the response time in your area.',
-    href: '/mobile-tyre-fitting-near-me', image: '/images/city-london.jpg',
+    href: '/mobile-tyre-fitting-near-me', image: '/images/city-london.webp',
   },
 ]
 
@@ -59,7 +59,7 @@ export default function ServicesSection() {
             >
               {service.image && (
                 <div className="relative h-44 overflow-hidden">
-                  <img src={service.image} alt={service.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  <img src={service.image} alt={service.title} width={400} height={240} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                   {service.badge && (
                     <span className="absolute top-3 right-3 rounded bg-[#d92a1d] px-2 py-0.5 text-[10px] font-bold tracking-wider text-white" style={{ fontFamily: 'JetBrains Mono' }}>
                       {service.badge}

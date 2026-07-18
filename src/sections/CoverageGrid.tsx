@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import { Clock, ArrowRight } from 'lucide-react'
 
 const cities = [
-  { name: 'London', time: '25 min', image: '/images/city-london.jpg', slug: 'london' },
-  { name: 'Manchester', time: '30 min', image: '/images/city-manchester.jpg', slug: 'manchester' },
-  { name: 'Birmingham', time: '30 min', image: '/images/city-birmingham.jpg', slug: 'birmingham' },
-  { name: 'Glasgow', time: '35 min', image: '/images/city-london.jpg', slug: 'glasgow' },
-  { name: 'Leeds', time: '30 min', image: '/images/city-manchester.jpg', slug: 'leeds' },
-  { name: 'Liverpool', time: '30 min', image: '/images/city-birmingham.jpg', slug: 'liverpool' },
-  { name: 'Bristol', time: '35 min', image: '/images/city-london.jpg', slug: 'bristol' },
-  { name: 'Sheffield', time: '35 min', image: '/images/city-manchester.jpg', slug: 'sheffield' },
+  { name: 'London', time: '25 min', image: '/images/city-london.webp', slug: 'london' },
+  { name: 'Manchester', time: '30 min', image: '/images/city-manchester.webp', slug: 'manchester' },
+  { name: 'Birmingham', time: '30 min', image: '/images/city-birmingham.webp', slug: 'birmingham' },
+  { name: 'Glasgow', time: '35 min', image: '/images/city-london.webp', slug: 'glasgow' },
+  { name: 'Leeds', time: '30 min', image: '/images/city-manchester.webp', slug: 'leeds' },
+  { name: 'Liverpool', time: '30 min', image: '/images/city-birmingham.webp', slug: 'liverpool' },
+  { name: 'Bristol', time: '35 min', image: '/images/city-london.webp', slug: 'bristol' },
+  { name: 'Sheffield', time: '35 min', image: '/images/city-manchester.webp', slug: 'sheffield' },
 ]
 
 export default function CoverageGrid() {
@@ -36,7 +36,7 @@ export default function CoverageGrid() {
           {cities.map((city) => (
             <Link key={city.name} to={`/mobile-tyre-fitting-${city.slug}`} className="group relative overflow-hidden rounded-lg aspect-[4/3]"
               onMouseEnter={() => setHoveredCity(city.name)} onMouseLeave={() => setHoveredCity(null)}>
-              <img src={city.image} alt={`${city.name} mobile tyre fitting coverage`} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+              <img src={city.image} alt={`${city.name} mobile tyre fitting coverage`} width={400} height={300} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/5 to-transparent" />
               <div className="absolute inset-0 bg-[#d92a1d]/0 transition-colors duration-300 group-hover:bg-[#d92a1d]/15" />
               <div className="absolute bottom-0 left-0 right-0 p-4">

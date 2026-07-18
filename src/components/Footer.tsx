@@ -60,7 +60,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-4">
-              <img src="/images/logo.png" alt="Mobile Tyre Fitter 247" className="h-10 w-auto" />
+              <img src="/images/logo.png" alt="Mobile Tyre Fitter 247" width={150} height={50} className="h-10 w-auto" />
             </div>
             <p className="mb-4 text-sm leading-relaxed text-[#6a6a6a]">
               UK's leading mobile tyre fitting service. We come to you at home, work, or roadside, 24 hours a day, 7 days a week.
@@ -76,9 +76,9 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
+            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
               Services
-            </h4>
+            </h3>
             <ul className="space-y-2.5">
               {footerLinks.services.map((link) => (
                 <li key={link.label}>
@@ -92,9 +92,9 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
+            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
               Company
-            </h4>
+            </h3>
             <ul className="space-y-2.5">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -108,9 +108,9 @@ export default function Footer() {
 
           {/* Coverage */}
           <div>
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
+            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
               Major Cities
-            </h4>
+            </h3>
             <ul className="space-y-2.5">
               {footerLinks.cities.map((link) => (
                 <li key={link.label}>

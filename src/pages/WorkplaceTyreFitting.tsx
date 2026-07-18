@@ -87,7 +87,7 @@ export default function WorkplaceTyreFitting() {
       description="Mobile tyre fitting at your workplace across the UK. We come to your office car park, no need to take time off. Corporate invoicing and volume discounts available. Call 0800 123 4567."
       metaTitle="Workplace Tyre Fitting UK - Mobile Service At Your Office Car Park"
       metaDescription="Mobile tyre fitting at your workplace across the UK. Office car park service with zero disruption to your day. Corporate invoicing & volume discounts. Call 0800 123 4567."
-      heroImage="/images/service-fleet.jpg"
+      heroImage="/images/service-fleet.webp"
       features={features}
       whatToExpect={whatToExpect}
       contentBlocks={contentBlocks}

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'
 
 export const SITE_NAME = 'Mobile Tyre Fitter 24/7'
 export const SITE_URL = 'https://www.mobiletyrefitter247.co.uk'
-const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-bg.jpg`
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-bg.webp`
 
 /** Breadcrumb item for generating BreadcrumbList structured data. */
 export interface BreadcrumbItem {

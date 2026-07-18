@@ -30,7 +30,7 @@ export default function HeroSection() {
       {/* Background image with a slow ambient zoom */}
       <div
         className="absolute inset-0 bg-cover bg-center animate-kenburns"
-        style={{ backgroundImage: 'url(/images/hero-bg.jpg)', zIndex: 1 }}
+        style={{ backgroundImage: 'url(/images/hero-bg.webp)', zIndex: 1 }}
       />
       {/* Readability scrims: a horizontal one darkens the text side while
           keeping the image visible on the right, plus a vertical one for

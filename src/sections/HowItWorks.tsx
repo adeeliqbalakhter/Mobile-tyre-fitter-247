@@ -58,7 +58,7 @@ export default function HowItWorks() {
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className={`text-xs font-bold transition-colors ${activeStep === index ? 'text-[#d92a1d]' : 'text-gray-300'}`} style={{ fontFamily: 'JetBrains Mono' }}>{step.number}</span>
+                    <span className={`text-xs font-bold transition-colors ${activeStep === index ? 'text-[#d92a1d]' : 'text-gray-500'}`} style={{ fontFamily: 'JetBrains Mono' }}>{step.number}</span>
                     <h3 className={`text-lg font-semibold transition-colors ${activeStep === index ? 'text-[#1a1a1a]' : 'text-[#6a6a6a]'}`} style={{ fontFamily: 'Space Grotesk' }}>{step.title}</h3>
                   </div>
                   <p className={`mt-1 text-sm leading-relaxed transition-all duration-300 ${activeStep === index ? 'text-[#6a6a6a] max-h-40 opacity-100' : 'text-gray-400 max-h-0 opacity-0 overflow-hidden lg:max-h-40 lg:opacity-100'}`}>

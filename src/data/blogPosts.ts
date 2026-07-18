@@ -25,7 +25,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: 'flat-tyre-motorway',
-    image: '/images/hero-bg.jpg',
+    image: '/images/hero-bg.webp',
     title: 'What to Do If You Get a Flat Tyre on the Motorway',
     excerpt: 'A flat tyre on the motorway can be dangerous. Here\'s exactly what to do to stay safe and get back on the road quickly.',
     date: '15 Jan 2025',
@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'how-long-tyres-last',
-    image: '/images/service-emergency.jpg',
+    image: '/images/service-emergency.webp',
     title: 'How Long Should Your Tyres Last?',
     excerpt: 'Learn the average lifespan of car tyres, the signs of wear to watch for, and how to maximise tyre longevity.',
     date: '10 Jan 2025',
@@ -122,7 +122,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'run-flat-vs-standard',
-    image: '/images/service-fleet.jpg',
+    image: '/images/service-fleet.webp',
     title: 'Run-Flat Tyres vs Standard Tyres: Which Is Better?',
     excerpt: 'We compare run-flat tyres and standard tyres to help you decide which is best for your vehicle and driving style.',
     date: '5 Jan 2025',
@@ -165,7 +165,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'winter-tyre-guide',
-    image: '/images/city-manchester.jpg',
+    image: '/images/city-manchester.webp',
     title: 'Winter Tyre Guide for UK Drivers',
     excerpt: 'Everything you need to know about winter tyres in the UK, when to fit them, the benefits, and the law.',
     date: '28 Dec 2024',
@@ -207,7 +207,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'mobile-vs-garage',
-    image: '/images/service-home.jpg',
+    image: '/images/service-home.webp',
     title: 'Why Mobile Tyre Fitting Beats Garage Visits',
     excerpt: 'Discover the benefits of mobile tyre fitting, convenience, speed, and why more UK drivers are choosing it.',
     date: '20 Dec 2024',
@@ -247,7 +247,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'tyre-labels-explained',
-    image: '/images/city-birmingham.jpg',
+    image: '/images/city-birmingham.webp',
     title: 'Understanding Tyre Labels: Fuel, Wet Grip & Noise',
     excerpt: 'How to read EU tyre labels and what fuel efficiency, wet grip, and noise ratings really mean for your driving.',
     date: '15 Dec 2024',
@@ -287,7 +287,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'mobile-tyre-fitting-cost',
-    image: '/images/service-emergency.jpg',
+    image: '/images/service-emergency.webp',
     title: 'How Much Does Mobile Tyre Fitting Cost in the UK?',
     excerpt: 'A clear breakdown of what mobile tyre fitting costs in the UK, what is included in the price, and how it compares to a traditional garage.',
     date: '20 Feb 2025',
@@ -339,7 +339,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'legal-tyre-tread-depth-uk',
-    image: '/images/step-fitting.jpg',
+    image: '/images/step-fitting.webp',
     title: 'What Is the Legal Tyre Tread Depth in the UK?',
     excerpt: 'The UK legal minimum tyre tread depth, how to check yours with the 20p test, and the penalties for driving on illegal tyres.',
     date: '18 Feb 2025',
@@ -381,7 +381,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'can-you-drive-on-a-flat-tyre',
-    image: '/images/hero-bg.jpg',
+    image: '/images/hero-bg.webp',
     title: 'Can You Drive on a Flat Tyre? What Happens If You Do',
     excerpt: 'Whether it is ever safe to drive on a flat tyre, how far you can go, and the damage it can cause to your wheel and car.',
     date: '12 Feb 2025',
@@ -422,7 +422,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'correct-tyre-pressure-guide',
-    image: '/images/step-fitting.jpg',
+    image: '/images/step-fitting.webp',
     title: 'Tyre Pressure Guide: Finding the Correct PSI for Your Car',
     excerpt: 'How to find the right tyre pressure for your vehicle, why it matters, and how often you should check it.',
     date: '8 Feb 2025',
@@ -467,7 +467,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'part-worn-vs-new-tyres',
-    image: '/images/service-fleet.jpg',
+    image: '/images/service-fleet.webp',
     title: 'Part-Worn vs New Tyres: Which Should You Buy?',
     excerpt: 'The real cost, safety, and value differences between part-worn and new tyres, and why new is usually the smarter buy.',
     date: '4 Feb 2025',
@@ -512,7 +512,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'slow-puncture-causes',
-    image: '/images/service-home.jpg',
+    image: '/images/service-home.webp',
     title: 'Tyre Losing Air Slowly? Common Causes of a Slow Puncture',
     excerpt: 'Why your tyre keeps going down, how to spot a slow puncture, and whether it can be repaired or needs replacing.',
     date: '30 Jan 2025',
