@@ -1,10 +1,19 @@
 import { Link } from 'react-router-dom'
 import { MapPin, Clock, ArrowRight, Navigation, Wrench } from 'lucide-react'
-import SEOHead from '../components/SEOHead'
+import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
 import { cityData } from '../data/cities'
+
+const coverageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'UK Coverage Areas - Mobile Tyre Fitter 24/7',
+  description: 'Mobile tyre fitting coverage across England, Scotland, and Wales. 37+ cities and towns covered with 30-45 minute average response times.',
+  url: `${SITE_URL}/coverage-areas`,
+  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+}
 
 const allCityLinks = Object.entries(cityData)
   .map(([slug, info]) => ({ slug, name: info.name, region: info.region }))
@@ -26,7 +35,7 @@ const motorways = ['M1', 'M25', 'M6', 'M40', 'M4', 'M62', 'M5', 'M11', 'M20', 'M
 export default function CoverageAreas() {
   return (
     <>
-      <SEOHead title="Coverage Areas - Mobile Tyre Fitting Across the UK" description="Mobile tyre fitting coverage across the entire UK. London, Manchester, Birmingham, Glasgow, and everywhere in between. Call 0800 123 4567 to check your area." />
+      <SEOHead title="Coverage Areas - Mobile Tyre Fitting Across 37+ UK Cities" description="Mobile tyre fitting across 37+ UK cities and towns. London, Manchester, Birmingham, Glasgow, Leeds, Liverpool, Bristol and more. 30-45 min average response. Call 0800 123 4567." schema={coverageSchema} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>

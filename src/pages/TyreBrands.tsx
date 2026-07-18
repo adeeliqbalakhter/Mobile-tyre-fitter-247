@@ -1,8 +1,17 @@
 import { Link } from 'react-router-dom'
 import { Gauge, Snowflake, Mountain, Truck, Zap, CircleDot } from 'lucide-react'
-import SEOHead from '../components/SEOHead'
+import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import EmergencyCTA from '../sections/EmergencyCTA'
 import { brandTiers as tiers } from '../data/brands'
+
+const brandsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Tyre Brands We Stock - Mobile Tyre Fitter 24/7',
+  description: 'All major tyre brands stocked for mobile fitting: Michelin, Pirelli, Continental, Bridgestone, Goodyear, Dunlop, Hankook, Yokohama and more.',
+  url: `${SITE_URL}/tyre-brands`,
+  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+}
 
 const specialist = [
   { icon: CircleDot, title: 'Run-Flat Tyres', desc: 'Bridgestone RFT, Pirelli, Dunlop DSST, Goodyear EMT, Michelin ZP and more.' },
@@ -16,7 +25,7 @@ const specialist = [
 export default function TyreBrands() {
   return (
     <>
-      <SEOHead title="Tyre Brands - All Major Brands Stocked UK" description="All major tyre brands available for mobile fitting across the UK, Michelin, Pirelli, Continental, Bridgestone, Goodyear and more. Premium, mid-range & budget. Call now." />
+      <SEOHead title="Tyre Brands We Stock - Michelin, Pirelli, Continental & More" description="All major tyre brands available for mobile fitting across the UK. Michelin, Pirelli, Continental, Bridgestone, Goodyear, Dunlop, Hankook, Yokohama and 20+ more. Premium, mid-range & budget. Call 0800 123 4567." schema={brandsSchema} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>

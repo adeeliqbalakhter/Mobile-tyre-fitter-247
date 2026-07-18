@@ -85,8 +85,8 @@ export default function HomeTyreFitting() {
       title="Home"
       titleHighlight="Tyre Fitting"
       description="Mobile tyre fitting at your home across the UK. We come to your driveway, no need to visit a garage. Same-day appointments available. Call 0800 123 4567 to book."
-      metaTitle="Home Tyre Fitting UK - Mobile Service At Your Doorstep"
-      metaDescription="Mobile tyre fitting at your home across the UK. We come to your driveway. Same-day appointments available. Call 0800 123 4567 to book."
+      metaTitle="Home Tyre Fitting UK - Mobile Tyre Replacement At Your Doorstep"
+      metaDescription="Home mobile tyre fitting across the UK. We come to your driveway with same-day appointments available. All major brands stocked. No garage visit needed. Call 0800 123 4567 to book."
       heroImage="/images/service-home.jpg"
       features={features}
       whatToExpect={whatToExpect}

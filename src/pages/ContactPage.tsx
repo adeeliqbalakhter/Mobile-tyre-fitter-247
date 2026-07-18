@@ -28,7 +28,7 @@ export default function ContactPage() {
   const waUrl = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, '')}?text=${encodeURIComponent('Hi, I need help with my tyres.')}`
   return (
     <>
-      <SEOHead title="Contact Us - 24/7 Mobile Tyre Fitting UK" description="Contact Mobile Tyre Fitter 24/7. Call 0800 123 4567 for emergency tyre fitting, available 24/7 across the UK. Phone and WhatsApp support, day or night." schema={schema} />
+      <SEOHead title="Contact Us - 24/7 Mobile Tyre Fitting UK" description="Contact Mobile Tyre Fitter 24/7. Call 0800 123 4567 for emergency tyre fitting, available 24/7 across the UK. Phone and WhatsApp support. Get an instant quote now." schema={schema} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>

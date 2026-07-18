@@ -47,6 +47,7 @@ export default function BlogPostPage() {
         publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
         mainEntityOfPage: pageUrl,
         url: pageUrl,
+        image: `${SITE_URL}${post.image}`,
       },
       {
         '@type': 'BreadcrumbList',
@@ -61,7 +62,7 @@ export default function BlogPostPage() {
 
   return (
     <>
-      <SEOHead title={post.metaTitle} description={post.metaDescription} schema={schema} />
+      <SEOHead title={post.metaTitle} description={post.metaDescription} schema={schema} ogType="article" ogImage={`${SITE_URL}${post.image}`} />
 
       <article>
         {/* Header */}

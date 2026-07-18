@@ -36,8 +36,8 @@ export default function AboutPage() {
   return (
     <>
       <SEOHead
-        title="About Us - UK's Leading Mobile Tyre Fitting Service"
-        description="Learn about Mobile Tyre Fitter 24/7, the UK's trusted mobile tyre fitting service since 2015. 70,000+ tyres fitted, 4.9★ rating, 30-45 min response."
+        title="About Us - UK's Trusted 24/7 Mobile Tyre Fitting Service Since 2015"
+        description="Learn about Mobile Tyre Fitter 24/7. 70,000+ tyres fitted, 4.9-star rating from 2,500+ reviews, 30-45 min average response. Serving UK drivers since 2015."
         schema={schema}
       />
 

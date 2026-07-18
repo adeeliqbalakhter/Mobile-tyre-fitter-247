@@ -1,6 +1,11 @@
-# Allow all crawlers, including search and AI engines
+# Allow all crawlers
 User-agent: *
 Allow: /
+Crawl-delay: 1
+
+# Disallow internal/utility paths
+Disallow: /api/
+Disallow: /_*
 
 # AI / answer engines (explicitly allowed)
 User-agent: GPTBot

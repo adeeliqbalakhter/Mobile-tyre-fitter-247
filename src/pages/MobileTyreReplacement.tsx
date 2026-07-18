@@ -85,8 +85,8 @@ export default function MobileTyreReplacement() {
       title="Mobile Tyre"
       titleHighlight="Replacement"
       description="Complete mobile tyre replacement service across the UK. We supply and fit new tyres at your location, home, work, or roadside. All brands, all sizes, all vehicle types. Call 0800 123 4567."
-      metaTitle="Mobile Tyre Replacement UK - Fitted At Your Location"
-      metaDescription="Mobile tyre replacement across the UK. New tyres supplied and fitted at home, work, or roadside. All brands and sizes. Call 0800 123 4567 for instant quote."
+      metaTitle="Mobile Tyre Replacement UK - New Tyres Supplied & Fitted At Your Location"
+      metaDescription="Complete mobile tyre replacement across the UK. New tyres supplied and fitted at home, work, or roadside. All brands, all sizes, all vehicle types. Call 0800 123 4567 for an instant quote."
       heroImage="/images/hero-bg.jpg"
       features={features}
       whatToExpect={whatToExpect}

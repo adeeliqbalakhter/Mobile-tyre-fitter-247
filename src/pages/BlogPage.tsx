@@ -1,15 +1,24 @@
 import { Link } from 'react-router-dom'
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
-import SEOHead from '../components/SEOHead'
+import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import EmergencyCTA from '../sections/EmergencyCTA'
 import { blogPosts } from '../data/blogPosts'
+
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Tyre Fitting Blog - Mobile Tyre Fitter 24/7',
+  description: 'Tyre fitting tips, maintenance advice, safety guides, and industry news from the UK\'s leading mobile tyre fitting service.',
+  url: `${SITE_URL}/blog`,
+  isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
+}
 
 export default function BlogPage() {
   const [featured, ...rest] = blogPosts
 
   return (
     <>
-      <SEOHead title="Blog - Tyre Fitting Tips, Guides & Advice" description="Read our blog for tyre fitting tips, maintenance advice, safety guides, and industry news from Mobile Tyre Fitter 24/7." />
+      <SEOHead title="Blog - Tyre Fitting Tips, Safety Guides & Maintenance Advice" description="Expert tyre fitting tips, safety guides, and maintenance advice for UK drivers. Learn about tyre replacement, emergency repairs, and seasonal tyre care from Mobile Tyre Fitter 24/7." schema={blogSchema} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
