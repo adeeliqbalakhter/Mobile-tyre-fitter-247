@@ -58,7 +58,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-4">
-              <img src="/images/logo.png" alt="Mobile Tyre Fitter 247" className="h-10 w-auto" />
+              <img src="/images/logo.svg" alt="Mobile Tyre Fitter 247" className="h-10 w-auto" />
             </div>
             <p className="mb-4 text-sm leading-relaxed text-[#6a6a6a]">
               UK's leading mobile tyre fitting service. We come to you at home, work, or roadside, 24 hours a day, 7 days a week.
