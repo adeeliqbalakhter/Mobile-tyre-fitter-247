@@ -127,7 +127,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Mobile Tyre Fitter 24/7. All rights reserved.
           </p>
           <div className="flex gap-4 text-xs text-[#6a6a6a]">
-            <span>Privacy Policy</span>
+            <Link to="/privacy-policy" className="hover:text-[#d92a1d] transition-colors">Privacy Policy</Link>
             <Link to="/terms-and-conditions" className="hover:text-[#d92a1d] transition-colors">Terms &amp; Conditions</Link>
             <Link to="/cookies" className="hover:text-[#d92a1d] transition-colors">Cookie Policy</Link>
           </div>

@@ -20,7 +20,7 @@ const services = [
   {
     icon: Building2, title: 'Workplace Tyre Fitting',
     description: 'Tyre replacement at your office car park. Minimal disruption to your working day.',
-    href: '/workplace-tyre-fitting', image: '/images/service-fleet.jpg',
+    href: '/workplace-tyre-fitting', image: '/images/step-fitting.jpg',
   },
   {
     icon: Truck, title: 'Fleet Tyre Services',

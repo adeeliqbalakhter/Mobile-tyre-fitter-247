@@ -205,12 +205,19 @@ export default function NearMe() {
       <section className="py-16 lg:py-20 bg-gray-50">
         <div className="mx-auto max-w-[800px] px-4 lg:px-6">
           <h2 className="mb-8 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Mobile Tyre Fitting Near Me <span className="text-[#d92a1d]">FAQs</span></h2>
-          <div className="space-y-4">
+          <div className="space-y-4" role="list">
             {faqs.map((f) => (
-              <div key={f.question} className="rounded-xl border border-gray-200 bg-white p-5">
-                <h3 className="mb-2 text-base font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>{f.question}</h3>
-                <p className="text-sm leading-relaxed text-[#6a6a6a]">{f.answer}</p>
-              </div>
+              <details key={f.question} className="group rounded-xl border border-gray-200 bg-white">
+                <summary className="cursor-pointer select-none p-5 text-base font-semibold text-[#1a1a1a] list-none flex items-start justify-between gap-4" style={{ fontFamily: 'Space Grotesk' }}>
+                  <span>{f.question}</span>
+                  <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-gray-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-5 pb-5">
+                  <p className="text-sm leading-relaxed text-[#6a6a6a]">{f.answer}</p>
+                </div>
+              </details>
             ))}
           </div>
         </div>

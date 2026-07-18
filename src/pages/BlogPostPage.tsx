@@ -13,15 +13,25 @@ export default function BlogPostPage() {
 
   if (!post) {
     return (
-      <div className="pt-32 pb-20 text-center bg-white">
-        <h1 className="text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Article Not Found</h1>
-        <Link to="/blog" className="mt-4 inline-block text-[#d92a1d]">Back to the blog</Link>
-      </div>
+      <>
+        <SEOHead
+          title="Article Not Found"
+          description="The blog article you are looking for could not be found."
+          noindex
+        />
+        <div className="pt-32 pb-20 text-center bg-white">
+          <h1 className="text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Article Not Found</h1>
+          <Link to="/blog" className="mt-4 inline-block text-[#d92a1d]">Back to the blog</Link>
+        </div>
+      </>
     )
   }
 
   const pageUrl = `${SITE_URL}${location.pathname}`
-  const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3)
+  const related = blogPosts
+    .filter((p) => p.slug !== post.slug)
+    .sort((a, b) => (a.category === post.category ? -1 : b.category === post.category ? 1 : 0))
+    .slice(0, 3)
 
   const schema = {
     '@context': 'https://schema.org',

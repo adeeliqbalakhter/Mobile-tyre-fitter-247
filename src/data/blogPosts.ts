@@ -411,7 +411,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'correct-tyre-pressure-guide',
-    image: '/images/step-drive.jpg',
+    image: '/images/step-fitting.jpg',
     title: 'Tyre Pressure Guide: Finding the Correct PSI for Your Car',
     excerpt: 'How to find the right tyre pressure for your vehicle, why it matters, and how often you should check it.',
     date: '8 Feb 2025',

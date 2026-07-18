@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { X, Phone, ChevronDown } from 'lucide-react'
 import { PHONE_NUMBER } from '../lib/config'
@@ -27,6 +27,7 @@ export default function StickyNav() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const location = useLocation()
+  const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50)
@@ -43,6 +44,29 @@ export default function StickyNav() {
     }
     return () => { document.body.style.overflow = '' }
   }, [menuOpen])
+
+  // Close dropdown when clicking or tabbing outside
+  const closeDropdown = useCallback(() => setDropdownOpen(false), [])
+
+  useEffect(() => {
+    if (!dropdownOpen) return
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { closeDropdown(); return }
+      // Trap focus within the dropdown when open
+      if (e.key === 'Tab' && dropdownRef.current) {
+        const focusable = dropdownRef.current.querySelectorAll<HTMLElement>('a, button')
+        const first = focusable[0]
+        const last = focusable[focusable.length - 1]
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault(); last?.focus()
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault(); first?.focus()
+        }
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [dropdownOpen, closeDropdown])
 
   // Close menu on route change
   useEffect(() => {
@@ -107,17 +131,30 @@ export default function StickyNav() {
                 <Link
                   to={link.href}
                   onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, link.href)}
+                  onKeyDown={(e: React.KeyboardEvent<HTMLAnchorElement>) => {
+                    if (link.hasDropdown && (e.key === 'Enter' || e.key === ' ')) {
+                      e.preventDefault()
+                      setDropdownOpen((prev) => !prev)
+                    }
+                  }}
+                  aria-expanded={link.hasDropdown ? dropdownOpen : undefined}
+                  aria-haspopup={link.hasDropdown ? 'true' : undefined}
                   className="flex items-center gap-1 px-3 py-2 text-[13px] font-medium text-[#6a6a6a] hover:text-[#1a1a1a] transition-colors"
                 >
                   {link.label}
                   {link.hasDropdown && <ChevronDown className="h-3 w-3" />}
                 </Link>
                 {link.hasDropdown && dropdownOpen && (
-                  <div className="absolute top-full left-0 mt-1 w-56 rounded-lg border border-gray-200 bg-white shadow-xl py-2 z-[52]">
+                  <div
+                    ref={dropdownRef}
+                    role="menu"
+                    className="absolute top-full left-0 mt-1 w-56 rounded-lg border border-gray-200 bg-white shadow-xl py-2 z-[52]"
+                  >
                     {serviceLinks.map((s) => (
                       <Link
                         key={s.label}
                         to={s.href}
+                        role="menuitem"
                         className="block px-4 py-2 text-[13px] text-[#6a6a6a] hover:text-[#1a1a1a] hover:bg-gray-50 transition-colors"
                       >
                         {s.label}

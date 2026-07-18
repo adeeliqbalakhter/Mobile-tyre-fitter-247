@@ -1,11 +1,5 @@
 // Google Consent Mode v2 helper — drives the cookie banner and updates gtag/GTM.
-
-declare global {
-  interface Window {
-    gtag?: (...args: unknown[]) => void
-    dataLayer?: Record<string, unknown>[]
-  }
-}
+// Window.gtag and Window.dataLayer are declared in src/types/index.ts
 
 export interface ConsentChoice {
   /** GA4 / analytics_storage */

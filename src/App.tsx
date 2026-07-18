@@ -45,7 +45,7 @@ function App() {
           <Outlet />
         </Suspense>
       </main>
-      <Footer />
+      <div className="pb-20 lg:pb-0"><Footer /></div>
       {showCallBar && <StickyCallBar />}
       <CookieConsent />
     </div>

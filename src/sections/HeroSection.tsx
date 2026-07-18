@@ -140,7 +140,7 @@ export default function HeroSection() {
       </div>
 
       {/* Animated scroll-down hint */}
-      <div className="absolute bottom-6 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-1 sm:flex" style={{ zIndex: 4 }} aria-hidden="true">
+      <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 items-center gap-1 sm:flex" style={{ zIndex: 4, display: 'none' }} aria-hidden="true">
         <span className="text-[10px] font-medium uppercase tracking-widest text-white/60" style={{ fontFamily: 'JetBrains Mono' }}>Scroll</span>
         <ChevronDown className="animate-scroll-hint h-5 w-5 text-white/70" />
       </div>
