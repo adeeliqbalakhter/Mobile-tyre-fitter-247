@@ -1,3 +1,6 @@
+# Mobile Tyre Fitter 24/7 — robots.txt
+# https://www.mobiletyrefitter247.co.uk
+
 # Allow all crawlers
 User-agent: *
 Allow: /
@@ -6,6 +9,9 @@ Crawl-delay: 1
 # Disallow internal/utility paths
 Disallow: /api/
 Disallow: /_*
+
+# Sitemap location
+Sitemap: https://www.mobiletyrefitter247.co.uk/sitemap.xml
 
 # AI / answer engines (explicitly allowed)
 User-agent: GPTBot
@@ -26,4 +32,21 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://www.mobiletyrefitter247.co.uk/sitemap.xml
+# Block aggressive/bad bots
+User-agent: AhrefsBot
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Crawl-delay: 5
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /

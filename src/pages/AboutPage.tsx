@@ -38,6 +38,7 @@ export default function AboutPage() {
       <SEOHead
         title="About Us - UK's Trusted 24/7 Mobile Tyre Fitting Service Since 2015"
         description="Learn about Mobile Tyre Fitter 24/7. 70,000+ tyres fitted, 4.9-star rating from 2,500+ reviews, 30-45 min average response. Serving UK drivers since 2015."
+        keywords="about mobile tyre fitter, mobile tyre fitting UK, 24/7 tyre service, UK tyre fitter, tyre fitting company"
         schema={schema}
       />
 

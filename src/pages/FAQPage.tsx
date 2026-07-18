@@ -30,7 +30,7 @@ const faqSchema = {
 export default function FAQPage() {
   return (
     <>
-      <SEOHead title="FAQs - Mobile Tyre Fitting Questions Answered" description="Frequently asked questions about our mobile tyre fitting service. 24/7 availability, pricing, coverage, brands, and more. Call 0800 123 4567 for immediate help." schema={faqSchema} />
+      <SEOHead title="FAQs - Mobile Tyre Fitting Questions Answered" description="Frequently asked questions about our mobile tyre fitting service. 24/7 availability, pricing, coverage, brands, and more. Call 0800 123 4567 for immediate help." keywords="tyre fitting FAQ, mobile tyre questions, tyre fitting cost, 24/7 tyre service FAQ, tyre brands FAQ" schema={faqSchema} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[800px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>

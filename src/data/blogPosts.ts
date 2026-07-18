@@ -18,6 +18,8 @@ export interface BlogPost {
   metaDescription: string
   intro: string
   sections: BlogSection[]
+  /** Tags for article:tag OG meta and keyword targeting */
+  tags?: string[]
 }
 
 export const blogPosts: BlogPost[] = [
@@ -33,6 +35,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'What to Do If You Get a Flat Tyre on the Motorway (UK Guide)',
     metaDescription: 'Step-by-step UK guide on what to do if you get a flat tyre or blowout on the motorway. Stay safe, follow the rules, and get back on the road fast.',
     intro: 'Suffering a flat tyre or blowout at 70mph is one of the most unnerving things that can happen on the road. Knowing exactly what to do in the moments that follow keeps you safe and gets you moving again quickly. Here is the UK-specific advice every driver should know.',
+    tags: ['flat tyre', 'motorway safety', 'blowout', 'tyre emergency', 'breakdown'],
     sections: [
       {
         heading: 'Keep control and slow down gradually',
@@ -79,6 +82,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'How Long Should Car Tyres Last? UK Lifespan & Wear Guide',
     metaDescription: 'How many miles and years should car tyres last? Learn the signs of wear, the 1.6mm UK legal limit, and how to make your tyres last longer.',
     intro: 'Tyres are the only part of your car that touches the road, so knowing when they need replacing is essential for safety and economy. There is no single answer to how long they last, it depends on the tyre, your car, and how you drive, but there are clear benchmarks and warning signs to watch for.',
+    tags: ['tyre lifespan', 'tyre wear', 'tyre replacement', 'tyre maintenance'],
     sections: [
       {
         heading: 'Average tyre lifespan',
@@ -128,6 +132,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Run-Flat vs Standard Tyres: Which Should You Choose?',
     metaDescription: 'A clear comparison of run-flat and standard tyres, how they work, the pros and cons, cost, and which is right for your car.',
     intro: 'If your car came fitted with run-flat tyres, you may be wondering whether to stick with them or switch to standard tyres at replacement time. Both have genuine advantages. Here is how they compare so you can make the right choice for your vehicle and budget.',
+    tags: ['run-flat tyres', 'tyre types', 'tyre comparison', 'tyre safety'],
     sections: [
       {
         heading: 'How run-flat tyres work',
@@ -170,6 +175,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Winter Tyres UK: When to Fit Them, Benefits & the Law',
     metaDescription: 'A UK driver\'s guide to winter tyres, how they work, when to fit them, whether they\'re a legal requirement, and if they\'re worth it.',
     intro: 'Winter tyres are common across much of mainland Europe, but many UK drivers are unsure whether they are worth it here. With our cold, wet winters, they can make a real difference to safety. Here is what every UK driver should know.',
+    tags: ['winter tyres', 'tyre safety', 'seasonal tyres', 'driving in snow'],
     sections: [
       {
         heading: 'What makes a winter tyre different',
@@ -211,6 +217,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Mobile Tyre Fitting vs Garage: Why Drivers Are Switching',
     metaDescription: 'Mobile tyre fitting brings the garage to you. Compare mobile fitting with traditional garage visits on convenience, speed, price, and safety.',
     intro: 'Traditionally, a flat or worn tyre meant booking a garage, arranging time off, and sitting in a waiting room. Mobile tyre fitting flips that model, the fitter comes to you. Here is why a growing number of UK drivers are choosing mobile over the garage.',
+    tags: ['mobile tyre fitting', 'garage vs mobile', 'tyre fitting comparison', 'convenience'],
     sections: [
       {
         heading: 'Total convenience',
@@ -250,6 +257,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Tyre Labels Explained: Fuel, Wet Grip & Noise Ratings',
     metaDescription: 'Learn how to read tyre labels in the UK, what the fuel efficiency, wet grip, and noise ratings mean and how to choose the right tyre.',
     intro: 'Every new tyre sold in the UK comes with a standardised label, similar to the energy labels on household appliances. These labels make it easier to compare tyres on three key measures. Here is what each rating means and how to use them when choosing your next set.',
+    tags: ['tyre labels', 'fuel efficiency', 'wet grip', 'tyre ratings', 'EU tyre label'],
     sections: [
       {
         heading: 'Fuel efficiency (rolling resistance)',
@@ -289,6 +297,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'How Much Does Mobile Tyre Fitting Cost in the UK? (2025 Guide)',
     metaDescription: 'How much does mobile tyre fitting cost in the UK? A transparent breakdown of tyre prices, what is included, and how mobile fitting compares to a garage.',
     intro: 'One of the first questions drivers ask about mobile tyre fitting is what it costs, and whether having a fitter come to you is more expensive than visiting a garage. The honest answer is that the price you pay is built almost entirely around the tyre itself. Here is a transparent breakdown of what goes into a mobile tyre fitting quote in the UK.',
+    tags: ['tyre fitting cost', 'tyre prices', 'mobile tyre fitting', 'tyre replacement cost'],
     sections: [
       {
         heading: 'What determines the price of a fitted tyre',
@@ -340,6 +349,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Legal Tyre Tread Depth UK: The 20p Test & Penalties Explained',
     metaDescription: 'The legal tyre tread depth in the UK is 1.6mm. Learn how to check your tread with the 20p test and the fines and penalty points for illegal tyres.',
     intro: 'Worn tyres are one of the most common reasons cars fail their MOT, and driving on them is both dangerous and illegal. Knowing the legal limit and how to check your own tyres takes less than a minute and could save you from a hefty fine. Here is what every UK driver needs to know.',
+    tags: ['tyre tread depth', 'legal minimum', 'MOT', 'tyre law UK', 'tyre safety'],
     sections: [
       {
         heading: 'The UK legal minimum is 1.6mm',
@@ -381,6 +391,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Can You Drive on a Flat Tyre? What Happens If You Do (UK)',
     metaDescription: 'Can you drive on a flat tyre? Learn how far you can safely go, the damage driving on a flat causes, and what to do instead if you get a puncture.',
     intro: 'It is a situation most drivers face at some point: you come back to your car and find a tyre completely flat, or you feel one deflate as you drive. The temptation is to limp to the nearest garage, but driving on a flat tyre can be dangerous and costly. Here is what you need to know.',
+    tags: ['flat tyre', 'driving on flat', 'tyre damage', 'tyre safety'],
     sections: [
       {
         heading: 'The short answer: avoid it if you can',
@@ -421,6 +432,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Correct Tyre Pressure Guide: Find the Right PSI for Your Car',
     metaDescription: 'How to find the correct tyre pressure for your car, where to check it, and why the right PSI improves safety, fuel economy, and tyre life.',
     intro: 'Correct tyre pressure is one of the simplest and most overlooked parts of car maintenance. Get it right and your tyres last longer, your car is safer, and you use less fuel. Get it wrong and you risk uneven wear, poor handling, and even a blowout. Here is how to find and maintain the right pressure.',
+    tags: ['tyre pressure', 'tyre maintenance', 'fuel efficiency', 'tyre safety', 'TPMS'],
     sections: [
       {
         heading: 'Where to find your correct pressure',
@@ -465,6 +477,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Part-Worn vs New Tyres: Which Is Better Value? (UK Guide)',
     metaDescription: 'Are part-worn tyres worth it? Compare the cost, safety, and value of part-worn vs new tyres in the UK and find out which is the smarter choice.',
     intro: 'Part-worn tyres can look like a bargain, often advertised at half the price of a new tyre. But once you account for the tread you are actually getting and the unknowns that come with a used tyre, the maths rarely adds up. Here is an honest comparison to help you decide.',
+    tags: ['part-worn tyres', 'tyre safety', 'used tyres', 'tyre value'],
     sections: [
       {
         heading: 'You pay more per millimetre of tread',
@@ -509,6 +522,7 @@ export const blogPosts: BlogPost[] = [
     metaTitle: 'Slow Puncture: Causes, Signs & How to Fix a Tyre Losing Air',
     metaDescription: 'Tyre losing air slowly? Learn the common causes of a slow puncture, how to spot one, and whether it can be repaired or needs replacing.',
     intro: 'A tyre that is fine one day and noticeably soft the next is the classic sign of a slow puncture. Unlike a blowout, it can go unnoticed for weeks, quietly affecting your handling, fuel economy, and safety. Here is what causes a slow puncture and what to do about it.',
+    tags: ['slow puncture', 'tyre repair', 'puncture causes', 'tyre maintenance'],
     sections: [
       {
         heading: 'Common causes of a slow puncture',

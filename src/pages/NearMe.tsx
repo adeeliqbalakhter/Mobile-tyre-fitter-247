@@ -69,6 +69,7 @@ export default function NearMe() {
       <SEOHead
         title="Mobile Tyre Fitting Near Me - 24/7 Fitters Near You"
         description="Looking for mobile tyre fitting near you? We come to your location anywhere in the UK, 24/7, with a 30-45 minute average response. Call now for an instant quote."
+        keywords="mobile tyre fitting near me, tyre fitter near me, local tyre fitting, 24/7 tyre repair near me, emergency tyre near me"
         schema={schema}
       />
 

@@ -18,7 +18,7 @@ export default function BlogPage() {
 
   return (
     <>
-      <SEOHead title="Blog - Tyre Fitting Tips, Safety Guides & Maintenance Advice" description="Expert tyre fitting tips, safety guides, and maintenance advice for UK drivers. Learn about tyre replacement, emergency repairs, and seasonal tyre care from Mobile Tyre Fitter 24/7." schema={blogSchema} />
+      <SEOHead title="Blog - Tyre Fitting Tips, Safety Guides & Maintenance Advice" description="Expert tyre fitting tips, safety guides, and maintenance advice for UK drivers. Learn about tyre replacement, emergency repairs, and seasonal tyre care from Mobile Tyre Fitter 24/7." keywords="tyre blog, tyre fitting tips, tyre safety guide, tyre maintenance UK, mobile tyre advice" schema={blogSchema} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>

@@ -30,6 +30,8 @@ const footerLinks = {
     { label: 'Edinburgh', href: '/mobile-tyre-fitting-edinburgh' },
     { label: 'Cardiff', href: '/mobile-tyre-fitting-cardiff' },
     { label: 'Nottingham', href: '/mobile-tyre-fitting-nottingham' },
+    { label: 'Sheffield', href: '/mobile-tyre-fitting-sheffield' },
+    { label: 'Newcastle', href: '/mobile-tyre-fitting-newcastle' },
   ],
 }
 

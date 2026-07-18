@@ -62,7 +62,20 @@ export default function BlogPostPage() {
 
   return (
     <>
-      <SEOHead title={post.metaTitle} description={post.metaDescription} schema={schema} ogType="article" ogImage={`${SITE_URL}${post.image}`} />
+      <SEOHead
+        title={post.metaTitle}
+        description={post.metaDescription}
+        schema={schema}
+        ogType="article"
+        ogImage={`${SITE_URL}${post.image}`}
+        keywords={`${post.category}, tyre fitting, mobile tyre, UK, tyre safety, tyre maintenance, ${post.tags?.join(', ') ?? ''}`}
+        articleProps={{
+          publishedTime: post.dateISO,
+          modifiedTime: post.dateISO,
+          section: post.category,
+          tags: post.tags,
+        }}
+      />
 
       <article>
         {/* Header */}

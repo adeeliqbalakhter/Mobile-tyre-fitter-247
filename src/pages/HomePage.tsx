@@ -54,6 +54,7 @@ export default function HomePage() {
       <SEOHead
         title="24/7 Mobile Tyre Fitting UK - Emergency Tyre Replacement Anywhere"
         description="UK's leading 24/7 mobile tyre fitting service. Emergency tyre replacement at your home, work, or roadside with 30-45 min average response. All major brands stocked. Call 0800 123 4567 now for an instant quote."
+        keywords="mobile tyre fitting, 24/7 tyre fitting, emergency tyre replacement, mobile tyre repair, roadside tyre fitting, home tyre fitting, UK tyre fitting, flat tyre repair, blowout repair, mobile tyre fitter"
         schema={homeSchema}
       />
       <HeroSection />

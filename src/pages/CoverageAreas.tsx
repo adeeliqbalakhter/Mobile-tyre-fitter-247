@@ -35,7 +35,7 @@ const motorways = ['M1', 'M25', 'M6', 'M40', 'M4', 'M62', 'M5', 'M11', 'M20', 'M
 export default function CoverageAreas() {
   return (
     <>
-      <SEOHead title="Coverage Areas - Mobile Tyre Fitting Across 37+ UK Cities" description="Mobile tyre fitting across 37+ UK cities and towns. London, Manchester, Birmingham, Glasgow, Leeds, Liverpool, Bristol and more. 30-45 min average response. Call 0800 123 4567." schema={coverageSchema} />
+      <SEOHead title="Coverage Areas - Mobile Tyre Fitting Across 37+ UK Cities" description="Mobile tyre fitting across 37+ UK cities and towns. London, Manchester, Birmingham, Glasgow, Leeds, Liverpool, Bristol and more. 30-45 min average response. Call 0800 123 4567." keywords="tyre fitting coverage, mobile tyre fitting near me, tyre fitting cities UK, local tyre fitter, UK tyre coverage" schema={coverageSchema} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
