@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Phone, Clock, Shield, MapPin } from 'lucide-react'
-import { PHONE_NUMBER } from '../lib/config'
+import { PHONE_NUMBER, COMPANY_LEGAL_NAME, COMPANY_NUMBER, REGISTERED_OFFICE } from '../lib/config'
 
 const socialLinks = [
   {
@@ -160,9 +160,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gray-200 pt-6 sm:flex-row">
-          <p className="text-xs text-[#6a6a6a]">
-            &copy; {new Date().getFullYear()} Mobile Tyre Fitter 24/7. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center gap-1 text-xs text-[#6a6a6a] sm:items-start">
+            <span>&copy; {new Date().getFullYear()} {COMPANY_LEGAL_NAME}. All rights reserved.</span>
+            <span>Company No. {COMPANY_NUMBER} &middot; {REGISTERED_OFFICE}</span>
+          </div>
           <div className="flex gap-4 text-xs text-[#6a6a6a]">
             <Link to="/privacy-policy" className="hover:text-[#d92a1d] transition-colors">Privacy Policy</Link>
             <Link to="/terms-and-conditions" className="hover:text-[#d92a1d] transition-colors">Terms &amp; Conditions</Link>

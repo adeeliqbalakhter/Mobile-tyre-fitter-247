@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import SEOHead from '../components/SEOHead'
 import { OPEN_COOKIE_PREFS_EVENT } from '../components/CookieConsent'
+import { COMPANY_LEGAL_NAME, COMPANY_NUMBER, REGISTERED_OFFICE, SUPPORT_EMAIL } from '../lib/config'
 
 const categories = [
   {
@@ -69,6 +70,11 @@ export default function CookiePolicy() {
           <p className="text-base leading-relaxed text-[#6a6a6a]">
             If you have any questions about how we use cookies, please <Link to="/contact" className="font-semibold text-[#d92a1d] hover:text-[#b82418]">contact us</Link>.
           </p>
+          <div className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-5 space-y-2 text-sm text-[#6a6a6a]">
+            <p><span className="font-semibold text-[#1a1a1a]">{COMPANY_LEGAL_NAME}</span> &middot; Company No. {COMPANY_NUMBER}</p>
+            <p>{REGISTERED_OFFICE}</p>
+            <p>{SUPPORT_EMAIL}</p>
+          </div>
         </div>
       </section>
     </>

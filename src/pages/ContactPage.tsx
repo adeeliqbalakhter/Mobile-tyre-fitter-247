@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import { Phone, Clock, MapPin, CheckCircle } from 'lucide-react'
 import WhatsAppIcon from '../components/icons/WhatsAppIcon'
-import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
-import { PHONE_NUMBER, WHATSAPP_NUMBER } from '../lib/config'
+import SEOHead, { SITE_URL } from '../components/SEOHead'
+import { PHONE_NUMBER, WHATSAPP_NUMBER, COMPANY_LEGAL_NAME, COMPANY_NUMBER, SUPPORT_EMAIL } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 import EmergencyCTA from '../sections/EmergencyCTA'
 
@@ -11,8 +11,17 @@ const schema = {
   '@type': 'ContactPage',
   mainEntity: {
     '@type': 'Organization',
-    name: SITE_NAME,
+    name: COMPANY_LEGAL_NAME,
     url: SITE_URL,
+    taxID: COMPANY_NUMBER,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '128 City Road',
+      addressLocality: 'London',
+      postalCode: 'EC1V 2NX',
+      addressCountry: 'GB',
+    },
+    email: SUPPORT_EMAIL,
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+448001234567',

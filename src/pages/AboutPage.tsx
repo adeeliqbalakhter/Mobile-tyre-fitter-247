@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import { Shield, Clock, Star, Truck, Wrench, BadgeCheck } from 'lucide-react'
+import { Shield, Clock, Star, Truck, Wrench, BadgeCheck, MapPin, Building2 } from 'lucide-react'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import { COMPANY_LEGAL_NAME, COMPANY_NUMBER, REGISTERED_OFFICE } from '../lib/config'
 
 const milestones = [
   { year: '2015', title: 'Founded', desc: 'Started with a single van fitting tyres across London.' },
@@ -29,6 +30,15 @@ const schema = {
     foundingDate: '2015',
     description: 'UK-wide 24/7 mobile tyre fitting service, replacing tyres at home, work, or roadside.',
     aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '2500' },
+    legalName: COMPANY_LEGAL_NAME,
+    taxID: COMPANY_NUMBER,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '128 City Road',
+      addressLocality: 'London',
+      postalCode: 'EC1V 2NX',
+      addressCountry: 'GB',
+    },
   },
 }
 
@@ -130,6 +140,36 @@ export default function AboutPage() {
             ))}
           </div>
 
+        </div>
+      </section>
+
+      {/* Company Details */}
+      <section className="py-16 lg:py-20 bg-gray-50 border-t border-gray-200">
+        <div className="mx-auto max-w-[800px] px-4 lg:px-6">
+          <h2 className="mb-8 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Company <span className="text-[#d92a1d]">Details</span></h2>
+          <div className="rounded-xl border border-gray-200 bg-white p-6 space-y-4">
+            <div className="flex items-start gap-3">
+              <Building2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#d92a1d]" />
+              <div>
+                <p className="text-sm font-semibold text-[#1a1a1a]">{COMPANY_LEGAL_NAME}</p>
+                <p className="text-sm text-[#6a6a6a]">Registered in England and Wales</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <BadgeCheck className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#d92a1d]" />
+              <div>
+                <p className="text-sm font-semibold text-[#1a1a1a]">Companies House Number</p>
+                <p className="text-sm text-[#6a6a6a]">{COMPANY_NUMBER}</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#d92a1d]" />
+              <div>
+                <p className="text-sm font-semibold text-[#1a1a1a]">Registered Office</p>
+                <p className="text-sm text-[#6a6a6a]">{REGISTERED_OFFICE}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
