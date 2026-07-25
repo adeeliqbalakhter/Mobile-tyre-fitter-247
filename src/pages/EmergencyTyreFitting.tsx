@@ -85,9 +85,9 @@ export default function EmergencyTyreFitting() {
     <ServicePageTemplate
       title="Emergency Mobile"
       titleHighlight="Tyre Fitting"
-      description="Stranded with a flat tyre or blowout? Our emergency mobile tyre fitting service reaches you within 30-45 minutes anywhere in the UK. Available 24/7, same day, every day of the year. Call 0800 123 4567 now for immediate assistance."
+      description="Stranded with a flat tyre or blowout? Our emergency mobile tyre fitting service reaches you within 30-45 minutes anywhere in the UK. Available 24/7, same day, every day of the year. Call 07933 899930 now for immediate assistance."
       metaTitle="Emergency Mobile Tyre Fitting UK - 24 Hour Roadside Service"
-      metaDescription="Emergency mobile tyre fitting across the UK. 24/7 roadside tyre replacement with 30-45 min response. We come to you at home, work, or the roadside. All brands stocked. Call 0800 123 4567 now."
+      metaDescription="Emergency mobile tyre fitting across the UK. 24/7 roadside tyre replacement with 30-45 min response. We come to you at home, work, or the roadside. All brands stocked. Call 07933 899930 now."
       heroImage="/images/service-emergency.webp"
       features={features}
       whatToExpect={whatToExpect}

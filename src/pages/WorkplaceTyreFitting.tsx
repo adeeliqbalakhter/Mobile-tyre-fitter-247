@@ -46,7 +46,7 @@ const contentBlocks = [
 
 const serviceFaqs = [
   { question: "Can you fit tyres in any office car park?", answer: "Yes, as long as we have safe access to your vehicle and enough space to work. Most office car parks are suitable. We recommend checking with your building management if parking restrictions apply." },
-  { question: "Do you offer corporate invoicing?", answer: "Yes, we offer corporate accounts with 30-day invoicing, volume discounts, and a dedicated account manager. Contact us on 0800 123 4567 to set up a business account." },
+  { question: "Do you offer corporate invoicing?", answer: "Yes, we offer corporate accounts with 30-day invoicing, volume discounts, and a dedicated account manager. Contact us on 07933 899930 to set up a business account." },
   { question: "Can you fit multiple vehicles at the same location?", answer: "Absolutely. We regularly service fleets of multiple vehicles at single locations. Volume discounts apply for 3 or more vehicles fitted at the same time." },
   { question: "What appointment times are available for workplace fitting?", answer: "We offer early morning (7-9am), lunchtime (12-2pm), and after-hours (4-7pm) appointments. We can also arrange weekend fitting if preferred. Emergency 24/7 service is always available." },
   { question: "Is there a minimum number of vehicles?", answer: "No minimum. We fit tyres for individual company car drivers and large fleets alike. Every business customer receives the same professional service." },
@@ -84,9 +84,9 @@ export default function WorkplaceTyreFitting() {
     <ServicePageTemplate
       title="Workplace"
       titleHighlight="Tyre Fitting"
-      description="Mobile tyre fitting at your workplace across the UK. We come to your office car park, no need to take time off. Corporate invoicing and volume discounts available. Call 0800 123 4567."
+      description="Mobile tyre fitting at your workplace across the UK. We come to your office car park, no need to take time off. Corporate invoicing and volume discounts available. Call 07933 899930."
       metaTitle="Workplace Tyre Fitting UK - Mobile Service At Your Office Car Park"
-      metaDescription="Mobile tyre fitting at your workplace across the UK. Office car park service with zero disruption to your day. Corporate invoicing & volume discounts. Call 0800 123 4567."
+      metaDescription="Mobile tyre fitting at your workplace across the UK. Office car park service with zero disruption to your day. Corporate invoicing & volume discounts. Call 07933 899930."
       heroImage="/images/service-fleet.webp"
       features={features}
       whatToExpect={whatToExpect}

@@ -8,7 +8,7 @@ export default function NotFound() {
     <>
       <SEOHead
         title="Page Not Found"
-        description="The page you are looking for could not be found. Browse our mobile tyre fitting services or call 0800 123 4567."
+        description="The page you are looking for could not be found. Browse our mobile tyre fitting services or call 07933 899930."
         noindex
       />
       <section className="flex min-h-[70vh] items-center justify-center bg-white px-4 py-24">

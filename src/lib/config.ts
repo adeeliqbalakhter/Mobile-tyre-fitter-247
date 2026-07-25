@@ -1,6 +1,6 @@
 // Central business config.
-export const PHONE_NUMBER = "0800 123 4567"
-export const WHATSAPP_NUMBER = "+447912345678"
+export const PHONE_NUMBER = "07933 899930"
+export const WHATSAPP_NUMBER = "+447933899930"
 
 export const COMPANY_LEGAL_NAME = "Mobile Tyre Fitter 247 Ltd"
 export const COMPANY_NUMBER = "17351934"

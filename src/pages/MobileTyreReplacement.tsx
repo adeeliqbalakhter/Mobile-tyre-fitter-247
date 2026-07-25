@@ -47,7 +47,7 @@ const contentBlocks = [
 const serviceFaqs = [
   { question: "How do I know what size tyres I need?", answer: "Your tyre size is printed on the sidewall of your current tyres in a format like 205/55 R16 91V. Alternatively, tell us your vehicle registration number and we can look up the correct size and specifications instantly." },
   { question: "Do you supply the tyres or do I need to buy them separately?", answer: "We supply and fit everything. There is no need to buy tyres separately. We stock over 70,000 tyres from all major brands and will recommend the best option for your vehicle and budget." },
-  { question: "How much does mobile tyre replacement cost?", answer: "The cost depends on your tyre size and the brand you choose. We offer transparent, all-inclusive pricing with no hidden fees. Call us on 0800 123 4567 for an instant, no-obligation quote." },
+  { question: "How much does mobile tyre replacement cost?", answer: "The cost depends on your tyre size and the brand you choose. We offer transparent, all-inclusive pricing with no hidden fees. Call us on 07933 899930 for an instant, no-obligation quote." },
   { question: "Should I replace all four tyres at once?", answer: "For optimal handling and safety, we recommend replacing tyres in pairs (both front or both rear) at a minimum. On four-wheel-drive vehicles, all four tyres should ideally be replaced together with matching tread patterns. We will advise you based on your specific vehicle." },
   { question: "Can you replace run-flat tyres?", answer: "Yes, we are run-flat tyre specialists. We stock and fit all major run-flat brands including Bridgestone RFT, Pirelli Euforia, Dunlop DSST, Goodyear EMT, and Michelin ZP. Run-flat tyres require specialist equipment and training, our fitters are fully qualified." },
   { question: "What happens to my old tyres?", answer: "We dispose of your old tyres responsibly at no extra cost. All tyres are sent to licensed recycling facilities in compliance with UK environmental regulations. You do not need to do anything, we handle everything." },
@@ -84,9 +84,9 @@ export default function MobileTyreReplacement() {
     <ServicePageTemplate
       title="Mobile Tyre"
       titleHighlight="Replacement"
-      description="Complete mobile tyre replacement service across the UK. We supply and fit new tyres at your location, home, work, or roadside. All brands, all sizes, all vehicle types. Call 0800 123 4567."
+      description="Complete mobile tyre replacement service across the UK. We supply and fit new tyres at your location, home, work, or roadside. All brands, all sizes, all vehicle types. Call 07933 899930."
       metaTitle="Mobile Tyre Replacement UK - New Tyres Supplied & Fitted At Your Location"
-      metaDescription="Complete mobile tyre replacement across the UK. New tyres supplied and fitted at home, work, or roadside. All brands, all sizes, all vehicle types. Call 0800 123 4567 for an instant quote."
+      metaDescription="Complete mobile tyre replacement across the UK. New tyres supplied and fitted at home, work, or roadside. All brands, all sizes, all vehicle types. Call 07933 899930 for an instant quote."
       heroImage="/images/hero-bg.webp"
       features={features}
       whatToExpect={whatToExpect}

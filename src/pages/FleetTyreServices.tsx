@@ -52,7 +52,7 @@ const serviceFaqs = [
   { question: "Do you offer credit terms?", answer: "Yes, established fleet accounts can apply for 30-day credit terms. We also offer corporate invoicing with detailed VAT breakdowns for straightforward accounting." },
   { question: "Can you handle emergency fleet breakdowns?", answer: "Yes, fleet customers receive priority dispatch on all emergency jobs. Our 24/7 emergency line is always available, and fleet vehicles are given priority over non-fleet bookings." },
   { question: "Do you provide tyre condition inspections?", answer: "Yes, we offer scheduled fleet tyre inspection services. Our fitters visit your premises and check every vehicle in your fleet, providing a detailed condition report and recommendations." },
-  { question: "How do I set up a fleet account?", answer: "Call us on 0800 123 4567 and ask to speak to our fleet team. We will assign you a dedicated account manager who will discuss your requirements, conduct a fleet audit, and set up your account within 24 hours." },
+  { question: "How do I set up a fleet account?", answer: "Call us on 07933 899930 and ask to speak to our fleet team. We will assign you a dedicated account manager who will discuss your requirements, conduct a fleet audit, and set up your account within 24 hours." },
 ]
 
 const emergencyScenarios = [
@@ -85,9 +85,9 @@ export default function FleetTyreServices() {
     <ServicePageTemplate
       title="Fleet Tyre"
       titleHighlight="Services"
-      description="Dedicated fleet tyre management for businesses across the UK. Volume discounts, scheduled maintenance, priority dispatch, and dedicated account management. Call 0800 123 4567."
+      description="Dedicated fleet tyre management for businesses across the UK. Volume discounts, scheduled maintenance, priority dispatch, and dedicated account management. Call 07933 899930."
       metaTitle="Fleet Tyre Services UK - Business Fleet Tyre Management & Maintenance"
-      metaDescription="Dedicated fleet tyre management for UK businesses. Volume discounts, scheduled maintenance, priority 24/7 dispatch, and dedicated account management. Call 0800 123 4567."
+      metaDescription="Dedicated fleet tyre management for UK businesses. Volume discounts, scheduled maintenance, priority 24/7 dispatch, and dedicated account management. Call 07933 899930."
       heroImage="/images/service-fleet.webp"
       features={features}
       whatToExpect={whatToExpect}

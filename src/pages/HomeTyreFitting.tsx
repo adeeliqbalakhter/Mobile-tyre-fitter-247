@@ -31,7 +31,7 @@ const contentBlocks = [
   {
     heading: "How Home Tyre Fitting Works",
     paragraphs: [
-      "The process is simple. Call us on 0800 123 4567 and tell us your address and vehicle details. We will check our stock, confirm availability, and give you an all-inclusive quote. You choose an appointment time, we offer slots from 7am to 7pm, seven days a week, and we will send you a confirmation text with your fitter\'s details and ETA.",
+      "The process is simple. Call us on 07933 899930 and tell us your address and vehicle details. We will check our stock, confirm availability, and give you an all-inclusive quote. You choose an appointment time, we offer slots from 7am to 7pm, seven days a week, and we will send you a confirmation text with your fitter\'s details and ETA.",
       "On the day, your fitter arrives in a clearly marked van, introduces themselves, and assesses the work. They will need access to your vehicle and enough space on your driveway to work safely, typically about the length of your car. The fitting process takes 30-45 minutes per tyre, during which you are free to carry on with your day. When the work is complete, your fitter will show you the results, provide a full receipt, and take payment by card. Your old tyres are loaded into the van for responsible recycling.",
     ],
   },
@@ -84,9 +84,9 @@ export default function HomeTyreFitting() {
     <ServicePageTemplate
       title="Home"
       titleHighlight="Tyre Fitting"
-      description="Mobile tyre fitting at your home across the UK. We come to your driveway, no need to visit a garage. Same-day appointments available. Call 0800 123 4567 to book."
+      description="Mobile tyre fitting at your home across the UK. We come to your driveway, no need to visit a garage. Same-day appointments available. Call 07933 899930 to book."
       metaTitle="Home Tyre Fitting UK - Mobile Tyre Replacement At Your Doorstep"
-      metaDescription="Home mobile tyre fitting across the UK. We come to your driveway with same-day appointments available. All major brands stocked. No garage visit needed. Call 0800 123 4567 to book."
+      metaDescription="Home mobile tyre fitting across the UK. We come to your driveway with same-day appointments available. All major brands stocked. No garage visit needed. Call 07933 899930 to book."
       heroImage="/images/service-home.webp"
       features={features}
       whatToExpect={whatToExpect}
