@@ -10,6 +10,11 @@ import SEOHead, { SITE_URL, SITE_NAME } from './SEOHead'
 import PhoneButton from './PhoneButton'
 import WhatsAppButton from './WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import { cityData, cityPath } from '../data/cities'
+
+// Major cities linked from every service page so authority flows from the
+// service hubs down to the local city pages (hub-and-spoke internal linking).
+const majorCities = Object.entries(cityData).slice(0, 16)
 
 interface ServicePageTemplateProps {
   title: string
@@ -281,6 +286,35 @@ export default function ServicePageTemplate({
           </div>
         </section>
       )}
+
+      {/* Available across the UK — links this service to local city pages */}
+      <section className="py-16 lg:py-20 bg-white border-t border-gray-200">
+        <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
+          <h2 className="mb-2 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>
+            {serviceName} <span className="text-[#d92a1d]">Across the UK</span>
+          </h2>
+          <p className="mb-6 max-w-2xl text-sm text-[#6a6a6a]">
+            We provide {serviceName.toLowerCase()} in towns and cities right across the United Kingdom. Choose your area below for local response times, or view every location we cover.
+          </p>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+            {majorCities.map(([slug, info]) => (
+              <Link key={slug} to={cityPath(slug)} className="group flex items-center gap-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 transition-all hover:border-[#d92a1d]/30 hover:bg-white hover:shadow-sm">
+                <MapPin className="h-3.5 w-3.5 flex-shrink-0 text-[#d92a1d]" />
+                <span className="flex-1 text-sm text-[#6a6a6a] group-hover:text-[#1a1a1a] transition-colors">{info.name}</span>
+                <ArrowRight className="h-3.5 w-3.5 flex-shrink-0 text-gray-300 group-hover:text-[#d92a1d] transition-colors" />
+              </Link>
+            ))}
+          </div>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link to="/mobile-tyre-fitting-near-me" className="inline-flex items-center gap-2 rounded-lg border border-[#d92a1d]/30 bg-white px-4 py-2.5 text-sm font-semibold text-[#d92a1d] transition-all hover:shadow-sm">
+              <MapPin className="h-3.5 w-3.5" /> Mobile tyre fitting near me
+            </Link>
+            <Link to="/coverage-areas" className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm font-semibold text-[#6a6a6a] transition-all hover:border-[#d92a1d]/30 hover:text-[#1a1a1a]">
+              View all coverage areas <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Related Services */}
       <section className="py-16 lg:py-20 bg-gray-50 border-t border-gray-200">

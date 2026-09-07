@@ -5,6 +5,7 @@ import TrustBar from '../sections/TrustBar'
 import CoverageGrid from '../sections/CoverageGrid'
 import HowItWorks from '../sections/HowItWorks'
 import ServicesSection from '../sections/ServicesSection'
+import AboutServiceSection from '../sections/AboutServiceSection'
 import WhyChooseUs from '../sections/WhyChooseUs'
 import ReviewsSection from '../sections/ReviewsSection'
 import BrandsSection from '../sections/BrandsSection'
@@ -61,6 +62,7 @@ export default function HomePage() {
       <TrustBar />
       <Reveal><ServicesSection /></Reveal>
       <Reveal><HowItWorks /></Reveal>
+      <Reveal><AboutServiceSection /></Reveal>
       <Reveal><WhyChooseUs /></Reveal>
       <Reveal><CoverageGrid /></Reveal>
       <Reveal><ReviewsSection /></Reveal>
