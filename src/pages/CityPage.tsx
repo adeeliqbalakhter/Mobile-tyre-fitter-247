@@ -9,6 +9,7 @@ import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
 import NotFound from './NotFound'
 import { cityData, CITY_URL_PREFIX } from '../data/cities'
+import { cityContent } from '../data/cityContent'
 
 const cityServices = [
   { icon: AlertTriangle, title: 'Emergency Tyre Fitting', href: '/emergency-mobile-tyre-fitting' },
@@ -32,6 +33,14 @@ export default function CityPage() {
   }
 
   const { name, region, time, areas, roads } = cityInfo
+  // Genuinely unique, locally-written content for this city (real landmarks,
+  // local road context) so each page is distinct rather than a template clone.
+  const content = cityContent[city as keyof typeof cityContent]
+  const landmarks = content?.landmarks ?? []
+  // Unique meta description per city so search snippets differ meaningfully.
+  const metaDescription = content
+    ? `Mobile tyre fitting in ${name}, 24/7. ${content.localContext.split('. ')[0]}. Fitted at your home, work, or roadside, call now for an instant quote.`
+    : `Mobile tyre fitting in ${name} and surrounding areas. 24/7 emergency tyre replacement at home, work, or roadside with a ${time} average response. Call now for an instant quote.`
   // Rotating window of nearby entries so internal links spread across the whole
   // city network instead of every page pointing at the same first six.
   const allCities = Object.entries(cityData)
@@ -47,7 +56,7 @@ export default function CityPage() {
     },
     {
       question: `Do you cover all areas of ${name}?`,
-      answer: `Yes. We cover ${name} city centre and all surrounding areas, including ${areas.slice(0, 5).join(', ')} and beyond. We also attend breakdowns on the major routes around the city such as the ${roads.slice(0, 3).join(', ')}.`,
+      answer: `Yes. We cover ${name} and all surrounding areas, including ${areas.slice(0, 5).join(', ')} and beyond${landmarks.length ? `. We are regularly called out to spots such as ${landmarks.slice(0, 4).join(', ')}` : ''}. We also attend breakdowns on the major routes around the city such as the ${roads.slice(0, 3).join(', ')}.`,
     },
     {
       question: `Are you available 24/7 in ${name}?`,
@@ -95,7 +104,7 @@ export default function CityPage() {
     <>
       <SEOHead
         title={`Mobile Tyre Fitting ${name} - 24/7 Emergency Service`}
-        description={`Mobile tyre fitting in ${name} and surrounding areas. 24/7 emergency tyre replacement at home, work, or roadside with a ${time} average response. Call now for an instant quote.`}
+        description={metaDescription}
         schema={schema}
       />
 
@@ -175,15 +184,32 @@ export default function CityPage() {
           <h2 className="mb-4 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>
             24/7 Mobile Tyre Fitting Across <span className="text-[#d92a1d]">{name}</span>
           </h2>
-          <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
-            When you're stranded with a flat tyre or blowout in {name}, the last thing you need is a long wait for recovery or the hassle of arranging a tow to a garage. Mobile Tyre Fitter 24/7 brings a fully-equipped workshop directly to you, anywhere in {name} and across {region}, with an average response time of just {time}.
-          </p>
-          <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
-            Our mobile vans carry a wide range of tyres and the equipment to supply, fit, and balance a brand-new tyre at your roadside, home driveway, or workplace car park. We work right across the city, from {areas.slice(0, 4).join(', ')} and beyond, as well as the busy routes that surround it, including the {roads.slice(0, 4).join(', ')}. Whether you've suffered a blowout on the motorway or woken up to a flat on the drive, help is never far away.
-          </p>
+          {content ? (
+            <>
+              <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">{content.intro}</p>
+              <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">{content.localContext}</p>
+            </>
+          ) : (
+            <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">
+              When you're stranded with a flat tyre or blowout in {name}, the last thing you need is a long wait for recovery or the hassle of arranging a tow to a garage. Mobile Tyre Fitter 24/7 brings a fully-equipped workshop directly to you, anywhere in {name} and across {region}, with an average response time of just {time}.
+            </p>
+          )}
           <p className="text-base leading-relaxed text-[#6a6a6a]">
             Every job is carried out by fully-insured, professionally-trained fitters, and every price we quote includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre. No out-of-hours premiums, just fast, honest mobile tyre fitting in {name}, day or night.
           </p>
+
+          {landmarks.length > 0 && (
+            <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
+              <h3 className="mb-3 flex items-center gap-2 text-lg font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>
+                <MapPin className="h-4 w-4 text-[#d92a1d]" /> Places we're called out to across {name}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {landmarks.map((place) => (
+                  <span key={place} className="rounded-lg border border-gray-200 bg-white px-3 py-1.5 text-sm text-[#6a6a6a]">{place}</span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
