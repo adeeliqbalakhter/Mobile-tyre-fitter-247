@@ -555,6 +555,275 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: 'tyre-pressure-warning-light',
+    image: '/images/step-drive.webp',
+    title: 'What Your Tyre Pressure Warning Light Means (and What to Do)',
+    excerpt: 'That little horseshoe symbol with an exclamation mark is your TPMS. Here is what it means, why it comes on, and how it affects your MOT.',
+    date: '25 Aug 2026',
+    dateISO: '2026-08-25',
+    category: 'Maintenance',
+    readTime: '6 min read',
+    metaTitle: 'Tyre Pressure Warning Light: What It Means & What to Do (UK)',
+    metaDescription: 'Tyre pressure warning light on? Learn what the TPMS symbol means, the common causes, how to reset it, and why it can cause an MOT failure in the UK.',
+    intro: 'A small amber symbol shaped like a horseshoe with an exclamation mark in the middle is one of the most misunderstood warning lights on your dashboard. It is your Tyre Pressure Monitoring System, or TPMS, and ignoring it can be both dangerous and expensive. Here is exactly what it means and what to do when it appears.',
+    sections: [
+      {
+        heading: 'What the light actually means',
+        paragraphs: [
+          'The TPMS warning light usually means one or more of your tyres has dropped below the recommended pressure. The system exists to improve safety, fuel economy, and tyre life by alerting you before a soft tyre becomes a dangerous one. On most cars the same amber light also flashes for a few seconds and then stays on when there is a fault with the monitoring system itself, rather than the tyres.',
+          'There are two types of system. Direct TPMS uses a sensor inside each wheel to measure actual pressure, while indirect TPMS works through the ABS wheel-speed sensors, detecting when one tyre is rotating slightly faster because it is underinflated.',
+        ],
+      },
+      {
+        heading: 'Common reasons it comes on',
+        list: [
+          'A slow puncture from a nail, screw, or debris letting air out gradually',
+          'A leaking or corroded valve',
+          'A drop in outside temperature (pressure falls roughly 1-2 PSI for every 10C colder)',
+          'Natural pressure loss over weeks and months',
+          'Wheel or tyre damage from a pothole or kerb',
+          'A faulty or flat sensor battery on a direct TPMS system',
+        ],
+      },
+      {
+        heading: 'What to do when it appears',
+        paragraphs: [
+          'As soon as it is safe, check all four tyre pressures with a reliable gauge and compare them to the figures on the sticker inside your driver door shut or in the handbook. Inflate any low tyre to the correct pressure. If the light was triggered simply by underinflation, it will usually go out on its own after a short drive, or after you reset the system following the handbook instructions.',
+          'If the light comes back on soon after you have set the pressures correctly, you very likely have a slow puncture or a leaking valve and the tyre should be inspected. If it stays on even though every tyre is at the right pressure, the system itself may have a fault, such as a dead sensor battery.',
+        ],
+      },
+      {
+        heading: 'Does it affect your MOT?',
+        paragraphs: [
+          'Yes. All cars registered from January 2012 must have a working TPMS, and it is checked during the MOT. If the warning light is illuminated because of a system fault when the car is tested, it is an automatic MOT failure. A light that is on simply because a tyre is soft can be cleared by correcting the pressure before the test.',
+          'This is why you should never cover up, disable, or ignore the light. Get the cause fixed properly so both your safety and your MOT are covered.',
+        ],
+      },
+      {
+        heading: 'When to call a professional',
+        paragraphs: [
+          'If the light keeps returning, if a tyre will not hold pressure, or if you suspect a puncture or a faulty sensor, have it checked promptly. A mobile tyre fitter can come to your home or workplace, find the leak, replace a faulty valve or sensor, and repair or replace the tyre on the spot, so a warning light never turns into a roadside breakdown.',
+        ],
+      },
+    ],
+    tags: ['TPMS', 'tyre pressure warning light', 'tyre pressure', 'MOT', 'tyre maintenance'],
+  },
+  {
+    slug: 'tyre-sidewall-markings-explained',
+    image: '/images/step-fitting.webp',
+    title: 'How to Read Your Tyre Size and Sidewall Markings',
+    excerpt: 'The string of numbers and letters on your tyre sidewall tells you everything you need to order the right replacement. Here is how to decode it.',
+    date: '18 Aug 2026',
+    dateISO: '2026-08-18',
+    category: 'Guide',
+    readTime: '6 min read',
+    metaTitle: 'Tyre Sidewall Markings Explained: How to Read Your Tyre Size (UK)',
+    metaDescription: 'Learn how to read your tyre sidewall markings, including width, aspect ratio, rim size, load index, speed rating, and the DOT age code. A simple UK guide.',
+    intro: 'Every tyre carries a code moulded into its sidewall that tells you its exact size and capabilities. Knowing how to read it means you can order the correct replacement in seconds and check that the tyres already on your car are the right ones. Here is what each part of a marking like 205/55 R16 91V actually means.',
+    sections: [
+      {
+        heading: 'The main size code, step by step',
+        paragraphs: [
+          'Take a typical marking of 205/55 R16 91V. Each element has a specific meaning that, together, describes the tyre precisely.',
+        ],
+        list: [
+          '205: the width of the tyre in millimetres, measured across the tread',
+          '55: the aspect ratio, meaning the sidewall height is 55 per cent of the width',
+          'R: radial construction, which almost every modern car tyre uses',
+          '16: the diameter of the wheel rim the tyre fits, in inches',
+          '91: the load index, a coded figure for the maximum weight the tyre can carry',
+          'V: the speed rating, the maximum speed the tyre is approved for',
+        ],
+      },
+      {
+        heading: 'Understanding the load index',
+        paragraphs: [
+          'The load index is a number that corresponds to a maximum weight each tyre can safely support. A load index of 91, for example, means each tyre can carry up to 615kg. Every vehicle has a minimum load index specified by the manufacturer, and you should never fit tyres rated below it, because they may not cope with the weight of your car when fully loaded.',
+        ],
+      },
+      {
+        heading: 'Understanding the speed rating',
+        paragraphs: [
+          'The letter at the end is the speed rating, the maximum speed the tyre is designed to sustain when correctly inflated and loaded. A V rating is good for up to 149mph, an H rating for up to 130mph, and a Y rating for up to 186mph. You should always fit tyres that meet or exceed the rating your manufacturer specifies, even though UK speed limits are far lower, because the rating also reflects how the tyre handles heat and high-speed stability.',
+        ],
+      },
+      {
+        heading: 'Other markings worth knowing',
+        list: [
+          'XL: Extra Load, a reinforced tyre able to carry more weight than a standard version of the same size',
+          'M+S: Mud and Snow, indicating some winter capability',
+          'The snowflake symbol (3PMSF): certified for severe winter conditions',
+          'DOT code: the last four digits show the week and year of manufacture, so 2523 means the 25th week of 2023',
+          'Runflat markings such as RSC, ROF, or ZP, depending on the manufacturer',
+        ],
+      },
+      {
+        heading: 'Why it matters when ordering tyres',
+        paragraphs: [
+          'When you call for a replacement, reading these markings to your fitter means you get exactly the right tyre first time, with no wasted journeys. It is also worth checking that all four tyres carry sensible, matching sizes and that none are older than recommended. If you are unsure, a mobile fitter can read the markings for you, confirm the correct specification for your vehicle, and supply and fit the right tyre at your location.',
+        ],
+      },
+    ],
+    tags: ['tyre size', 'sidewall markings', 'load index', 'speed rating', 'tyre guide'],
+  },
+  {
+    slug: 'can-a-puncture-be-repaired',
+    image: '/images/service-emergency.webp',
+    title: 'Can a Punctured Tyre Be Repaired? UK Rules Explained',
+    excerpt: 'Not every puncture can be safely repaired. UK law and British Standard BS AU 159 set clear limits. Here is when a repair is allowed and when you need a new tyre.',
+    date: '11 Aug 2026',
+    dateISO: '2026-08-11',
+    category: 'Guide',
+    readTime: '6 min read',
+    metaTitle: 'Can a Punctured Tyre Be Repaired? UK Rules (BS AU 159) Explained',
+    metaDescription: 'When can a tyre puncture be repaired in the UK? A clear guide to the BS AU 159 rules, the minor repair area, size limits, and when a tyre must be replaced.',
+    intro: 'A puncture does not always mean a new tyre, but it does not always mean a repair either. In the UK, tyre repairs are governed by the British Standard BS AU 159, which sets strict, safety-based limits on what can and cannot be fixed. Here is a clear explanation of the rules so you know where you stand.',
+    sections: [
+      {
+        heading: 'The minor repair area',
+        paragraphs: [
+          'BS AU 159 only permits repairs within the central part of the tread, known as the minor repair area. For most passenger car tyres this is roughly the central three-quarters of the tread width. Punctures inside this zone are usually repairable; punctures outside it, in the shoulder or sidewall, are not.',
+          'The reason is simple. The sidewall and shoulder flex the most as the tyre rolls and carries load, so a patch in those areas is very likely to fail. The central tread is far more stable, which is why a properly executed repair there can be permanent and safe.',
+        ],
+      },
+      {
+        heading: 'When a puncture can be repaired',
+        paragraphs: [
+          'Under BS AU 159, a repair is allowed only when all of the following are true:',
+        ],
+        list: [
+          'The damage is within the central minor repair area of the tread',
+          'The puncture is no more than 6mm in diameter',
+          'The tyre still has at least the legal 1.6mm of tread across the central three-quarters',
+          'There is no sidewall damage, cracking, or perishing',
+          'The tyre has not been run flat or badly damaged internally',
+          'There is no evidence of a previous unsafe repair',
+        ],
+      },
+      {
+        heading: 'When a tyre must be replaced',
+        paragraphs: [
+          'A tyre cannot be safely or legally repaired if the puncture is in the sidewall or shoulder, if the hole is larger than 6mm, or if the tyre has been driven on while flat, which usually destroys the internal structure. Perished or badly worn tyres, and tyres with a previous poor repair, must also be replaced rather than patched again.',
+          'A temporary sealant from a tyre repair kit is only ever a get-you-home measure. It is not a permanent fix and the tyre must still be inspected by a professional afterwards.',
+        ],
+      },
+      {
+        heading: 'How a proper repair is done',
+        paragraphs: [
+          'A correct repair is not a plug pushed in from the outside. The tyre is removed from the wheel and inspected inside and out, the damage is assessed against the standard, and a combination plug-patch is fitted from the inside to seal both the puncture channel and the inner liner. The tyre is then refitted and rebalanced. This is why a safe repair should always be carried out by a trained fitter, not with a roadside plug kit alone.',
+        ],
+      },
+      {
+        heading: 'Getting it checked',
+        paragraphs: [
+          'If you have picked up a puncture, the safest thing is to have it assessed promptly rather than driving on it. A mobile tyre fitter can come to your home, work, or the roadside, judge whether the damage is repairable to British Standard, and either carry out a proper repair or supply and fit a replacement on the spot.',
+        ],
+      },
+    ],
+    tags: ['puncture repair', 'BS AU 159', 'tyre repair', 'tyre safety', 'tyre law'],
+  },
+  {
+    slug: 'lost-locking-wheel-nut-key',
+    image: '/images/service-home.webp',
+    title: 'Lost Your Locking Wheel Nut Key? What to Do',
+    excerpt: 'A missing locking wheel nut key does not have to mean recovery to a garage. Here is how the nut is removed and how to avoid the problem next time.',
+    date: '4 Aug 2026',
+    dateISO: '2026-08-04',
+    category: 'Guide',
+    readTime: '5 min read',
+    metaTitle: 'Lost Your Locking Wheel Nut Key? What to Do (UK Guide)',
+    metaDescription: 'Lost your locking wheel nut key? Learn how a mobile fitter removes the nut without the key, what it involves, and how to replace the key so you are covered.',
+    intro: 'A locking wheel nut is a security nut fitted to each wheel, removable only with a matching key, designed to stop your alloys being stolen. It becomes a problem the moment you need a tyre changed and cannot find the key. The good news is that a lost key rarely means your car has to be recovered to a garage. Here is what to do.',
+    sections: [
+      {
+        heading: 'First, check the usual hiding places',
+        paragraphs: [
+          'The locking wheel nut key is a small socket-shaped adaptor, often kept in the boot with the spare wheel or jack, in the glovebox, in a door pocket, or under a seat. If you bought the car used, it may never have been passed on. Before assuming it is lost for good, check all of these places, because having the correct key makes the job quicker and cheaper.',
+        ],
+      },
+      {
+        heading: 'How the nut is removed without a key',
+        paragraphs: [
+          'If the key really is missing, a professional can still remove the locking nuts. Where the nut is in good condition, a master removal set with many different socket patterns can often match and undo it cleanly. Where the nut is rounded, damaged, or no pattern matches, a specialist extractor socket is used, which bites into the outside of the nut to grip and turn it.',
+          'The extractor method usually damages the nut in the process, so that nut will need replacing with a standard or new locking nut afterwards. A skilled fitter does all of this without damaging your alloy wheel.',
+        ],
+      },
+      {
+        heading: 'Can it be done at the roadside?',
+        paragraphs: [
+          'In most cases, yes. A well-equipped mobile tyre fitter carries the master sets and extractor tools needed to remove locking nuts at your home, your workplace, or the roadside, so a lost key does not mean waiting for recovery. It is important to tell the fitter in advance that you have lost the key, so they arrive with the right removal tools and can confirm any additional cost with you upfront.',
+        ],
+      },
+      {
+        heading: 'Replacing the key or the nuts',
+        paragraphs: [
+          'Once the nut is off, you have options. If your locking nuts are intact and you simply lost the key, a replacement key can often be ordered from a main dealer using the key code, which is sometimes printed on a small card or on the key itself. If the nut had to be cut off, or you would rather not deal with locking nuts again, you can replace them with a fresh set of locking nuts or with standard wheel nuts.',
+        ],
+      },
+      {
+        heading: 'Avoiding the problem in future',
+        list: [
+          'Keep the key with the spare wheel or jack, not loose in the car',
+          'Note down the key code somewhere safe so a replacement can be matched',
+          'Check the key is present when buying a used car',
+          'Tell your tyre fitter in advance if you know the key is missing',
+        ],
+      },
+    ],
+    tags: ['locking wheel nut', 'wheel nut key', 'tyre change', 'mobile tyre fitting', 'car maintenance'],
+  },
+  {
+    slug: 'electric-car-tyres-explained',
+    image: '/images/service-fleet.webp',
+    title: 'Do Electric Cars Need Special Tyres?',
+    excerpt: 'Electric cars are heavier, quieter, and more powerful than petrol cars, and that changes what their tyres need to do. Here is what EV tyres are and whether you need them.',
+    date: '28 Jul 2026',
+    dateISO: '2026-07-28',
+    category: 'Guide',
+    readTime: '6 min read',
+    metaTitle: 'Do Electric Cars Need Special Tyres? EV Tyres Explained (UK)',
+    metaDescription: 'Do electric cars need special tyres? Learn how EV tyres differ from standard ones, why EV tyres wear faster, and what to look for when replacing them.',
+    intro: 'As more UK drivers switch to electric, a common question at the roadside is whether an electric car really needs special tyres. Standard tyres will physically fit, but electric vehicles place very different demands on their tyres, and using the right ones makes a real difference to range, wear, and comfort. Here is what you need to know.',
+    sections: [
+      {
+        heading: 'Why EVs are harder on tyres',
+        paragraphs: [
+          'Electric cars differ from petrol and diesel cars in three ways that all affect the tyres. They are significantly heavier because of their battery packs, they deliver instant torque the moment you press the accelerator, and they are much quieter, so road and tyre noise is far more noticeable inside the cabin.',
+          'The combination of extra weight and instant power means the tyres work harder and can wear noticeably faster than on an equivalent petrol car, especially if the car is driven enthusiastically.',
+        ],
+      },
+      {
+        heading: 'What makes an EV tyre different',
+        list: [
+          'Reinforced sidewalls and higher load ratings to carry the extra battery weight',
+          'Tougher, more durable tread compounds to cope with instant torque and reduce wear',
+          'Low rolling resistance to preserve driving range and efficiency',
+          'Noise-reducing designs, often with a layer of foam inside the tyre to absorb road noise',
+          'Strong grip to manage the longer stopping distances of a heavier vehicle',
+        ],
+      },
+      {
+        heading: 'Do you have to use EV-specific tyres?',
+        paragraphs: [
+          'You are not legally required to fit EV-branded tyres, and a standard tyre of the correct size, load index, and speed rating is roadworthy on an electric car. However, fitting tyres that are not built for the weight and torque can mean faster wear, more road noise, and reduced range. Many premium tyres are now designed to suit both conventional and electric cars, so the key is choosing a tyre with the right load rating and quality rather than simply the cheapest option.',
+        ],
+      },
+      {
+        heading: 'Getting the load rating right',
+        paragraphs: [
+          'Because an EV is heavier, the load index on its tyres matters even more than usual. Always match or exceed the load rating specified by your manufacturer, and never fit a lower-rated tyre to save money. If you are unsure what your electric car needs, the markings on your current tyres and your handbook will confirm the correct specification.',
+        ],
+      },
+      {
+        heading: 'Replacing EV tyres',
+        paragraphs: [
+          'Because EV tyres can wear faster, it is worth checking them regularly and keeping pressures correct, as underinflation increases both wear and energy use. When the time comes to replace them, a mobile tyre fitter can supply the correct EV-suitable tyres and fit them at your home or workplace, which is especially convenient when you can keep the car on charge while the work is done.',
+        ],
+      },
+    ],
+    tags: ['EV tyres', 'electric car tyres', 'electric vehicles', 'tyre wear', 'tyre guide'],
+  },
 ]
 
 export function getPostBySlug(slug: string | undefined): BlogPost | undefined {
