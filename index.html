@@ -5,32 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#d92a1d" />
 
-    <!-- Fallback meta for crawlers that don't execute JS. Overridden per-route by SEOHead. -->
-    <title>Mobile Tyre Fitter 24/7 | 24/7 Emergency Mobile Tyre Fitting UK</title>
-    <meta name="description" content="UK's leading 24/7 mobile tyre fitting service. Emergency tyre replacement at your home, work, or roadside with 30-45 min average response. All major brands. Call 07933 899930." />
-    <meta name="keywords" content="mobile tyre fitting, 24/7 tyre fitting, emergency tyre replacement, mobile tyre repair, roadside tyre fitting, home tyre fitting, UK" />
-    <link rel="canonical" href="https://www.mobiletyrefitter247.co.uk/" />
-
-    <!-- Fallback Open Graph for social sharing previews -->
-    <meta property="og:title" content="Mobile Tyre Fitter 24/7 | 24/7 Emergency Mobile Tyre Fitting UK" />
-    <meta property="og:description" content="UK's leading 24/7 mobile tyre fitting service. Emergency tyre replacement at your home, work, or roadside with 30-45 min average response." />
-    <meta property="og:url" content="https://www.mobiletyrefitter247.co.uk/" />
-    <meta property="og:image" content="https://www.mobiletyrefitter247.co.uk/images/hero-bg.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Mobile Tyre Fitter 24/7" />
-    <meta property="og:locale" content="en_GB" />
-
-    <!-- Fallback Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@MobileTyre247" />
-    <meta name="twitter:title" content="Mobile Tyre Fitter 24/7 | 24/7 Emergency Mobile Tyre Fitting UK" />
-    <meta name="twitter:description" content="UK's leading 24/7 mobile tyre fitting service. Emergency tyre replacement at your home, work, or roadside with 30-45 min average response." />
-    <meta name="twitter:image" content="https://www.mobiletyrefitter247.co.uk/images/hero-bg.webp" />
-
-    <!-- Per-page title, description, canonical, robots, Open Graph and Twitter
-         tags are managed per route by the SEOHead component (vite-react-ssg Head). -->
+    <!--
+      NO static <title>, <meta description>, <link canonical> or og/twitter
+      tags here on purpose. This is a static-site-generated app: vite-react-ssg
+      prerenders the correct, UNIQUE per-page title/description/canonical/OG/
+      Twitter tags (via the SEOHead component) directly into each page's HTML.
+      A static tag here would be DUPLICATED on every page and a static canonical
+      pointing at "/" would tell Google every page is a copy of the homepage,
+      preventing all inner pages from being indexed. Keep SEO tags in SEOHead.
+    -->
 
     <!-- Icons + manifest -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
