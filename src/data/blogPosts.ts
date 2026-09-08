@@ -302,7 +302,7 @@ export const blogPosts: BlogPost[] = [
     dateISO: '2025-02-20',
     category: 'Guide',
     readTime: '6 min read',
-    metaTitle: 'How Much Does Mobile Tyre Fitting Cost in the UK?',
+    metaTitle: "Mobile Tyre Fitting Cost UK: Prices & What's Included",
     metaDescription: 'How much does mobile tyre fitting cost in the UK? A transparent breakdown of tyre prices, what is included, and how mobile fitting compares to a garage.',
     intro: 'One of the first questions drivers ask about mobile tyre fitting is what it costs, and whether having a fitter come to you is more expensive than visiting a garage. The honest answer is that the price you pay is built almost entirely around the tyre itself. Here is a transparent breakdown of what goes into a mobile tyre fitting quote in the UK.',
     tags: ['tyre fitting cost', 'tyre prices', 'mobile tyre fitting', 'tyre replacement cost'],
@@ -692,7 +692,7 @@ export const blogPosts: BlogPost[] = [
     dateISO: '2026-08-11',
     category: 'Guide',
     readTime: '6 min read',
-    metaTitle: 'Can a Punctured Tyre Be Repaired? UK Rules Explained',
+    metaTitle: 'Tyre Puncture Repair Rules UK: When It Can Be Fixed',
     metaDescription: 'When can a tyre puncture be repaired in the UK? A clear guide to the BS AU 159 rules, the minor repair area, size limits, and when a tyre must be replaced.',
     intro: 'A puncture does not always mean a new tyre, but it does not always mean a repair either. In the UK, tyre repairs are governed by the British Standard BS AU 159, which sets strict, safety-based limits on what can and cannot be fixed. Here is a clear explanation of the rules so you know where you stand.',
     sections: [

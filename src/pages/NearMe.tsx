@@ -3,7 +3,8 @@ import {
   MapPin, Clock, Shield, Star, CheckCircle, ArrowRight,
   Phone, Navigation, Wrench, Home, BadgeCheck,
 } from 'lucide-react'
-import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
+import SEOHead, { SITE_URL } from '../components/SEOHead'
+import { BUSINESS_PROVIDER } from '../lib/schema'
 import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
@@ -48,7 +49,7 @@ export default function NearMe() {
         serviceType: 'Mobile Tyre Fitting',
         areaServed: { '@type': 'Country', name: 'United Kingdom' },
         url: pageUrl,
-        provider: { '@type': 'LocalBusiness', name: SITE_NAME, url: SITE_URL },
+        provider: BUSINESS_PROVIDER,
       },
       {
         '@type': 'BreadcrumbList',

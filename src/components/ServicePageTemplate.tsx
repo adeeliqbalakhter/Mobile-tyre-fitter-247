@@ -6,7 +6,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import SEOHead, { SITE_URL, SITE_NAME } from './SEOHead'
+import SEOHead, { SITE_URL } from './SEOHead'
+import { BUSINESS_PROVIDER } from '../lib/schema'
 import PhoneButton from './PhoneButton'
 import WhatsAppButton from './WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
@@ -53,7 +54,7 @@ export default function ServicePageTemplate({
         serviceType: serviceName,
         areaServed: 'United Kingdom',
         url: pageUrl,
-        provider: { '@type': 'LocalBusiness', name: SITE_NAME, url: SITE_URL },
+        provider: BUSINESS_PROVIDER,
       },
       {
         '@type': 'BreadcrumbList',
@@ -124,7 +125,7 @@ export default function ServicePageTemplate({
             </div>
 
             <div className="rounded-xl border border-white/10 bg-white/10 backdrop-blur-sm p-6 lg:p-8">
-              <h3 className="mb-4 text-lg font-semibold text-white" style={{ fontFamily: 'Space Grotesk' }}>What&apos;s Included</h3>
+              <h2 className="mb-4 text-lg font-semibold text-white" style={{ fontFamily: 'Space Grotesk' }}>What&apos;s Included</h2>
               <ul className="space-y-3">
                 {features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
