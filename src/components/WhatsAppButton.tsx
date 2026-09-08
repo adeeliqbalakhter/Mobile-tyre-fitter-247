@@ -44,7 +44,7 @@ export default function WhatsAppButton({
     <a
       href={waUrl}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
       className={`inline-flex items-center justify-center rounded-lg font-semibold transition-all active:scale-[0.98] ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
       onClick={() => {
         trackEvent('whatsapp_click', { event_category: 'conversion', event_label: 'whatsapp_button' })

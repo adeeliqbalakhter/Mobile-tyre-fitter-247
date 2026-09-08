@@ -109,7 +109,7 @@ export default function HeroSection() {
             <a
               href={waUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 backdrop-blur-sm px-6 py-4 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/20 active:scale-[0.98]"
             >
               <WhatsAppIcon className="h-4 w-4" />

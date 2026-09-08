@@ -61,7 +61,7 @@ export default function ContactPage() {
             </a>
 
             {/* WhatsApp */}
-            <a href={waUrl} target="_blank" rel="noopener noreferrer" className="group flex flex-col rounded-xl border border-gray-200 bg-gray-50 p-6 transition-all hover:border-[#25D366]/40 hover:shadow-md">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer nofollow" className="group flex flex-col rounded-xl border border-gray-200 bg-gray-50 p-6 transition-all hover:border-[#25D366]/40 hover:shadow-md">
               <WhatsAppIcon className="mb-3 h-8 w-8 text-[#25D366]" />
               <h3 className="mb-1 font-semibold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>WhatsApp</h3>
               <p className="mb-3 text-sm text-[#6a6a6a]">Message us anytime with your location and tyre size.</p>

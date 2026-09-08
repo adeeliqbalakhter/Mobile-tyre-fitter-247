@@ -86,7 +86,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'How many miles and years should car tyres last? Learn the signs of wear, the 1.6mm UK legal limit, and how to make your tyres last longer.',
     intro: 'Tyres are the only part of your car that touches the road, so knowing when they need replacing is essential for safety and economy. There is no single answer to how long they last, it depends on the tyre, your car, and how you drive, but there are clear benchmarks and warning signs to watch for.',
     tags: ['tyre lifespan', 'tyre wear', 'tyre replacement', 'tyre maintenance'],
-    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'Legal tyre tread depth in the UK', href: '/blog/legal-tyre-tread-depth-uk' }, { label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'Legal tyre tread depth in the UK', href: '/blog/legal-tyre-tread-depth-uk' }, { label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }, { label: 'Mobile fitting vs a garage visit', href: '/blog/mobile-vs-garage' }, { label: 'Winter tyre guide for UK drivers', href: '/blog/winter-tyre-guide' }],
     sections: [
       {
         heading: 'Average tyre lifespan',
@@ -306,7 +306,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'How much does mobile tyre fitting cost in the UK? A transparent breakdown of tyre prices, what is included, and how mobile fitting compares to a garage.',
     intro: 'One of the first questions drivers ask about mobile tyre fitting is what it costs, and whether having a fitter come to you is more expensive than visiting a garage. The honest answer is that the price you pay is built almost entirely around the tyre itself. Here is a transparent breakdown of what goes into a mobile tyre fitting quote in the UK.',
     tags: ['tyre fitting cost', 'tyre prices', 'mobile tyre fitting', 'tyre replacement cost'],
-    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }, { label: 'Part-worn vs new tyres', href: '/blog/part-worn-vs-new-tyres' }],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }, { label: 'Part-worn vs new tyres', href: '/blog/part-worn-vs-new-tyres' }, { label: 'Mobile fitting vs a garage visit', href: '/blog/mobile-vs-garage' }],
     sections: [
       {
         heading: 'What determines the price of a fitted tyre',
@@ -444,7 +444,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'How to find the correct tyre pressure for your car, where to check it, and why the right PSI improves safety, fuel economy, and tyre life.',
     intro: 'Correct tyre pressure is one of the simplest and most overlooked parts of car maintenance. Get it right and your tyres last longer, your car is safer, and you use less fuel. Get it wrong and you risk uneven wear, poor handling, and even a blowout. Here is how to find and maintain the right pressure.',
     tags: ['tyre pressure', 'tyre maintenance', 'fuel efficiency', 'tyre safety', 'TPMS'],
-    relatedLinks: [{ label: 'Tyre pressure warning light explained', href: '/blog/tyre-pressure-warning-light' }, { label: 'Causes of a slow puncture', href: '/blog/slow-puncture-causes' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
+    relatedLinks: [{ label: 'Tyre pressure warning light explained', href: '/blog/tyre-pressure-warning-light' }, { label: 'Causes of a slow puncture', href: '/blog/slow-puncture-causes' }, { label: 'Winter tyre guide for UK drivers', href: '/blog/winter-tyre-guide' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
     sections: [
       {
         heading: 'Where to find your correct pressure',

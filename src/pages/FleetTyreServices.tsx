@@ -86,7 +86,7 @@ export default function FleetTyreServices() {
       title="Fleet Tyre"
       titleHighlight="Services"
       description="Dedicated fleet tyre management for businesses across the UK. Volume discounts, scheduled maintenance, priority dispatch, and dedicated account management. Call 07933 899930."
-      metaTitle="Fleet Tyre Services UK - Business Fleet Tyre Management & Maintenance"
+      metaTitle="Fleet Tyre Services UK - Business Fleet Tyre Management"
       metaDescription="Dedicated fleet tyre management for UK businesses. Volume discounts, scheduled maintenance, priority 24/7 dispatch, and dedicated account management. Call 07933 899930."
       heroImage="/images/service-fleet.webp"
       features={features}

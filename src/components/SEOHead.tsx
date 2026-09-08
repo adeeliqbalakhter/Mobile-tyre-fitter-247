@@ -38,7 +38,11 @@ export default function SEOHead({
   keywords, breadcrumbs, articleProps,
 }: SEOHeadProps) {
   const location = useLocation()
-  const fullTitle = `${title} | ${SITE_NAME}`
+  // Keep the full title under ~70 characters (search engines truncate beyond
+  // that). Append the brand only when it still fits; otherwise use the page
+  // title on its own, which already carries the primary keyword.
+  const withBrand = `${title} | ${SITE_NAME}`
+  const fullTitle = withBrand.length <= 70 ? withBrand : title
 
   const path = canonical ?? `${location.pathname}${location.search || ''}`
   const canonicalUrl = path.startsWith('http')

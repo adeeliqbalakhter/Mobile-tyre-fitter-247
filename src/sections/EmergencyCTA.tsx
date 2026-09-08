@@ -35,7 +35,7 @@ export default function EmergencyCTA() {
           </a>
 
           <div className="mb-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <a href={waUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-gray-700 bg-gray-800 px-5 py-2.5 text-sm font-semibold text-gray-300 transition-all hover:border-[#25D366] hover:text-[#25D366]">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-2 rounded-lg border border-gray-700 bg-gray-800 px-5 py-2.5 text-sm font-semibold text-gray-300 transition-all hover:border-[#25D366] hover:text-[#25D366]">
               <WhatsAppIcon className="h-4 w-4" /> WhatsApp Us
             </a>
             <Link to="/coverage-areas" className="inline-flex items-center gap-2 rounded-lg border border-gray-700 bg-gray-800 px-5 py-2.5 text-sm font-semibold text-gray-300 transition-all hover:border-white hover:text-white">
