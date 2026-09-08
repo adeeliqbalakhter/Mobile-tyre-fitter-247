@@ -20,6 +20,8 @@ export interface BlogPost {
   sections: BlogSection[]
   /** Tags for article:tag OG meta and keyword targeting */
   tags?: string[]
+  /** Contextual internal links shown as a "related services & guides" box. */
+  relatedLinks?: { label: string; href: string }[]
 }
 
 export const blogPosts: BlogPost[] = [
@@ -36,6 +38,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'Step-by-step UK guide on what to do if you get a flat tyre or blowout on the motorway. Stay safe, follow the rules, and get back on the road fast.',
     intro: 'Suffering a flat tyre or blowout at 70mph is one of the most unnerving things that can happen on the road. Knowing exactly what to do in the moments that follow keeps you safe and gets you moving again quickly. Here is the UK-specific advice every driver should know.',
     tags: ['flat tyre', 'motorway safety', 'blowout', 'tyre emergency', 'breakdown'],
+    relatedLinks: [{ label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }, { label: 'Mobile tyre fitting near me', href: '/mobile-tyre-fitting-near-me' }, { label: 'Can you drive on a flat tyre?', href: '/blog/can-you-drive-on-a-flat-tyre' }],
     sections: [
       {
         heading: 'Keep control and slow down gradually',
@@ -55,7 +58,7 @@ export const blogPosts: BlogPost[] = [
         heading: 'Call for help',
         paragraphs: [
           'From a safe position behind the barrier, call for assistance. If you are in immediate danger, call 999. Otherwise, contact a 24/7 mobile tyre fitting or recovery service and give them your location, use the marker posts on the hard shoulder or the location displayed on the nearest sign to pinpoint where you are.',
-          'A mobile tyre fitter can supply and fit a brand-new tyre at your location, meaning you avoid a tow to a garage and the wait that comes with it. On smart motorways without a hard shoulder, follow Highways England guidance and stay in your vehicle with your seatbelt on only if you cannot safely exit.',
+          'A [mobile tyre fitter](/emergency-mobile-tyre-fitting) can supply and fit a brand-new tyre at your location, meaning you avoid a tow to a garage and the wait that comes with it. On smart motorways without a hard shoulder, follow Highways England guidance and stay in your vehicle with your seatbelt on only if you cannot safely exit.',
         ],
       },
       {
@@ -83,6 +86,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'How many miles and years should car tyres last? Learn the signs of wear, the 1.6mm UK legal limit, and how to make your tyres last longer.',
     intro: 'Tyres are the only part of your car that touches the road, so knowing when they need replacing is essential for safety and economy. There is no single answer to how long they last, it depends on the tyre, your car, and how you drive, but there are clear benchmarks and warning signs to watch for.',
     tags: ['tyre lifespan', 'tyre wear', 'tyre replacement', 'tyre maintenance'],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'Legal tyre tread depth in the UK', href: '/blog/legal-tyre-tread-depth-uk' }, { label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }],
     sections: [
       {
         heading: 'Average tyre lifespan',
@@ -133,6 +137,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'A clear comparison of run-flat and standard tyres, how they work, the pros and cons, cost, and which is right for your car.',
     intro: 'If your car came fitted with run-flat tyres, you may be wondering whether to stick with them or switch to standard tyres at replacement time. Both have genuine advantages. Here is how they compare so you can make the right choice for your vehicle and budget.',
     tags: ['run-flat tyres', 'tyre types', 'tyre comparison', 'tyre safety'],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'Can a punctured tyre be repaired?', href: '/blog/can-a-puncture-be-repaired' }, { label: 'How to read tyre sidewall markings', href: '/blog/tyre-sidewall-markings-explained' }],
     sections: [
       {
         heading: 'How run-flat tyres work',
@@ -176,6 +181,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'A UK driver\'s guide to winter tyres, how they work, when to fit them, whether they\'re a legal requirement, and if they\'re worth it.',
     intro: 'Winter tyres are common across much of mainland Europe, but many UK drivers are unsure whether they are worth it here. With our cold, wet winters, they can make a real difference to safety. Here is what every UK driver should know.',
     tags: ['winter tyres', 'tyre safety', 'seasonal tyres', 'driving in snow'],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }, { label: 'Tyre labels explained', href: '/blog/tyre-labels-explained' }],
     sections: [
       {
         heading: 'What makes a winter tyre different',
@@ -218,6 +224,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'Mobile tyre fitting brings the garage to you. Compare mobile fitting with traditional garage visits on convenience, speed, price, and safety.',
     intro: 'Traditionally, a flat or worn tyre meant booking a garage, arranging time off, and sitting in a waiting room. Mobile tyre fitting flips that model, the fitter comes to you. Here is why a growing number of UK drivers are choosing mobile over the garage.',
     tags: ['mobile tyre fitting', 'garage vs mobile', 'tyre fitting comparison', 'convenience'],
+    relatedLinks: [{ label: 'Home tyre fitting', href: '/home-tyre-fitting' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'How much does mobile tyre fitting cost?', href: '/blog/mobile-tyre-fitting-cost' }],
     sections: [
       {
         heading: 'Total convenience',
@@ -258,6 +265,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'Learn how to read tyre labels in the UK, what the fuel efficiency, wet grip, and noise ratings mean and how to choose the right tyre.',
     intro: 'Every new tyre sold in the UK comes with a standardised label, similar to the energy labels on household appliances. These labels make it easier to compare tyres on three key measures. Here is what each rating means and how to use them when choosing your next set.',
     tags: ['tyre labels', 'fuel efficiency', 'wet grip', 'tyre ratings', 'EU tyre label'],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'How to read tyre sidewall markings', href: '/blog/tyre-sidewall-markings-explained' }, { label: 'How long should tyres last?', href: '/blog/how-long-tyres-last' }],
     sections: [
       {
         heading: 'Fuel efficiency (rolling resistance)',
@@ -294,10 +302,11 @@ export const blogPosts: BlogPost[] = [
     dateISO: '2025-02-20',
     category: 'Guide',
     readTime: '6 min read',
-    metaTitle: 'How Much Does Mobile Tyre Fitting Cost in the UK? (2025 Guide)',
+    metaTitle: 'How Much Does Mobile Tyre Fitting Cost in the UK?',
     metaDescription: 'How much does mobile tyre fitting cost in the UK? A transparent breakdown of tyre prices, what is included, and how mobile fitting compares to a garage.',
     intro: 'One of the first questions drivers ask about mobile tyre fitting is what it costs, and whether having a fitter come to you is more expensive than visiting a garage. The honest answer is that the price you pay is built almost entirely around the tyre itself. Here is a transparent breakdown of what goes into a mobile tyre fitting quote in the UK.',
     tags: ['tyre fitting cost', 'tyre prices', 'mobile tyre fitting', 'tyre replacement cost'],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }, { label: 'Part-worn vs new tyres', href: '/blog/part-worn-vs-new-tyres' }],
     sections: [
       {
         heading: 'What determines the price of a fitted tyre',
@@ -346,10 +355,11 @@ export const blogPosts: BlogPost[] = [
     dateISO: '2025-02-18',
     category: 'Legal',
     readTime: '5 min read',
-    metaTitle: 'Legal Tyre Tread Depth UK: The 20p Test & Penalties Explained',
+    metaTitle: 'Legal Tyre Tread Depth UK: The 20p Test Explained',
     metaDescription: 'The legal tyre tread depth in the UK is 1.6mm. Learn how to check your tread with the 20p test and the fines and penalty points for illegal tyres.',
     intro: 'Worn tyres are one of the most common reasons cars fail their MOT, and driving on them is both dangerous and illegal. Knowing the legal limit and how to check your own tyres takes less than a minute and could save you from a hefty fine. Here is what every UK driver needs to know.',
     tags: ['tyre tread depth', 'legal minimum', 'MOT', 'tyre law UK', 'tyre safety'],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'How long should tyres last?', href: '/blog/how-long-tyres-last' }, { label: 'Part-worn vs new tyres', href: '/blog/part-worn-vs-new-tyres' }],
     sections: [
       {
         heading: 'The UK legal minimum is 1.6mm',
@@ -392,6 +402,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'Can you drive on a flat tyre? Learn how far you can safely go, the damage driving on a flat causes, and what to do instead if you get a puncture.',
     intro: 'It is a situation most drivers face at some point: you come back to your car and find a tyre completely flat, or you feel one deflate as you drive. The temptation is to limp to the nearest garage, but driving on a flat tyre can be dangerous and costly. Here is what you need to know.',
     tags: ['flat tyre', 'driving on flat', 'tyre damage', 'tyre safety'],
+    relatedLinks: [{ label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }, { label: 'Flat tyre on the motorway: what to do', href: '/blog/flat-tyre-motorway' }, { label: 'Can a punctured tyre be repaired?', href: '/blog/can-a-puncture-be-repaired' }],
     sections: [
       {
         heading: 'The short answer: avoid it if you can',
@@ -433,6 +444,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'How to find the correct tyre pressure for your car, where to check it, and why the right PSI improves safety, fuel economy, and tyre life.',
     intro: 'Correct tyre pressure is one of the simplest and most overlooked parts of car maintenance. Get it right and your tyres last longer, your car is safer, and you use less fuel. Get it wrong and you risk uneven wear, poor handling, and even a blowout. Here is how to find and maintain the right pressure.',
     tags: ['tyre pressure', 'tyre maintenance', 'fuel efficiency', 'tyre safety', 'TPMS'],
+    relatedLinks: [{ label: 'Tyre pressure warning light explained', href: '/blog/tyre-pressure-warning-light' }, { label: 'Causes of a slow puncture', href: '/blog/slow-puncture-causes' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
     sections: [
       {
         heading: 'Where to find your correct pressure',
@@ -478,6 +490,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'Are part-worn tyres worth it? Compare the cost, safety, and value of part-worn vs new tyres in the UK and find out which is the smarter choice.',
     intro: 'Part-worn tyres can look like a bargain, often advertised at half the price of a new tyre. But once you account for the tread you are actually getting and the unknowns that come with a used tyre, the maths rarely adds up. Here is an honest comparison to help you decide.',
     tags: ['part-worn tyres', 'tyre safety', 'used tyres', 'tyre value'],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'How much does mobile tyre fitting cost?', href: '/blog/mobile-tyre-fitting-cost' }, { label: 'Legal tyre tread depth in the UK', href: '/blog/legal-tyre-tread-depth-uk' }],
     sections: [
       {
         heading: 'You pay more per millimetre of tread',
@@ -523,6 +536,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription: 'Tyre losing air slowly? Learn the common causes of a slow puncture, how to spot one, and whether it can be repaired or needs replacing.',
     intro: 'A tyre that is fine one day and noticeably soft the next is the classic sign of a slow puncture. Unlike a blowout, it can go unnoticed for weeks, quietly affecting your handling, fuel economy, and safety. Here is what causes a slow puncture and what to do about it.',
     tags: ['slow puncture', 'tyre repair', 'puncture causes', 'tyre maintenance'],
+    relatedLinks: [{ label: 'Can a punctured tyre be repaired?', href: '/blog/can-a-puncture-be-repaired' }, { label: 'Tyre pressure warning light explained', href: '/blog/tyre-pressure-warning-light' }, { label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }],
     sections: [
       {
         heading: 'Common causes of a slow puncture',
@@ -603,11 +617,12 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'When to call a professional',
         paragraphs: [
-          'If the light keeps returning, if a tyre will not hold pressure, or if you suspect a puncture or a faulty sensor, have it checked promptly. A mobile tyre fitter can come to your home or workplace, find the leak, replace a faulty valve or sensor, and repair or replace the tyre on the spot, so a warning light never turns into a roadside breakdown.',
+          'If the light keeps returning, if a tyre will not hold pressure, or if you suspect a puncture or a faulty sensor, have it checked promptly. A [mobile tyre fitter](/mobile-tyre-replacement) can come to your home or workplace, find the leak, replace a faulty valve or sensor, and repair or replace the tyre on the spot, so a warning light never turns into a roadside breakdown.',
         ],
       },
     ],
     tags: ['TPMS', 'tyre pressure warning light', 'tyre pressure', 'MOT', 'tyre maintenance'],
+    relatedLinks: [{ label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }, { label: 'Causes of a slow puncture', href: '/blog/slow-puncture-causes' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
   },
   {
     slug: 'tyre-sidewall-markings-explained',
@@ -618,7 +633,7 @@ export const blogPosts: BlogPost[] = [
     dateISO: '2026-08-18',
     category: 'Guide',
     readTime: '6 min read',
-    metaTitle: 'Tyre Sidewall Markings Explained: How to Read Your Tyre Size (UK)',
+    metaTitle: 'How to Read Tyre Sidewall Markings & Tyre Size (UK)',
     metaDescription: 'Learn how to read your tyre sidewall markings, including width, aspect ratio, rim size, load index, speed rating, and the DOT age code. A simple UK guide.',
     intro: 'Every tyre carries a code moulded into its sidewall that tells you its exact size and capabilities. Knowing how to read it means you can order the correct replacement in seconds and check that the tyres already on your car are the right ones. Here is what each part of a marking like 205/55 R16 91V actually means.',
     sections: [
@@ -666,6 +681,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     tags: ['tyre size', 'sidewall markings', 'load index', 'speed rating', 'tyre guide'],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'How long should tyres last?', href: '/blog/how-long-tyres-last' }, { label: 'Do electric cars need special tyres?', href: '/blog/electric-car-tyres-explained' }],
   },
   {
     slug: 'can-a-puncture-be-repaired',
@@ -676,7 +692,7 @@ export const blogPosts: BlogPost[] = [
     dateISO: '2026-08-11',
     category: 'Guide',
     readTime: '6 min read',
-    metaTitle: 'Can a Punctured Tyre Be Repaired? UK Rules (BS AU 159) Explained',
+    metaTitle: 'Can a Punctured Tyre Be Repaired? UK Rules Explained',
     metaDescription: 'When can a tyre puncture be repaired in the UK? A clear guide to the BS AU 159 rules, the minor repair area, size limits, and when a tyre must be replaced.',
     intro: 'A puncture does not always mean a new tyre, but it does not always mean a repair either. In the UK, tyre repairs are governed by the British Standard BS AU 159, which sets strict, safety-based limits on what can and cannot be fixed. Here is a clear explanation of the rules so you know where you stand.',
     sections: [
@@ -717,11 +733,12 @@ export const blogPosts: BlogPost[] = [
       {
         heading: 'Getting it checked',
         paragraphs: [
-          'If you have picked up a puncture, the safest thing is to have it assessed promptly rather than driving on it. A mobile tyre fitter can come to your home, work, or the roadside, judge whether the damage is repairable to British Standard, and either carry out a proper repair or supply and fit a replacement on the spot.',
+          'If you have picked up a puncture, the safest thing is to have it assessed promptly rather than driving on it. A mobile fitter can come to your home, work, or the roadside, judge whether the damage is repairable to British Standard, and either carry out a proper repair or supply and fit a [replacement tyre](/mobile-tyre-replacement) on the spot. In an urgent case, our [emergency mobile tyre fitting](/emergency-mobile-tyre-fitting) service can reach you fast.',
         ],
       },
     ],
     tags: ['puncture repair', 'BS AU 159', 'tyre repair', 'tyre safety', 'tyre law'],
+    relatedLinks: [{ label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }, { label: 'Causes of a slow puncture', href: '/blog/slow-puncture-causes' }, { label: 'Can you drive on a flat tyre?', href: '/blog/can-you-drive-on-a-flat-tyre' }],
   },
   {
     slug: 'lost-locking-wheel-nut-key',
@@ -772,6 +789,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     tags: ['locking wheel nut', 'wheel nut key', 'tyre change', 'mobile tyre fitting', 'car maintenance'],
+    relatedLinks: [{ label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'Home tyre fitting', href: '/home-tyre-fitting' }],
   },
   {
     slug: 'electric-car-tyres-explained',
@@ -823,6 +841,7 @@ export const blogPosts: BlogPost[] = [
       },
     ],
     tags: ['EV tyres', 'electric car tyres', 'electric vehicles', 'tyre wear', 'tyre guide'],
+    relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'How to read tyre sidewall markings', href: '/blog/tyre-sidewall-markings-explained' }, { label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }],
   },
 ]
 

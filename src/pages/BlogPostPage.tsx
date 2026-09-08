@@ -1,10 +1,36 @@
 import { useParams, useLocation, Link } from 'react-router-dom'
-import { Calendar, Clock, ArrowLeft, ArrowRight, CheckCircle } from 'lucide-react'
+import type { ReactNode } from 'react'
+import { Calendar, Clock, ArrowLeft, ArrowRight, CheckCircle, LinkIcon } from 'lucide-react'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
 import { getPostBySlug, blogPosts } from '../data/blogPosts'
+
+/**
+ * Renders body text that may contain inline links written in a lightweight
+ * markdown style: [anchor text](/internal-path). Internal paths become
+ * client-side <Link>s; anything else renders as plain text. This lets articles
+ * carry genuine contextual internal links to service and location pages.
+ */
+function renderText(text: string): ReactNode {
+  const parts: ReactNode[] = []
+  const regex = /\[([^\]]+)\]\((\/[^)]+)\)/g
+  let last = 0
+  let m: RegExpExecArray | null
+  let key = 0
+  while ((m = regex.exec(text)) !== null) {
+    if (m.index > last) parts.push(text.slice(last, m.index))
+    parts.push(
+      <Link key={key++} to={m[2]} className="font-semibold text-[#d92a1d] underline decoration-[#d92a1d]/30 underline-offset-2 hover:text-[#b82418]">
+        {m[1]}
+      </Link>,
+    )
+    last = m.index + m[0].length
+  }
+  if (last < text.length) parts.push(text.slice(last))
+  return parts
+}
 
 export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -102,7 +128,7 @@ export default function BlogPostPage() {
         {/* Body */}
         <div className="bg-white py-12 lg:py-16">
           <div className="mx-auto max-w-[800px] px-4 lg:px-6">
-            <p className="mb-8 text-lg leading-relaxed text-[#1a1a1a]">{post.intro}</p>
+            <p className="mb-8 text-lg leading-relaxed text-[#1a1a1a]">{renderText(post.intro)}</p>
 
             {post.sections.map((section, i) => (
               <section key={i} className="mb-8">
@@ -110,20 +136,39 @@ export default function BlogPostPage() {
                   <h2 className="mb-3 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>{section.heading}</h2>
                 )}
                 {section.paragraphs?.map((p, j) => (
-                  <p key={j} className="mb-4 text-base leading-relaxed text-[#6a6a6a]">{p}</p>
+                  <p key={j} className="mb-4 text-base leading-relaxed text-[#6a6a6a]">{renderText(p)}</p>
                 ))}
                 {section.list && (
                   <ul className="space-y-2.5">
                     {section.list.map((item, k) => (
                       <li key={k} className="flex items-start gap-3">
                         <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#d92a1d]" />
-                        <span className="text-base leading-relaxed text-[#6a6a6a]">{item}</span>
+                        <span className="text-base leading-relaxed text-[#6a6a6a]">{renderText(item)}</span>
                       </li>
                     ))}
                   </ul>
                 )}
               </section>
             ))}
+
+            {/* Related pages, contextual internal links to service & location hubs */}
+            {post.relatedLinks && post.relatedLinks.length > 0 && (
+              <div className="my-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
+                <h2 className="mb-4 flex items-center gap-2 text-lg font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>
+                  <LinkIcon className="h-4 w-4 text-[#d92a1d]" /> Related services &amp; guides
+                </h2>
+                <ul className="space-y-2.5">
+                  {post.relatedLinks.map((link) => (
+                    <li key={link.href}>
+                      <Link to={link.href} className="group inline-flex items-start gap-2 text-sm font-medium text-[#d92a1d] hover:text-[#b82418]">
+                        <ArrowRight className="mt-0.5 h-3.5 w-3.5 flex-shrink-0" />
+                        <span className="underline decoration-[#d92a1d]/30 underline-offset-2">{link.label}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Inline CTA */}
             <div className="my-10 rounded-2xl border border-[#d92a1d]/20 bg-[#d92a1d]/5 p-6 text-center sm:p-8">
