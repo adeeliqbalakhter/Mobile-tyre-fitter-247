@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Gauge, Snowflake, Mountain, Truck, Zap, CircleDot } from 'lucide-react'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
+import RelatedPagesSection from '../components/RelatedPagesSection'
 import EmergencyCTA from '../sections/EmergencyCTA'
 import { brandTiers as tiers } from '../data/brands'
 
@@ -25,7 +26,7 @@ const specialist = [
 export default function TyreBrands() {
   return (
     <>
-      <SEOHead title="Tyre Brands We Stock - Michelin, Pirelli, Continental & More" description="All major tyre brands available for mobile fitting across the UK. Michelin, Pirelli, Continental, Bridgestone, Goodyear, Dunlop, Hankook, Yokohama and 20+ more. Premium, mid-range & budget. Call 07933 899930." keywords="tyre brands UK, Michelin mobile fitting, Pirelli, Continental, Bridgestone, Goodyear, Dunlop, tyre brand comparison" schema={brandsSchema} />
+      <SEOHead title="Tyre Brands We Stock - Michelin, Pirelli, Continental & More" description="All major tyre brands supplied and fitted at your location across the UK, from Michelin, Pirelli and Continental to quality budget options. Call 07933 899930." keywords="tyre brands UK, Michelin mobile fitting, Pirelli, Continental, Bridgestone, Goodyear, Dunlop, tyre brand comparison" schema={brandsSchema} breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Tyre Brands', url: '/tyre-brands' }]} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
@@ -87,6 +88,24 @@ export default function TyreBrands() {
 
         </div>
       </section>
+
+      <RelatedPagesSection
+        heading="Get Your New Tyres Fitted"
+        intro="Whichever brand you choose, we supply and fit it at your location across the UK."
+        tone="gray"
+        links={[
+          { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' },
+          { label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' },
+          { label: 'Home tyre fitting', href: '/home-tyre-fitting' },
+          { label: 'Workplace tyre fitting', href: '/workplace-tyre-fitting' },
+          { label: 'Fleet tyre services', href: '/fleet-tyre-services' },
+          { label: 'Mobile tyre fitting near me', href: '/mobile-tyre-fitting-near-me' },
+          { label: 'How to read tyre sidewall markings', href: '/blog/tyre-sidewall-markings-explained' },
+          { label: 'Tyre labels explained', href: '/blog/tyre-labels-explained' },
+          { label: 'Areas we cover', href: '/coverage-areas' },
+        ]}
+      />
+
       <EmergencyCTA />
     </>
   )

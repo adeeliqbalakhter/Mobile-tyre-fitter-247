@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Shield, Clock, Truck, BadgeCheck, MapPin, Building2, Target, HeartHandshake } from 'lucide-react'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
+import RelatedPagesSection from '../components/RelatedPagesSection'
 import EmergencyCTA from '../sections/EmergencyCTA'
 import { COMPANY_LEGAL_NAME, COMPANY_NUMBER, REGISTERED_OFFICE } from '../lib/config'
 
@@ -46,9 +47,10 @@ export default function AboutPage() {
     <>
       <SEOHead
         title="About Us - UK's Trusted 24/7 Mobile Tyre Fitting Service"
-        description="Mobile Tyre Fitter 24/7 is a UK-based mobile tyre fitting company founded in 2026. We bring the tyre workshop to you at home, work, or roadside, 24 hours a day, 7 days a week."
+        description="Learn about Mobile Tyre Fitter 24/7, a UK-based 24/7 mobile tyre fitting company that brings the tyre workshop to you at home, work, or the roadside."
         keywords="about mobile tyre fitter, mobile tyre fitting UK, 24/7 tyre service, UK tyre fitter, tyre fitting company"
         schema={schema}
+        breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'About', url: '/about' }]}
       />
 
       {/* Hero */}
@@ -202,6 +204,23 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <RelatedPagesSection
+        heading="Our Services & Coverage"
+        intro="Explore what we do and where we work across the UK."
+        tone="gray"
+        links={[
+          { label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' },
+          { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' },
+          { label: 'Home tyre fitting', href: '/home-tyre-fitting' },
+          { label: 'Workplace tyre fitting', href: '/workplace-tyre-fitting' },
+          { label: 'Fleet tyre services', href: '/fleet-tyre-services' },
+          { label: 'Mobile tyre fitting near me', href: '/mobile-tyre-fitting-near-me' },
+          { label: 'Tyre brands we stock', href: '/tyre-brands' },
+          { label: 'Areas we cover', href: '/coverage-areas' },
+          { label: 'Contact us', href: '/contact' },
+        ]}
+      />
 
       <EmergencyCTA />
     </>

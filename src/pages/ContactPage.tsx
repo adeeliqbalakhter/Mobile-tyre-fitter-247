@@ -5,6 +5,7 @@ import SEOHead, { SITE_URL } from '../components/SEOHead'
 import { PHONE_NUMBER, WHATSAPP_NUMBER, COMPANY_LEGAL_NAME, COMPANY_NUMBER, SUPPORT_EMAIL } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import RelatedPagesSection from '../components/RelatedPagesSection'
 
 const schema = {
   '@context': 'https://schema.org',
@@ -37,7 +38,7 @@ export default function ContactPage() {
   const waUrl = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, '')}?text=${encodeURIComponent('Hi, I need help with my tyres.')}`
   return (
     <>
-      <SEOHead title="Contact Us - 24/7 Mobile Tyre Fitting UK" description="Contact Mobile Tyre Fitter 24/7. Call 07933 899930 for emergency tyre fitting, available 24/7 across the UK. Phone and WhatsApp support. Get an instant quote now." keywords="contact tyre fitter, mobile tyre fitting phone, tyre emergency contact, 24/7 tyre help UK" schema={schema} />
+      <SEOHead title="Contact Us - 24/7 Mobile Tyre Fitting UK" description="Contact Mobile Tyre Fitter 24/7. Call 07933 899930 for 24/7 emergency mobile tyre fitting across the UK, or reach us on WhatsApp for an instant quote." keywords="contact tyre fitter, mobile tyre fitting phone, tyre emergency contact, 24/7 tyre help UK" schema={schema} breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact' }]} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>
@@ -144,6 +145,24 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <RelatedPagesSection
+        heading="How We Can Help"
+        intro="Whatever your tyre problem, we come to you across the UK."
+        tone="gray"
+        links={[
+          { label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' },
+          { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' },
+          { label: 'Home tyre fitting', href: '/home-tyre-fitting' },
+          { label: 'Workplace tyre fitting', href: '/workplace-tyre-fitting' },
+          { label: 'Fleet tyre services', href: '/fleet-tyre-services' },
+          { label: 'Mobile tyre fitting near me', href: '/mobile-tyre-fitting-near-me' },
+          { label: 'Areas we cover', href: '/coverage-areas' },
+          { label: 'Tyre brands we stock', href: '/tyre-brands' },
+          { label: 'Read our tyre guides', href: '/blog' },
+        ]}
+      />
+
       <EmergencyCTA />
     </>
   )
