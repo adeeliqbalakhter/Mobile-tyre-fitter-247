@@ -843,6 +843,288 @@ export const blogPosts: BlogPost[] = [
     tags: ['EV tyres', 'electric car tyres', 'electric vehicles', 'tyre wear', 'tyre guide'],
     relatedLinks: [{ label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }, { label: 'How to read tyre sidewall markings', href: '/blog/tyre-sidewall-markings-explained' }, { label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }],
   },
+  {
+    slug: 'best-budget-tyres-uk',
+    image: '/images/step-fitting.webp',
+    title: 'Best Budget Tyres UK 2026: Top Value Brands That Are Actually Safe',
+    excerpt: 'Budget tyres do not have to mean unsafe tyres. Here are the best value tyre brands in the UK for 2026, and how to pick a cheap tyre that still stops well in the wet.',
+    date: '8 Sep 2026',
+    dateISO: '2026-09-08',
+    category: 'Guide',
+    readTime: '8 min read',
+    metaTitle: 'Best Budget Tyres UK 2026: Top Value Brands Ranked',
+    metaDescription: 'The best budget tyres in the UK for 2026. Compare top value tyre brands, wet grip ratings, and how to choose a cheap tyre that is still safe. Fitted at your location.',
+    intro: 'A new set of tyres is one of the bigger running costs of owning a car, so it is no surprise that budget tyres are popular. The good news is that a lower price does not have to mean poor safety. Several value brands now score well on wet grip and last surprisingly long. Here is our guide to the best budget tyres in the UK for 2026, and how to avoid the genuinely poor ones.',
+    sections: [
+      {
+        heading: 'What counts as a budget tyre?',
+        paragraphs: [
+          'Tyres are generally split into three tiers. Premium brands like Michelin, Continental, and Pirelli sit at the top on price and performance. Mid-range brands such as Hankook, Falken, and Yokohama offer strong value. Budget tyres are the cheapest tier, and this is where quality varies the most, from genuinely good value brands to some that are best avoided.',
+          'The key point is that budget does not automatically mean unsafe. A well-chosen budget tyre from a reputable value brand can be a sensible choice, especially for lower-mileage drivers or older cars.',
+        ],
+      },
+      {
+        heading: 'Are budget tyres safe? The one label that matters',
+        paragraphs: [
+          'Every tyre sold in the UK carries an EU tyre label showing its wet grip rating from A (best) to E. This is the single most important number to check on a budget tyre, because wet braking is where cheap tyres most often fall short. A budget tyre rated B or C for wet grip can be a safe, sensible buy. One rated D or E should be avoided, whatever the price.',
+          'Alongside the label, look at independent tyre test results and genuine customer reviews for the specific size you need, as performance can vary between sizes.',
+        ],
+      },
+      {
+        heading: 'Best budget and value tyre brands for 2026',
+        list: [
+          'Avon: a long-established British brand (part of the Goodyear group) offering dependable wet grip at a fair price.',
+          'Uniroyal: owned by Continental and known for the RainSport and RainExpert ranges, a strong choice for the UK wet weather.',
+          'Falken: sits at the upper end of value, with well-reviewed all-season and summer tyres.',
+          'Hankook: technically mid-range but keenly priced, a favourite for reliable everyday performance.',
+          'Kumho: solid, affordable Korean tyres with a good balance of grip and wear.',
+          'Barum: Continental\'s value brand, built to a simpler spec but with the backing of a premium maker.',
+          'GT Radial and Nankang: popular true-budget options that can be good value when they carry a B or C wet grip rating.',
+          'Landsail and Davanti: newer value brands that have improved a lot and often score well in independent tests.',
+        ],
+      },
+      {
+        heading: 'What to check before you buy a budget tyre',
+        list: [
+          'Wet grip rating of B or C on the EU label (avoid D and E).',
+          'The correct size, load index, and speed rating for your car (see the sidewall).',
+          'Recent, genuine reviews for your exact tyre size.',
+          'The fuel efficiency and noise ratings if those matter to you.',
+          'A sensible manufacture date so you are not buying old stock.',
+        ],
+      },
+      {
+        heading: 'Budget vs mid-range vs premium: which should you buy?',
+        paragraphs: [
+          'If you cover high mileage, drive a powerful car, or want the shortest wet braking distances, premium or mid-range tyres are worth the extra. For lower-mileage drivers, city cars, and older vehicles, a good value brand with a B or C wet grip rating is a sensible, safe choice. A common approach is to fit mid-range or premium on the driven axle and quality budget elsewhere, though matching tyres across an axle is essential.',
+        ],
+      },
+      {
+        heading: 'Get your new tyres fitted at your location',
+        paragraphs: [
+          'Whichever budget or value tyre you choose, we can supply and fit it wherever you are, at home, at work, or the roadside, across the UK. Call or message us with your tyre size and we will give you an all-inclusive quote that covers the tyre, fitting, balancing, a new valve, and disposal of your old tyre.',
+        ],
+      },
+    ],
+    tags: ['best budget tyres', 'budget tyres UK', 'cheap tyres', 'tyre brands', 'value tyres'],
+    relatedLinks: [{ label: 'Best mid-range tyres UK', href: '/blog/best-mid-range-tyres-uk' }, { label: 'Best tyre brands ranked', href: '/blog/best-tyre-brands-uk' }, { label: 'Part-worn vs new tyres', href: '/blog/part-worn-vs-new-tyres' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
+  },
+  {
+    slug: 'best-mid-range-tyres-uk',
+    image: '/images/service-fleet.webp',
+    title: 'Best Mid-Range Tyres UK 2026: The Value Sweet Spot',
+    excerpt: 'Mid-range tyres offer most of the performance of premium brands for noticeably less money. Here are the best mid-range tyre brands in the UK for 2026.',
+    date: '5 Sep 2026',
+    dateISO: '2026-09-05',
+    category: 'Guide',
+    readTime: '7 min read',
+    metaTitle: 'Best Mid-Range Tyres UK 2026: Top Brands Compared',
+    metaDescription: 'The best mid-range tyres in the UK for 2026. Compare the top value brands that offer near-premium performance for less, and how to choose. Fitted at your location.',
+    intro: 'For many drivers, mid-range tyres are the smart choice. They deliver most of the wet grip, handling, and longevity of premium tyres for a noticeably lower price. If premium feels like too much and true budget feels like too little, this is the sweet spot. Here are the best mid-range tyre brands in the UK for 2026.',
+    sections: [
+      {
+        heading: 'What makes a tyre mid-range?',
+        paragraphs: [
+          'Mid-range tyres sit between the premium brands (Michelin, Continental, Pirelli, Bridgestone, Goodyear, Dunlop) and the budget tier. They are made by established manufacturers with real research behind them, and they often score close to premium in independent tests, particularly on wet grip and tread life, while costing less.',
+        ],
+      },
+      {
+        heading: 'Best mid-range tyre brands for 2026',
+        list: [
+          'Hankook: consistently strong across wet grip, comfort, and wear, and a common original-equipment fit on new cars.',
+          'Falken: excellent value with well-regarded summer and all-season ranges.',
+          'Yokohama: a good balance of grip and low noise, popular on family and performance cars.',
+          'Toyo: durable tyres that are well liked for SUVs, vans, and everyday cars.',
+          'Kumho: keenly priced with solid all-round performance.',
+          'Cooper: strong for 4x4, SUV, and all-terrain use.',
+          'Nexen: improving quickly and often excellent value for money.',
+          'Vredestein: a slightly premium-leaning mid-range brand known for handling and design.',
+          'Uniroyal and BFGoodrich: both part of larger premium groups, offering dependable wet-weather and rugged options.',
+        ],
+      },
+      {
+        heading: 'Why mid-range is often the smart buy',
+        paragraphs: [
+          'Independent tyre tests regularly show mid-range tyres finishing just behind the premium leaders, with only small differences in braking distance, but at a meaningfully lower price. For most everyday drivers covering average mileage, a good mid-range tyre offers the best balance of safety, longevity, and cost.',
+          'As always, check the EU label wet grip rating (aim for A or B) and read reviews for your exact size before buying.',
+        ],
+      },
+      {
+        heading: 'Fitted wherever you are',
+        paragraphs: [
+          'We stock and fit all the leading mid-range brands and can bring them to your home, workplace, or the roadside anywhere in the UK. Send us your tyre size for an all-inclusive quote with no hidden charges.',
+        ],
+      },
+    ],
+    tags: ['best mid-range tyres', 'mid range tyres UK', 'tyre brands', 'Hankook', 'Falken'],
+    relatedLinks: [{ label: 'Best budget tyres UK', href: '/blog/best-budget-tyres-uk' }, { label: 'Best tyre brands ranked', href: '/blog/best-tyre-brands-uk' }, { label: 'Tyre brands we stock', href: '/tyre-brands' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
+  },
+  {
+    slug: 'best-tyre-brands-uk',
+    image: '/images/service-emergency.webp',
+    title: 'Best Tyre Brands UK 2026: Premium, Mid-Range & Budget Ranked',
+    excerpt: 'A complete ranking of the best tyre brands available in the UK, from premium performance to smart budget value, so you can choose the right tyre for your car and budget.',
+    date: '2 Sep 2026',
+    dateISO: '2026-09-02',
+    category: 'Guide',
+    readTime: '8 min read',
+    metaTitle: 'Best Tyre Brands UK 2026: Premium to Budget Ranked',
+    metaDescription: 'The best tyre brands in the UK for 2026, ranked across premium, mid-range, and budget tiers. Find the right brand for your car and budget, fitted at your location.',
+    intro: 'With dozens of tyre brands on the UK market, choosing can be confusing. The truth is that the best brand for you depends on your car, your mileage, and your budget. To make it simple, we have ranked the leading tyre brands into three clear tiers, so you can quickly find the right fit.',
+    sections: [
+      {
+        heading: 'Premium tyre brands (best performance)',
+        paragraphs: [
+          'Premium brands lead independent tests for wet braking, handling, and tread life. They cost the most but offer the shortest stopping distances and longest life, making them ideal for high-mileage drivers, powerful cars, and anyone who wants the best safety margin.',
+        ],
+        list: [
+          'Michelin: consistently among the best for wet grip and longevity.',
+          'Continental: outstanding wet braking and all-round performance.',
+          'Pirelli: strong on performance and prestige cars, often an original fit.',
+          'Bridgestone: excellent all-round with long tread life.',
+          'Goodyear: dependable wet-weather performance and comfort.',
+          'Dunlop: a well-regarded performance brand within the Goodyear group.',
+        ],
+      },
+      {
+        heading: 'Mid-range tyre brands (best value)',
+        paragraphs: [
+          'Mid-range brands deliver close to premium performance for less, and are the smart choice for most everyday drivers.',
+        ],
+        list: [
+          'Hankook, Falken, Yokohama, Toyo, Kumho, Cooper, Nexen, Vredestein, Uniroyal, and BFGoodrich.',
+        ],
+      },
+      {
+        heading: 'Budget tyre brands (best price)',
+        paragraphs: [
+          'Budget brands are the cheapest option and can be a sensible choice when they carry a B or C wet grip rating on the EU label.',
+        ],
+        list: [
+          'Avon, Barum, GT Radial, Nankang, Landsail, Davanti, Riken, and Kenda.',
+        ],
+      },
+      {
+        heading: 'How to choose the right brand for you',
+        paragraphs: [
+          'Match the brand to how you drive. High mileage, a powerful car, or a priority on safety points to premium. Average mileage and a balance of cost and quality points to mid-range. Low mileage, a city car, or a tight budget makes a good value brand sensible. Whatever the tier, always check the EU wet grip rating and fit matching tyres across each axle.',
+        ],
+      },
+      {
+        heading: 'We fit every major brand at your location',
+        paragraphs: [
+          'From premium to budget, we supply and fit all the leading tyre brands wherever you are in the UK. Tell us your tyre size and preferred budget and we will recommend the right option and fit it at your home, work, or the roadside.',
+        ],
+      },
+    ],
+    tags: ['best tyre brands', 'tyre brands UK', 'premium tyres', 'mid range tyres', 'budget tyres'],
+    relatedLinks: [{ label: 'Best budget tyres UK', href: '/blog/best-budget-tyres-uk' }, { label: 'Best mid-range tyres UK', href: '/blog/best-mid-range-tyres-uk' }, { label: 'Tyre brands we stock', href: '/tyre-brands' }, { label: 'Understanding tyre labels', href: '/blog/tyre-labels-explained' }],
+  },
+  {
+    slug: 'tyre-sidewall-damage',
+    image: '/images/hero-bg.webp',
+    title: 'Tyre Sidewall Damage: Causes, Is It Safe, and What to Do',
+    excerpt: 'A bulge, cut, or crack in your tyre sidewall is a serious safety issue. Learn what causes sidewall damage, whether it is safe to drive, and why it cannot be repaired.',
+    date: '29 Aug 2026',
+    dateISO: '2026-08-29',
+    category: 'Safety',
+    readTime: '6 min read',
+    metaTitle: 'Tyre Sidewall Damage: Causes, Safety & What to Do (UK)',
+    metaDescription: 'Bulge, cut or crack in your tyre sidewall? Learn what causes sidewall damage, whether it is safe to drive, and why a damaged sidewall cannot be repaired.',
+    intro: 'The sidewall is the flexible outer wall of the tyre between the tread and the wheel rim. Because it flexes constantly and carries the weight of the car, any damage here is far more serious than a simple tread puncture. Here is what causes sidewall damage, whether you can keep driving, and what you need to do.',
+    sections: [
+      {
+        heading: 'Common types of sidewall damage',
+        list: [
+          'Bulges or bubbles: a lump sticking out of the sidewall, usually caused by internal damage after hitting a pothole or kerb. This is a serious blowout risk.',
+          'Cuts and gouges: sharp objects or kerbing can slice into the sidewall and expose or cut the internal cords.',
+          'Cracks and perishing: fine cracks in the rubber from age, UV exposure, or under-inflation.',
+          'Kerbing scuffs: cosmetic scrapes from brushing a kerb, which are usually only surface deep.',
+          'Nails or screws in the sidewall: unlike the tread, these cannot be repaired.',
+        ],
+      },
+      {
+        heading: 'What causes a sidewall bulge?',
+        paragraphs: [
+          'A bulge almost always follows a sudden impact, such as hitting a pothole at speed or striking a kerb. The impact damages the internal fabric cords of the tyre, and air pressure then pushes the weakened area outward, creating the bulge. The outside may look intact, but the tyre is structurally compromised and can fail without warning.',
+        ],
+      },
+      {
+        heading: 'Is it safe to drive with sidewall damage?',
+        paragraphs: [
+          'A bulge, a cut that reaches the cords, or a deep gouge is not safe to drive on. These weaken the tyre structure and can cause a sudden blowout at speed, which is extremely dangerous. If you find a bulge or cut, avoid driving on it and arrange a replacement as soon as possible.',
+          'Light cosmetic kerbing scuffs that do not reach the cords are usually fine, but if you are unsure, have the tyre inspected. Perished, cracked rubber on an older tyre should also be replaced.',
+        ],
+      },
+      {
+        heading: 'Can sidewall damage be repaired?',
+        paragraphs: [
+          'No. Under the UK standard for tyre repairs (BS AU 159), only punctures in the central tread area can be repaired. Sidewall and shoulder damage is specifically excluded because those areas flex too much for any repair to hold safely. A tyre with a damaged sidewall must be replaced, not patched.',
+        ],
+      },
+      {
+        heading: 'What to do if you spot sidewall damage',
+        paragraphs: [
+          'Stop driving on the tyre if the damage is a bulge, cut, or deep gouge. A mobile tyre fitter can come to your home, work, or the roadside, confirm whether the tyre is safe, and supply and fit a replacement on the spot. If the damage came from a pothole, it is also worth having your wheel and alignment checked, as impacts can bend a wheel or knock the tracking out.',
+        ],
+      },
+    ],
+    tags: ['tyre sidewall damage', 'sidewall bulge', 'tyre safety', 'tyre replacement', 'pothole damage'],
+    relatedLinks: [{ label: 'Can a punctured tyre be repaired?', href: '/blog/can-a-puncture-be-repaired' }, { label: 'Can you drive on a flat tyre?', href: '/blog/can-you-drive-on-a-flat-tyre' }, { label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
+  },
+  {
+    slug: 'best-winter-tyres-uk',
+    image: '/images/step-drive.webp',
+    title: 'Best Winter Tyres UK 2026: Top Picks for Cold and Ice',
+    excerpt: 'Winter tyres transform grip below 7C. Here are the best winter tyres in the UK for 2026, from premium to value, plus whether winter or all-season is right for you.',
+    date: '26 Aug 2026',
+    dateISO: '2026-08-26',
+    category: 'Guide',
+    readTime: '7 min read',
+    metaTitle: 'Best Winter Tyres UK 2026: Top Picks Compared',
+    metaDescription: 'The best winter tyres in the UK for 2026, from premium to value. Learn how winter tyres work below 7C, winter vs all-season, and the law. Fitted at your location.',
+    intro: 'When temperatures drop below 7C, a winter tyre grips far better than a summer or standard tyre, even on a dry road, thanks to a softer compound and deeper sipes that bite into cold, wet, and icy surfaces. If you drive through UK winters in colder or rural areas, they are well worth considering. Here are the best winter tyres for 2026 and how to choose.',
+    sections: [
+      {
+        heading: 'How winter tyres work (the 7C rule)',
+        paragraphs: [
+          'Winter tyres use a rubber compound with more natural silica that stays flexible in the cold, plus a tread pattern with many small slits called sipes. Below about 7C, a normal tyre hardens and loses grip, while a winter tyre stays supple and can dramatically shorten stopping distances on cold, wet, or snowy roads. Look for the three-peak mountain snowflake symbol (3PMSF) for certified winter performance.',
+        ],
+      },
+      {
+        heading: 'Best winter tyres for 2026',
+        list: [
+          'Michelin Alpin series: consistently among the best for wet and cold grip with long life.',
+          'Continental WinterContact: outstanding braking on cold and wet roads.',
+          'Goodyear UltraGrip: a strong all-round winter performer.',
+          'Pirelli Winter series: excellent on performance and prestige cars.',
+          'Nokian: a Scandinavian specialist, superb in snow and ice.',
+          'Bridgestone Blizzak: a proven choice for snowy conditions.',
+          'Value options: Falken, Hankook, and Uniroyal offer well-reviewed winter tyres for less.',
+        ],
+      },
+      {
+        heading: 'Winter tyres vs all-season tyres',
+        paragraphs: [
+          'If you face regular snow, ice, or long cold spells, dedicated winter tyres are best, fitted for the colder months and swapped back in spring. For most UK drivers who see occasional cold snaps rather than heavy snow, all-season tyres are a practical compromise. They carry the snowflake symbol, stay on all year, and give better cold-weather grip than a summer tyre without the seasonal swap.',
+        ],
+      },
+      {
+        heading: 'Is it a legal requirement in the UK?',
+        paragraphs: [
+          'Winter tyres are not a legal requirement in the UK, unlike some European countries. However, they are strongly recommended if you drive in cold, rural, or hilly areas. If you do fit winter tyres, fit a full set of four for balanced, predictable handling rather than just two.',
+        ],
+      },
+      {
+        heading: 'Seasonal fitting that comes to you',
+        paragraphs: [
+          'We can supply and fit winter or all-season tyres at your home or workplace, and swap your sets over each season without you visiting a garage. Send us your tyre size for an all-inclusive quote.',
+        ],
+      },
+    ],
+    tags: ['best winter tyres', 'winter tyres UK', 'all-season tyres', 'cold weather tyres', 'snow tyres'],
+    relatedLinks: [{ label: 'Winter tyre guide for UK drivers', href: '/blog/winter-tyre-guide' }, { label: 'Best tyre brands ranked', href: '/blog/best-tyre-brands-uk' }, { label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
+  },
 ]
 
 export function getPostBySlug(slug: string | undefined): BlogPost | undefined {
