@@ -1125,6 +1125,197 @@ export const blogPosts: BlogPost[] = [
     tags: ['best winter tyres', 'winter tyres UK', 'all-season tyres', 'cold weather tyres', 'snow tyres'],
     relatedLinks: [{ label: 'Winter tyre guide for UK drivers', href: '/blog/winter-tyre-guide' }, { label: 'Best tyre brands ranked', href: '/blog/best-tyre-brands-uk' }, { label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
   },
+  {
+    slug: 'best-all-season-tyres-uk',
+    image: '/images/service-home.webp',
+    title: 'Best All-Season Tyres UK 2026: One Tyre for Every Season',
+    excerpt: 'All-season tyres save you the summer and winter swap while staying safe in UK conditions. Here are the best all-season tyres for 2026 and who should fit them.',
+    date: '15 Sep 2026',
+    dateISO: '2026-09-15',
+    category: 'Guide',
+    readTime: '7 min read',
+    metaTitle: 'Best All-Season Tyres UK 2026: Top Picks Compared',
+    metaDescription: 'The best all-season tyres in the UK for 2026. Compare top brands, learn how all-season tyres perform in summer and winter, and who should fit them.',
+    intro: 'All-season tyres have become hugely popular in the UK, and it is easy to see why. They stay on your car all year, cope with cold and wet far better than a summer tyre, and remove the hassle of swapping to winter tyres. For most UK drivers who rarely see deep snow, they are the practical choice. Here are the best all-season tyres for 2026.',
+    sections: [
+      {
+        heading: 'What is an all-season tyre?',
+        paragraphs: [
+          'An all-season tyre blends the qualities of summer and winter tyres into one. The rubber compound and tread pattern are designed to grip well in warm, wet, and cold conditions, and the best ones carry the three-peak mountain snowflake symbol (3PMSF) for certified winter capability. They are not as specialised as a dedicated winter tyre in heavy snow, or a summer tyre in high heat, but they are a strong all-round compromise.',
+        ],
+      },
+      {
+        heading: 'Best all-season tyres for 2026',
+        list: [
+          'Michelin CrossClimate: widely regarded as the benchmark, excellent in the wet and certified for winter.',
+          'Continental AllSeasonContact: superb balance of wet grip, low noise, and long life.',
+          'Goodyear Vector 4Seasons: a proven all-rounder with strong winter performance.',
+          'Bridgestone Weather Control: dependable grip across the seasons.',
+          'Hankook Kinergy 4S: excellent value with well-rounded performance.',
+          'Falken EuroAll Season: strong value option that tests well.',
+          'Vredestein Quatrac: a refined choice with good handling.',
+        ],
+      },
+      {
+        heading: 'Who should fit all-season tyres?',
+        paragraphs: [
+          'All-season tyres suit drivers who want year-round convenience without swapping tyres twice a year, who live in areas with mild winters rather than heavy snow, and who cover average mileage on a mix of roads. If you regularly drive in deep snow or ice, dedicated winter tyres are still better for the coldest months. If you do high performance driving in summer, a summer tyre will feel sharper.',
+        ],
+      },
+      {
+        heading: 'Fitted at your home or work',
+        paragraphs: [
+          'We can supply and fit all-season tyres wherever you are, so there is no trip to a garage. Send us your tyre size for an all-inclusive quote covering the tyre, fitting, balancing, a new valve, and old tyre disposal.',
+        ],
+      },
+    ],
+    tags: ['best all-season tyres', 'all season tyres UK', 'crossclimate', 'winter tyres', 'tyre guide'],
+    relatedLinks: [{ label: 'Best winter tyres UK', href: '/blog/best-winter-tyres-uk' }, { label: 'Best tyre brands ranked', href: '/blog/best-tyre-brands-uk' }, { label: 'Winter tyre guide', href: '/blog/winter-tyre-guide' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
+  },
+  {
+    slug: 'change-tyres-in-pairs-or-all-four',
+    image: '/images/step-fitting.webp',
+    title: 'Should You Change Tyres in Pairs or All Four?',
+    excerpt: 'Do you need to replace tyres in pairs, or is changing just one enough? Here is what is safe, what the rules say, and how to avoid handling problems.',
+    date: '13 Sep 2026',
+    dateISO: '2026-09-13',
+    category: 'Maintenance',
+    readTime: '5 min read',
+    metaTitle: 'Change Tyres in Pairs or All Four? UK Safety Guide',
+    metaDescription: 'Should you change tyres in pairs or all four at once? Learn when one tyre is enough, why matching tyres matters, and how mismatched tyres affect handling.',
+    intro: 'When one tyre is damaged or worn, a common question is whether you have to replace others at the same time. The answer depends on how worn your other tyres are and which axle is affected. Here is a clear guide to changing tyres in pairs, singly, or as a full set.',
+    sections: [
+      {
+        heading: 'Can you replace just one tyre?',
+        paragraphs: [
+          'Yes, you can replace a single tyre, and it is often fine if your other three tyres still have plenty of tread and are the same type. The key is that the new tyre should closely match the one next to it on the same axle in size, brand, and tread pattern, and the tread depths across that axle should be similar.',
+        ],
+      },
+      {
+        heading: 'Why changing in pairs is often recommended',
+        paragraphs: [
+          'Tyres on the same axle should have similar grip so the car brakes and corners evenly. If one tyre is brand new with full tread and the other is worn, the difference in grip can affect handling and stability, especially in the wet. For this reason, fitting a matching pair across an axle is the safest approach when the existing tyres are noticeably worn.',
+        ],
+      },
+      {
+        heading: 'New tyres on the front or rear?',
+        paragraphs: [
+          'Where you fit a new pair matters. Most tyre professionals recommend fitting the newer tyres to the rear axle, even on a front-wheel-drive car. Better grip at the rear helps keep the car stable and reduces the risk of the back stepping out in the wet. Your fitter can advise on the best arrangement for your vehicle.',
+        ],
+      },
+      {
+        heading: 'When to replace all four',
+        list: [
+          'On four-wheel-drive and all-wheel-drive cars, where the manufacturer often requires matching tyres on all four corners.',
+          'When all four tyres are close to the wear limit at the same time.',
+          'When you are switching tyre type, for example moving to all-season or winter tyres.',
+        ],
+      },
+      {
+        heading: 'Not sure? We will check for you',
+        paragraphs: [
+          'If you are unsure whether you need one, two, or four tyres, a mobile fitter can check your tread depths at your location and advise honestly, then supply and fit exactly what you need. We will never upsell you tyres you do not require.',
+        ],
+      },
+    ],
+    tags: ['change tyres in pairs', 'replace one tyre', 'tyre wear', 'tyre safety', 'tyre maintenance'],
+    relatedLinks: [{ label: 'How long should tyres last?', href: '/blog/how-long-tyres-last' }, { label: 'Legal tyre tread depth UK', href: '/blog/legal-tyre-tread-depth-uk' }, { label: 'Part-worn vs new tyres', href: '/blog/part-worn-vs-new-tyres' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
+  },
+  {
+    slug: 'signs-you-need-wheel-alignment',
+    image: '/images/step-drive.webp',
+    title: 'Signs Your Car Needs Wheel Alignment (and Alignment vs Balancing)',
+    excerpt: 'Uneven tyre wear, a car pulling to one side, or an off-centre steering wheel are all signs your alignment is out. Here is what to look for and how it differs from balancing.',
+    date: '11 Sep 2026',
+    dateISO: '2026-09-11',
+    category: 'Maintenance',
+    readTime: '6 min read',
+    metaTitle: 'Signs You Need Wheel Alignment + Alignment vs Balancing',
+    metaDescription: 'Learn the signs your car needs wheel alignment, including uneven tyre wear and pulling to one side, and how wheel alignment differs from wheel balancing.',
+    intro: 'Wheel alignment keeps your tyres pointing in exactly the right direction. When it drifts out, usually after hitting a pothole or kerb, your tyres wear unevenly and your car may not drive straight. Catching it early saves your tyres and keeps you safe. Here are the signs to watch for, and how alignment differs from balancing.',
+    sections: [
+      {
+        heading: 'Signs your wheel alignment is out',
+        list: [
+          'The car pulls to one side when you hold the steering wheel loosely on a straight, level road.',
+          'The steering wheel sits off-centre when you are driving straight ahead.',
+          'Uneven tyre wear, with one edge of the tread wearing faster than the other.',
+          'The steering feels loose, vague, or twitchy.',
+          'You recently hit a pothole, kerb, or speed bump hard.',
+        ],
+      },
+      {
+        heading: 'Why alignment matters',
+        paragraphs: [
+          'Correct alignment means all four wheels are set to the angles the manufacturer specifies. When they are off, tyres scrub against the road at a slight angle and wear out far faster, sometimes in just a few thousand miles. Poor alignment also increases rolling resistance, which uses more fuel, and can make the car less stable and predictable to drive.',
+        ],
+      },
+      {
+        heading: 'Wheel alignment vs wheel balancing: what is the difference?',
+        paragraphs: [
+          'These two are often confused but are completely different. Wheel alignment adjusts the angles of the wheels so the car tracks straight and tyres wear evenly. Wheel balancing corrects tiny weight differences around a wheel and tyre so it spins smoothly without vibration.',
+          'A simple way to remember it: alignment fixes pulling and uneven wear, while balancing fixes vibration through the steering wheel or seat, usually felt at certain speeds. A new tyre is always balanced when fitted; alignment is a separate check.',
+        ],
+      },
+      {
+        heading: 'What to do',
+        paragraphs: [
+          'If you notice any of the alignment signs above, have it checked, especially after pothole or kerb damage that can also harm the tyre and wheel. When we fit new tyres at your location we always balance them as standard, and we can advise if we spot uneven wear that suggests your alignment needs attention.',
+        ],
+      },
+    ],
+    tags: ['wheel alignment', 'wheel balancing', 'uneven tyre wear', 'tracking', 'tyre maintenance'],
+    relatedLinks: [{ label: 'How long should tyres last?', href: '/blog/how-long-tyres-last' }, { label: 'Correct tyre pressure guide', href: '/blog/correct-tyre-pressure-guide' }, { label: 'Tyre sidewall damage', href: '/blog/tyre-sidewall-damage' }, { label: 'Mobile tyre replacement', href: '/mobile-tyre-replacement' }],
+  },
+  {
+    slug: 'how-to-change-a-tyre',
+    image: '/images/service-emergency.webp',
+    title: 'How to Change a Tyre Safely: UK Step-by-Step Guide',
+    excerpt: 'A clear, safe step-by-step guide to changing a tyre and fitting your spare, plus when it is safer to call a mobile fitter instead.',
+    date: '9 Sep 2026',
+    dateISO: '2026-09-09',
+    category: 'Safety',
+    readTime: '6 min read',
+    metaTitle: 'How to Change a Tyre Safely: UK Step-by-Step Guide',
+    metaDescription: 'A safe, step-by-step UK guide to changing a tyre and fitting your spare wheel, the tools you need, and when to call a mobile tyre fitter instead.',
+    intro: 'Knowing how to change a tyre is a useful skill, but it must be done safely, and there are times when it is far better to call for help than to attempt it. Here is a clear step-by-step guide, along with the important safety points many guides leave out.',
+    sections: [
+      {
+        heading: 'Before you start: is it safe?',
+        paragraphs: [
+          'Never attempt to change a tyre on a motorway hard shoulder or anywhere close to moving traffic. In those situations, get behind the barrier and call for assistance. Only change a tyre when you are on firm, level ground, well away from traffic, with the car in a safe position.',
+        ],
+      },
+      {
+        heading: 'What you will need',
+        list: [
+          'The spare wheel (or space-saver) and the jack, wheel brace, and locking wheel nut key from your car.',
+          'A warning triangle if you are in a safe location to place one.',
+          'Wheel chocks or bricks to stop the car rolling, and gloves.',
+        ],
+      },
+      {
+        heading: 'Step by step',
+        list: [
+          'Apply the handbrake, switch on hazard lights, and put the car in gear or park.',
+          'Chock the wheel diagonally opposite the one you are changing.',
+          'Loosen the wheel nuts about half a turn while the wheel is still on the ground, using the locking nut key where needed.',
+          'Place the jack at the correct jacking point (see your handbook) and raise the car until the tyre is just clear of the ground.',
+          'Fully remove the nuts, take off the wheel, and fit the spare.',
+          'Hand-tighten the nuts, lower the car, then fully tighten the nuts in a diagonal (star) pattern.',
+          'Check the spare pressure as soon as you can, and if it is a space-saver, observe its speed and distance limits.',
+        ],
+      },
+      {
+        heading: 'When to call a mobile fitter instead',
+        paragraphs: [
+          'Many modern cars no longer carry a spare wheel, only a sealant kit that is a temporary fix at best. If you have no spare, a damaged sidewall, a lost locking wheel nut key, or you are in an unsafe spot, do not risk it. A mobile tyre fitter can come to your home, work, or the roadside, and supply and fit a proper replacement tyre on the spot, which is safer and gets you back on the road properly rather than on a space-saver.',
+        ],
+      },
+    ],
+    tags: ['how to change a tyre', 'spare wheel', 'flat tyre', 'roadside', 'tyre safety'],
+    relatedLinks: [{ label: 'Can you drive on a flat tyre?', href: '/blog/can-you-drive-on-a-flat-tyre' }, { label: 'Flat tyre on the motorway: what to do', href: '/blog/flat-tyre-motorway' }, { label: 'Lost your locking wheel nut key?', href: '/blog/lost-locking-wheel-nut-key' }, { label: 'Emergency mobile tyre fitting', href: '/emergency-mobile-tyre-fitting' }],
+  },
 ]
 
 export function getPostBySlug(slug: string | undefined): BlogPost | undefined {

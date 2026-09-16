@@ -3,6 +3,7 @@
   "framework": "vite",
   "cleanUrls": true,
   "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "mobiletyrefitter247.co.uk" }], "destination": "https://www.mobiletyrefitter247.co.uk/:path*", "permanent": true },
     { "source": "/emergency-tyre-fitting", "destination": "/emergency-mobile-tyre-fitting", "permanent": true },
     { "source": "/24-hour-tyre-fitting", "destination": "/emergency-mobile-tyre-fitting", "permanent": true },
     { "source": "/same-day-tyre-fitting", "destination": "/emergency-mobile-tyre-fitting", "permanent": true },
