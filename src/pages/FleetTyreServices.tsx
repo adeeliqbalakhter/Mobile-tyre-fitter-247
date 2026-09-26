@@ -25,7 +25,7 @@ const contentBlocks = [
     heading: "Complete Fleet Tyre Management For UK Businesses",
     paragraphs: [
       "Managing a fleet of vehicles comes with unique challenges, and tyre maintenance is one of the most critical. Worn or damaged tyres put your drivers at risk, can result in MOT failures, and cause costly unexpected downtime. Our fleet tyre management service takes the hassle out of fleet tyre maintenance by providing a single, reliable supplier who covers your entire operation nationwide.",
-      "We work with businesses of all sizes, from local delivery companies with five vans to national organisations with hundreds of vehicles. Our service is built around your needs: scheduled maintenance visits to check tyre conditions, priority emergency response when failures occur, volume pricing that reduces your costs, and detailed reporting that gives you complete visibility over your fleet\'s tyre health. One phone call to your dedicated account manager is all it takes.",
+      "We work with businesses of all sizes, from local delivery companies with five vans to national organisations with hundreds of vehicles. Our service is built around your needs: scheduled maintenance visits to check tyre conditions, priority emergency response when failures occur, volume pricing that reduces your costs, and detailed reporting that gives you complete visibility over your fleet's tyre health. One phone call to your dedicated account manager is all it takes.",
     ],
   },
   {

@@ -68,8 +68,11 @@ export default function StickyNav() {
     return () => document.removeEventListener('keydown', handleKeyDown)
   }, [dropdownOpen, closeDropdown])
 
-  // Close menu on route change
+  // Close menu on route change. Resetting overlay state when the path changes
+  // is the intended behaviour here (covers back/forward and programmatic nav),
+  // so the synchronous setState in this effect is deliberate.
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMenuOpen(false)
     setDropdownOpen(false)
   }, [location.pathname])

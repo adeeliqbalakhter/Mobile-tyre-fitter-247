@@ -20,4 +20,16 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  {
+    // Vendored shadcn/ui primitives (and their stock helper hook). These are
+    // generated library components kept as-is for future use; relax the
+    // component-authoring lint rules that only fire on this scaffolding so the
+    // rest of the app can lint clean without hand-editing generated files.
+    files: ['src/components/ui/**/*.{ts,tsx}', 'src/hooks/use-mobile.ts'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+      'react-hooks/set-state-in-effect': 'off',
+      'react-hooks/purity': 'off',
+    },
+  },
 ])

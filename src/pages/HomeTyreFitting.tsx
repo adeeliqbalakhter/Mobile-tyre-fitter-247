@@ -31,7 +31,7 @@ const contentBlocks = [
   {
     heading: "How Home Tyre Fitting Works",
     paragraphs: [
-      "The process is simple. Call us on 0800 058 4106 and tell us your address and vehicle details. We will check our stock, confirm availability, and give you an all-inclusive quote. You choose an appointment time, we offer slots from 7am to 7pm, seven days a week, and we will send you a confirmation text with your fitter\'s details and ETA.",
+      "The process is simple. Call us on 0800 058 4106 and tell us your address and vehicle details. We will check our stock, confirm availability, and give you an all-inclusive quote. You choose an appointment time, we offer slots from 7am to 7pm, seven days a week, and we will send you a confirmation text with your fitter's details and ETA.",
       "On the day, your fitter arrives in a clearly marked van, introduces themselves, and assesses the work. They will need access to your vehicle and enough space on your driveway to work safely, typically about the length of your car. The fitting process takes 30-45 minutes per tyre, during which you are free to carry on with your day. When the work is complete, your fitter will show you the results, provide a full receipt, and take payment by card. Your old tyres are loaded into the van for responsible recycling.",
     ],
   },

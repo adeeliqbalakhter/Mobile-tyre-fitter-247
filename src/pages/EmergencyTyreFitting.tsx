@@ -15,7 +15,7 @@ const whatToExpect = [
   "Call our 24/7 emergency line and speak directly to a dispatcher, no automated systems",
   "Tell us your location, vehicle details, and tyre size. We will give you an instant quote",
   "Your nearest fully-equipped mobile fitter is dispatched immediately with the correct tyre",
-  "Receive real-time SMS updates with your fitter\'s estimated arrival time",
+  "Receive real-time SMS updates with your fitter's estimated arrival time",
   "Professional fitting and balancing completed at your location while you wait",
   "Pay securely by card or Apple Pay. Drive away with a fully fitted, balanced tyre",
 ]
@@ -38,7 +38,7 @@ const contentBlocks = [
   {
     heading: "Why Choose Mobile Tyre Fitter 24/7 For Emergency Tyre Replacement?",
     paragraphs: [
-      "With over 70,000 tyres fitted and a 4.9-star Google rating from more than 2,500 customers, Mobile Tyre Fitter 24/7 has established itself as the UK\'s most trusted emergency mobile tyre service. Our average response time of 30-45 minutes is among the fastest in the industry, and our 24/7 availability means you are never left waiting until morning. Our pricing is transparent, quoted upfront, and all of our work is guaranteed.",
+      "With over 70,000 tyres fitted and a 4.9-star Google rating from more than 2,500 customers, Mobile Tyre Fitter 24/7 has established itself as the UK's most trusted emergency mobile tyre service. Our average response time of 30-45 minutes is among the fastest in the industry, and our 24/7 availability means you are never left waiting until morning. Our pricing is transparent, quoted upfront, and all of our work is guaranteed.",
       "Our coverage extends to every corner of the UK, including major motorways such as the M1, M25, M6, M40, M4, M62, M5, and M11. We understand the stress and inconvenience of a tyre emergency, which is why we have designed our entire service around speed, transparency, and quality. When you call us, you speak to a real person based in the UK who understands your situation and can dispatch help immediately.",
     ],
   },

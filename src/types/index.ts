@@ -6,7 +6,4 @@ declare global {
   }
 }
 
-// Make gtag available as global
-declare const gtag: (...args: unknown[]) => void;
-
 export {};

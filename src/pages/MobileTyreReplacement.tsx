@@ -25,7 +25,7 @@ const contentBlocks = [
     heading: "Complete Mobile Tyre Replacement At Your Location",
     paragraphs: [
       "When your tyres are worn, damaged, or simply past their best, replacing them should not be a hassle. Our mobile tyre replacement service brings the full expertise of a professional tyre garage directly to your doorstep. We supply, fit, and balance new tyres at your chosen location, whether that is your home driveway, your office car park, or a roadside location anywhere in the UK.",
-      "Our service covers all vehicle types and tyre categories. From family hatchbacks and executive saloons to large 4x4s, commercial vans, and motorhomes, we have the equipment and expertise to handle them all. Our mobile vans are stocked with over 70,000 tyres from the world\'s leading manufacturers, ensuring we have the right tyre for your vehicle at a price that suits your budget.",
+      "Our service covers all vehicle types and tyre categories. From family hatchbacks and executive saloons to large 4x4s, commercial vans, and motorhomes, we have the equipment and expertise to handle them all. Our mobile vans are stocked with over 70,000 tyres from the world's leading manufacturers, ensuring we have the right tyre for your vehicle at a price that suits your budget.",
     ],
   },
   {
@@ -51,7 +51,7 @@ const serviceFaqs = [
   { question: "Should I replace all four tyres at once?", answer: "For optimal handling and safety, we recommend replacing tyres in pairs (both front or both rear) at a minimum. On four-wheel-drive vehicles, all four tyres should ideally be replaced together with matching tread patterns. We will advise you based on your specific vehicle." },
   { question: "Can you replace run-flat tyres?", answer: "Yes, we are run-flat tyre specialists. We stock and fit all major run-flat brands including Bridgestone RFT, Pirelli Euforia, Dunlop DSST, Goodyear EMT, and Michelin ZP. Run-flat tyres require specialist equipment and training, our fitters are fully qualified." },
   { question: "What happens to my old tyres?", answer: "We dispose of your old tyres responsibly at no extra cost. All tyres are sent to licensed recycling facilities in compliance with UK environmental regulations. You do not need to do anything, we handle everything." },
-  { question: "Do you replace TPMS sensors?", answer: "Yes, we can replace faulty TPMS (Tyre Pressure Monitoring System) sensors and recalibrate them to your vehicle\'s system. This service is available at a small additional cost and can be done during your tyre replacement." },
+  { question: "Do you replace TPMS sensors?", answer: "Yes, we can replace faulty TPMS (Tyre Pressure Monitoring System) sensors and recalibrate them to your vehicle's system. This service is available at a small additional cost and can be done during your tyre replacement." },
   { question: "What is included in the fitting service?", answer: "Our fitting service includes removal of the old tyre, fitting the new tyre, wheel balancing, a new valve, tyre pressure adjustment, and a visual inspection of your brakes and suspension. All work is guaranteed." },
 ]
 
