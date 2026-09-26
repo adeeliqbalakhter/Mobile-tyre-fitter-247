@@ -25,7 +25,7 @@ const schema = {
     email: SUPPORT_EMAIL,
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+447933899930',
+      telephone: '+448000584106',
       contactType: 'customer service',
       areaServed: 'GB',
       availableLanguage: 'English',
@@ -38,7 +38,7 @@ export default function ContactPage() {
   const waUrl = `https://wa.me/${WHATSAPP_NUMBER.replace(/\+/g, '')}?text=${encodeURIComponent('Hi, I need help with my tyres.')}`
   return (
     <>
-      <SEOHead title="Contact Us - 24/7 Mobile Tyre Fitting UK" description="Contact Mobile Tyre Fitter 24/7. Call 07933 899930 for 24/7 emergency mobile tyre fitting across the UK, or reach us on WhatsApp for an instant quote." keywords="contact tyre fitter, mobile tyre fitting phone, tyre emergency contact, 24/7 tyre help UK" schema={schema} breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact' }]} />
+      <SEOHead title="Contact Us - 24/7 Mobile Tyre Fitting UK" description="Contact Mobile Tyre Fitter 24/7. Call 0800 058 4106 for 24/7 emergency mobile tyre fitting across the UK, or reach us on WhatsApp for an instant quote." keywords="contact tyre fitter, mobile tyre fitting phone, tyre emergency contact, 24/7 tyre help UK" schema={schema} breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact' }]} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>

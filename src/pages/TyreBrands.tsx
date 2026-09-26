@@ -26,7 +26,7 @@ const specialist = [
 export default function TyreBrands() {
   return (
     <>
-      <SEOHead title="Tyre Brands We Stock - Michelin, Pirelli, Continental & More" description="All major tyre brands supplied and fitted at your location across the UK, from Michelin, Pirelli and Continental to quality budget options. Call 07933 899930." keywords="tyre brands UK, Michelin mobile fitting, Pirelli, Continental, Bridgestone, Goodyear, Dunlop, tyre brand comparison" schema={brandsSchema} breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Tyre Brands', url: '/tyre-brands' }]} />
+      <SEOHead title="Tyre Brands We Stock - Michelin, Pirelli, Continental & More" description="All major tyre brands supplied and fitted at your location across the UK, from Michelin, Pirelli and Continental to quality budget options. Call 0800 058 4106." keywords="tyre brands UK, Michelin mobile fitting, Pirelli, Continental, Bridgestone, Goodyear, Dunlop, tyre brand comparison" schema={brandsSchema} breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Tyre Brands', url: '/tyre-brands' }]} />
       <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 bg-white">
         <div className="mx-auto max-w-[1400px] px-4 lg:px-6">
           <nav className="mb-6 flex items-center gap-2 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>

@@ -12,7 +12,7 @@ export const BUSINESS_PROVIDER = {
   '@id': `${SITE_URL}/#business`,
   name: SITE_NAME,
   url: SITE_URL,
-  telephone: '+447933899930',
+  telephone: '+448000584106',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '128 City Road',

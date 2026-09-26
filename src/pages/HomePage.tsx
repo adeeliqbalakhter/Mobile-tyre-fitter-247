@@ -17,7 +17,7 @@ const homeSchema = [
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'Mobile Tyre Fitter 24/7 - 24/7 Mobile Tyre Fitting UK',
-    description: "UK's leading 24/7 mobile tyre fitting service. Emergency tyre replacement at home, work, or roadside. 30-45 min average response. Call 07933 899930.",
+    description: "UK's leading 24/7 mobile tyre fitting service. Emergency tyre replacement at home, work, or roadside. 30-45 min average response. Call 0800 058 4106.",
     url: SITE_URL,
     isPartOf: { '@type': 'WebSite', name: SITE_NAME, url: SITE_URL },
   },
@@ -43,7 +43,7 @@ const homeSchema = [
       {
         '@type': 'Question',
         name: 'How much does mobile tyre fitting cost?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Pricing depends on your tyre size and brand choice. We give you a clear, all-inclusive quote upfront before any work begins. The price includes the tyre, fitting, balancing, new valve, and old tyre disposal. Call 07933 899930 for an instant quote.' },
+        acceptedAnswer: { '@type': 'Answer', text: 'Pricing depends on your tyre size and brand choice. We give you a clear, all-inclusive quote upfront before any work begins. The price includes the tyre, fitting, balancing, new valve, and old tyre disposal. Call 0800 058 4106 for an instant quote.' },
       },
     ],
   },
@@ -54,7 +54,7 @@ export default function HomePage() {
     <>
       <SEOHead
         title="24/7 Mobile Tyre Fitting UK - Emergency Tyre Replacement Anywhere"
-        description="UK's leading 24/7 mobile tyre fitting service. Emergency tyre replacement at your home, work, or roadside with 30-45 min average response. All major brands stocked. Call 07933 899930 now for an instant quote."
+        description="UK's leading 24/7 mobile tyre fitting service. Emergency tyre replacement at your home, work, or roadside with 30-45 min average response. All major brands stocked. Call 0800 058 4106 now for an instant quote."
         keywords="mobile tyre fitting, 24/7 tyre fitting, emergency tyre replacement, mobile tyre repair, roadside tyre fitting, home tyre fitting, UK tyre fitting, flat tyre repair, blowout repair, mobile tyre fitter"
         schema={homeSchema}
       />
