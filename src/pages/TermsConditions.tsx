@@ -23,252 +23,363 @@ interface Section {
 
 const LAST_UPDATED = 'September 2026'
 
+// Prominent key points shown at the top of the page. UK unfair-terms law
+// (Consumer Rights Act 2015 s.68; CMA37 guidance Ch 4) requires onerous or
+// surprising terms to be flagged clearly, not buried in the small print.
+const keyPoints: string[] = [
+  `You have a legal right to cancel within 14 days. Because our service is usually urgent, you can ask us to start straight away; if you do and then cancel, you pay only for the work done and costs we have actually incurred (see section 5).`,
+  `Cancellation charges reflect the stage reached: nothing before we incur any cost; £50 once your tyre is sourced; £150 once a fitter is on the way; the full call-out fee plus the tyre cost once a fitter has arrived.`,
+  `A call-out fee applies to some jobs. The standard call-out fee is £120, and it can be higher for remote locations. We confirm the exact fee with you when you book, before you commit.`,
+  `If a tyre we supply is faulty, you have rights against us under the Consumer Rights Act 2015. If we damage your wheel or vehicle through our own fault, we will put it right — please tell us as soon as possible, ideally within 24 hours.`,
+  `Nothing in these Terms removes your statutory rights.`,
+]
+
 const sections: Section[] = [
   {
     number: 1,
-    title: 'Object and Acceptance',
+    title: 'Definitions',
     clauses: [
       {
-        paragraphs: [
-          `These Terms govern all sales made by the Company and form an individual contract between the Company and each Customer.`,
-          `These Terms take precedence over, and supersede, any prior agreements, representations, commitments, declarations, promises, intentions, documentation, or information exchanged with the Customer regarding an order, whether written or oral.`,
-          `A Customer's order is accepted once the Customer calls, messages, or otherwise contacts the Company and requests emergency tyre services. The order is treated as complete once the Customer has reviewed and confirmed all order details, including price, tyre specification, and address, and has had a reasonable opportunity to correct any errors before final confirmation is given.`,
-          `These Terms are accessible via the Company's website at all times and may also be provided to the Customer in a durable format together with the acknowledgement of receipt.`,
-          `The contract between the Company and the Customer is formed at the moment the Company issues its acknowledgement of receipt.`,
-          `The Company retains a record of the contract for a period of ten (10) years from the date of delivery, accessible to the Customer upon reasonable request.`,
-          `Once the contract is formed, the Customer is notified accordingly, and this creates a binding obligation on the Customer to pay the agreed price in favour of the Company.`,
+        list: [
+          `"Company", "we", "us", "our" means ${COMPANY_LEGAL_NAME}, company number ${COMPANY_NUMBER}, registered office ${REGISTERED_OFFICE}.`,
+          `"You", "your", the "Customer" means the person or business placing an order with us.`,
+          `"Consumer" means an individual acting wholly or mainly outside their trade, business, craft or profession, as defined in the Consumer Rights Act 2015. Consumers have additional legal protections, which are described in these Terms.`,
+          `"Business customer" means a customer who is not a consumer, for example a company, sole trader or fleet operator ordering for business purposes. Section 18 sets out the terms that apply specifically to business customers.`,
+          `"Durable medium" means a format (such as email) in which we can give you information that you can keep and reproduce unchanged.`,
+          `"These Terms" means these terms and conditions, as updated from time to time in accordance with section 15.`,
         ],
       },
     ],
   },
   {
     number: 2,
-    title: 'Products',
+    title: 'Scope and Formation of the Contract',
     clauses: [
       {
         paragraphs: [
-          `The Company provides emergency mobile tyre fitting services across the UK and is committed to attending within a target window of 30 minutes to 2 hours from the time the order is placed or payment is taken. This target is an estimate only and may vary depending on the Customer's location, traffic and weather conditions, and the type of tyre requested (see the Service Timeframe section below).`,
-          `The Company's tyre range includes budget, mid-range, and premium tyres. The product information confirmed at the point of order forms the contractual obligation agreed between the parties. All orders are subject to product availability as set out below.`,
-        ],
-      },
-      {
-        subheading: '2.1 Tyre Availability',
-        list: [
-          `All bookings are subject to the availability of the specific tyre required for the Customer's vehicle.`,
-          `The Company will not fit an incorrect or unsuitable tyre to a Customer's vehicle under any circumstances, even where doing so would allow an appointment to proceed.`,
-          `Where the required tyre cannot be sourced, the Company will notify the Customer as soon as reasonably possible and issue a full refund.`,
-        ],
-      },
-      {
-        subheading: '2.2 Nature of Service',
-        list: [
-          `The Company provides tyre replacement services only.`,
-          `The Company does not carry out puncture repairs, tyre patching, sidewall repairs, wheel repairs, suspension repairs, or vehicle wheel alignment services, unless expressly agreed otherwise in writing prior to the appointment.`,
+          `These Terms apply to every order you place with us and form the contract between you and the Company. They do not affect anything we tell you or confirm to you about your specific order (for example the price, the tyre specification, or the estimated arrival time) before you place it. You can rely on that information, and under the Consumer Rights Act 2015 it forms part of your contract.`,
+          `You can place an order by telephone, WhatsApp, email, our mobile application, or our website. Before you confirm your order, you will have the opportunity to check and correct the order details, including the price, the tyre specification and the address.`,
+          `Your order is accepted, and a legally binding contract is formed, when we confirm your order after payment has been taken. We will send you confirmation of your order on a durable medium (for example by email or message).`,
+          `We keep a record of your contract for as long as we reasonably need it to provide the service and to meet our legal, accounting and tax obligations, normally six years, and we handle your information in line with our Privacy Policy.`,
         ],
       },
     ],
   },
   {
     number: 3,
-    title: 'Placing an Order',
+    title: 'Our Services and Products',
     clauses: [
       {
-        subheading: '3.1 Access to the Company’s Website',
         paragraphs: [
-          `The Company's website is publicly accessible year-round, twenty-four hours a day, seven days a week. The website may occasionally be unavailable due to scheduled maintenance or technical issues beyond the Company's reasonable control, which may require additional time to resolve. Orders may be placed instantly by telephone, WhatsApp, email, or through the Company's mobile application.`,
+          `We provide emergency mobile tyre fitting across the UK. We aim to attend within a target window of 30 minutes to 2 hours from the time your order is placed or payment is taken. This is an estimate only and may vary with your location, traffic, weather and the tyre required (see section 4.7). It does not limit your legal right to have the service carried out within a reasonable time.`,
+          `We provide tyre replacement only. We do not carry out puncture repairs, tyre patching, sidewall repairs, wheel repairs, suspension repairs, or wheel alignment, unless we agree otherwise in writing before the appointment.`,
+          `Our tyre range includes budget, mid-range and premium tyres. The tyre and price confirmed when you order form part of your contract.`,
         ],
       },
       {
-        subheading: '3.2 Reviews',
-        paragraphs: [
-          `Customers are invited to review independent feedback and ratings published on the Company's website prior to placing an order.`,
-        ],
-      },
-      {
-        subheading: '3.3 Placing an Order',
-        paragraphs: [
-          `You can place an order by telephone on ${PHONE_NUMBER}, by email at ${SUPPORT_EMAIL}, or on WhatsApp at ${WHATSAPP_NUMBER}.`,
-          `An order is confirmed and processed once payment has been successfully taken. A confirmation is sent to the Customer shortly after payment. When placing an order, the Customer must provide:`,
-        ],
+        subheading: '3.1 Tyre availability',
         list: [
-          `Full name`,
-          `Mobile number`,
-          `Vehicle details (make, model, year)`,
-          `Exact tyre size`,
-          `Number of tyres required`,
-          `Whether a wheel locking nut key is required`,
-          `Postal code of the vehicle's current location`,
-          `Vehicle registration number`,
-          `Payment information`,
-        ],
-      },
-      {
-        paragraphs: [
-          `The Company reserves the right to refuse service, or to amend its eligibility criteria, at its discretion. By placing an order, the Customer confirms that they are of legal age to enter into a binding contract, or, where placing an order on behalf of a legal entity, that they are duly authorised to bind that entity to these Terms.`,
-        ],
-      },
-      {
-        subheading: '3.4 Information Accuracy',
-        paragraphs: [
-          `The Customer is solely responsible for providing the Company with accurate and complete information, including but not limited to vehicle details, exact tyre size, current location, and whether a wheel locking nut key is available on-site.`,
-          `Any additional costs reasonably incurred by the Company as a result of inaccurate or incomplete information supplied by the Customer may be charged to the Customer. The Company reserves the right to take appropriate action, including recovery of costs, where information is provided knowingly falsely.`,
-          `Where incorrect or incomplete information results in an additional journey, additional tyre sourcing cost, or a repeat visit, the Customer shall be responsible for the associated charges, which will be communicated to the Customer prior to being applied where reasonably practicable.`,
-          `Where the Customer fails to inform the Company that a wheel locking nut key is missing, the Company will assume the key is available on-site. Where the Company's fitters are required to remove or break a locking nut without the correct key, an additional charge will apply, which will be confirmed with the Customer wherever possible before the work is carried out.`,
-        ],
-      },
-      {
-        subheading: '3.5 Product Selection',
-        paragraphs: [
-          `It is the Customer's responsibility to specify their preferred tyre category, budget, mid-range, or premium, at the time of booking. Where no preference is specified, the Company will default to supplying a budget or mid-range tyre suitable for the Customer's vehicle.`,
-        ],
-      },
-      {
-        subheading: '3.6 Brand and Premium Requests',
-        paragraphs: [
-          `Where a Customer requests a specific brand or a premium tyre, this may affect both the price and the time required to source and fit the product. The Company will always confirm the applicable price with the Customer before any chargeable work begins.`,
-        ],
-      },
-      {
-        subheading: '3.7 Service Timeframe',
-        list: [
-          `The Company's target attendance window is 30 minutes to 2 hours from the time the order is placed or payment is taken. Arrival times are estimates only and do not form a guaranteed delivery time.`,
-          `Arrival times may be affected by traffic, weather conditions, supplier delays, vehicle breakdowns, remote locations, or other circumstances beyond the Company's reasonable control.`,
-          `The Company will make every reasonable effort to keep the Customer informed of any significant anticipated delay.`,
-          `The maximum anticipated delay period is 5 hours from the original estimated attendance time. Where this period is expected to be exceeded, the Company will contact the Customer directly to discuss options, which may include cancellation and a full refund at the Customer's election.`,
-        ],
-      },
-      {
-        subheading: '3.8 Cancellation',
-        list: [
-          `Customers may cancel their booking free of charge within 5 minutes of placing the order.`,
-          `Cancellations made between 5 and 25 minutes after booking will incur a cancellation fee of £100.`,
-          `Cancellations made between 25 and 60 minutes after booking will incur a cancellation fee of £150.`,
-          `Cancellations made after 60 minutes will incur a charge reflecting the costs already and reasonably incurred by the Company at the time of cancellation, which may include tyre sourcing costs, fitter dispatch costs, travel costs, and supplier charges. The Customer will be notified of the applicable charge at the time of cancellation.`,
-          `Where the Company is unable to source the tyre required for the Customer's vehicle, a full refund will be issued regardless of when the booking is cancelled.`,
+          `All bookings are subject to the availability of the specific tyre required for your vehicle.`,
+          `We will not fit an incorrect or unsuitable tyre to your vehicle under any circumstances, even where doing so would allow an appointment to go ahead. This is for your safety and to keep your vehicle road-legal.`,
+          `Where we cannot source the tyre required, we will tell you as soon as reasonably possible and give you a full refund.`,
         ],
       },
     ],
   },
   {
     number: 4,
-    title: 'Financial Conditions',
+    title: 'Placing an Order',
     clauses: [
       {
+        subheading: '4.1 How to order',
+        paragraphs: [
+          `You can order by telephone on ${PHONE_NUMBER}, by email at ${SUPPORT_EMAIL}, or on WhatsApp at ${WHATSAPP_NUMBER}. Our website is normally available 24 hours a day, though it may occasionally be unavailable for maintenance or for reasons outside our reasonable control.`,
+          `When you order, please provide: your full name; a mobile number; your vehicle details (make, model, year); the exact tyre size; the number of tyres required; whether a locking wheel-nut key is available; the postcode of the vehicle's current location; the vehicle registration; and payment information.`,
+        ],
+      },
+      {
+        subheading: '4.2 Reviews',
+        paragraphs: [
+          `You are welcome to read customer feedback and ratings on our website before ordering. All reviews we display are from genuine customers; we do not publish fake reviews or undisclosed incentivised reviews.`,
+        ],
+      },
+      {
+        subheading: '4.3 Who can order',
+        paragraphs: [
+          `By placing an order you confirm that you are old enough to enter into a binding contract and, if ordering for a business, that you are authorised to bind that business. We may decline an order where we reasonably cannot carry out the work safely or lawfully, where the required tyre cannot be sourced, or where we otherwise have reasonable grounds to do so. We will never refuse service on any ground prohibited by the Equality Act 2010. Where we decline before work begins, you will not be charged and any payment taken will be refunded.`,
+        ],
+      },
+      {
+        subheading: '4.4 Accurate information and extra costs',
+        paragraphs: [
+          `You are responsible for giving us accurate and complete information, including your vehicle details, the exact tyre size, your location, and whether a locking wheel-nut key is available on site.`,
+          `If inaccurate or incomplete information means we reasonably incur extra cost (for example a wasted journey, re-sourcing a tyre, or a return visit), we may charge you the reasonable cost we actually incur. We will tell you the amount and get your agreement before applying any such charge.`,
+          `If you do not tell us that a locking wheel-nut key is missing, we will assume it is available on site. If we then have to remove the nut without the correct key, an additional charge applies, which we will confirm with you before carrying out that work.`,
+        ],
+      },
+      {
+        subheading: '4.5 Choosing your tyre',
+        paragraphs: [
+          `Please tell us your preferred tyre category (budget, mid-range or premium) when you book. If you do not state a preference, we will supply a budget or mid-range tyre suitable for your vehicle.`,
+        ],
+      },
+      {
+        subheading: '4.6 Brand and premium requests',
+        paragraphs: [
+          `If you ask for a specific brand or a premium tyre, this may affect both the price and the time needed to source and fit it. We will always confirm the price with you before any chargeable work begins.`,
+        ],
+      },
+      {
+        subheading: '4.7 Arrival times',
         list: [
-          `The Company accepts payment by debit or credit card, PayPal, and bank transfer.`,
-          `Card payments are processed through a secure, PCI-compliant payment provider using 3D Secure authentication. Card details are never stored or accessible to the Company in an unsecured or unauthorised manner.`,
-          `Card payments are debited immediately upon confirmation of the order, and this action is irrevocable. By placing an order, the Customer authorises the Company to debit the card provided for the full amount due and confirms that they are the legitimate cardholder, or are otherwise authorised to use the payment method provided.`,
-          `PayPal payments are similarly protected via secure authentication protocols.`,
-          `Bank transfer payments must be made to the Company's registered business bank account, quoting the relevant order number as the payment reference to ensure accurate reconciliation.`,
+          `Our target attendance window is 30 minutes to 2 hours from the time your order is placed or payment is taken. Arrival times are estimates only and are not a guaranteed delivery time.`,
+          `Arrival times may be affected by traffic, weather, supplier delays, breakdowns, remote locations, or other circumstances beyond our reasonable control.`,
+          `We will make every reasonable effort to keep you informed of any significant delay.`,
+          `If a delay is expected to exceed 5 hours from the original estimated arrival time, we will contact you to discuss your options, which include cancelling for a full refund.`,
+          `Where a delay is caused by us or something within our control, this section does not exclude our responsibility to you.`,
         ],
       },
     ],
   },
   {
     number: 5,
-    title: 'Ownership of the Product',
+    title: 'Your Right to Cancel, and Cancellation Charges',
     clauses: [
       {
+        subheading: '5.1 Your 14-day right to cancel (consumers)',
         paragraphs: [
-          `Ownership of the tyre or tyres transfers to the Customer upon validation of the order and completion of payment. From the point ownership transfers, which occurs once payment is taken and the product is delivered or fitted, all risk of loss, theft, or damage to the product passes to the Customer.`,
+          `Because you order at a distance (by phone, message, app or website), you normally have a legal right to cancel within 14 days under the Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013, without giving a reason.`,
+          `Our service is usually urgent, so you can ask us to begin within the 14-day period. By asking us to carry out the work straight away, you agree that we may start before the 14 days end, and you acknowledge that once the work is fully complete you will no longer have the right to cancel it. If you cancel after asking us to start but before the work is complete, you pay only for the work done and the costs we have actually and reasonably incurred up to that point.`,
+          `To cancel, contact us on ${PHONE_NUMBER}, at ${SUPPORT_EMAIL}, or on WhatsApp at ${WHATSAPP_NUMBER}. Any refund due is paid using the same payment method you used, without undue delay.`,
+        ],
+      },
+      {
+        subheading: '5.2 Cancellation charges',
+        paragraphs: [
+          `We do not charge fixed cancellation penalties. Any charge reflects only the stage reached and the costs we have actually and reasonably incurred:`,
+        ],
+        list: [
+          `Before we have sourced your tyre or assigned a fitter, there is no charge.`,
+          `After we have sourced your tyre and booked the job, but before a fitter has been dispatched, a charge of £50 applies, covering tyre sourcing and booking costs.`,
+          `After a fitter has been dispatched and is on the way, a charge of £150 applies, covering travel already under way and the tyre sourced for you.`,
+          `After a fitter has arrived at your location, the full call-out fee (standard £120, or the higher amount confirmed at booking for a remote location) applies, together with the cost of the tyre, which we will give to you so it can be fitted elsewhere.`,
+          `If we cannot source the correct tyre for your vehicle, you receive a full refund, whenever you cancel.`,
+        ],
+      },
+      {
+        subheading: '5.3 Call-out fee',
+        paragraphs: [
+          `A call-out fee applies to some jobs. The standard call-out fee is £120. For remote or distant locations the call-out fee may be higher. We will confirm the exact call-out fee that applies to your job when you book, before you commit, so you always know it in advance.`,
         ],
       },
     ],
   },
   {
     number: 6,
-    title: 'Warranty',
+    title: 'Your Statutory Rights',
     clauses: [
       {
-        subheading: '6.1 Manufacturer’s Warranty',
+        paragraphs: [
+          `Nothing in these Terms affects the legal rights you have as a consumer. In particular, under the Consumer Rights Act 2015:`,
+        ],
         list: [
-          `All tyres supplied by the Company are covered by the relevant tyre manufacturer's own warranty.`,
-          `Any claim relating to manufacturing defects, premature wear, or product performance must be submitted directly to the tyre manufacturer in accordance with that manufacturer's published warranty terms.`,
-          `The Company does not provide any separate or additional warranty on the tyre product itself beyond that provided by the manufacturer.`,
+          `the tyres we supply must be of satisfactory quality, fit for their purpose, and as described;`,
+          `our fitting service must be carried out with reasonable care and skill, and within a reasonable time;`,
+          `if we breach these rights, you may be entitled to a remedy such as repeat performance, repair or replacement, a price reduction, or a refund, depending on the circumstances.`,
         ],
       },
       {
-        subheading: '6.2 Service Complaints (Workmanship)',
-        list: [
-          `Any complaint relating to the fitting service or workmanship carried out by the Company must be reported to the Company within 24 hours of the service being completed.`,
-          `Complaints raised after this 24-hour window may not be investigated or accepted, save where the Company determines in its reasonable discretion that exceptional circumstances apply.`,
-          `Where a genuine fitting error is identified, the Company will assess the matter and take appropriate corrective action.`,
-          `Any goodwill contribution, replacement, or remedy offered by the Company in connection with a service complaint is offered entirely at the Company's discretion and shall not constitute an admission of liability.`,
+        paragraphs: [
+          `These rights cannot be excluded or restricted by these Terms. For more information about your rights, contact Citizens Advice or visit gov.uk.`,
         ],
       },
     ],
   },
   {
     number: 7,
-    title: 'Wheel & Vehicle Safety',
+    title: 'Prices and Payment',
     clauses: [
       {
         list: [
-          `The Company reserves the right to refuse to carry out fitting where a wheel is found to be cracked, damaged, or otherwise unsafe. In such circumstances, the Customer remains responsible for the applicable call-out fee and any other charges already incurred.`,
-          `Where fitting cannot be completed due to damage to, or an unsafe condition of, the wheel or vehicle, the tyre already sourced will be provided to the Customer so that fitting can be completed at a suitable garage once the underlying issue has been resolved. No refund will be issued for the tyre or for any charges already incurred in such circumstances.`,
-          `The Company shall not be liable for pre-existing wheel damage, corrosion, cosmetic defects, or faults present prior to the commencement of work, nor for minor cosmetic marks or scratches to the wheel rim that may reasonably occur in the ordinary course of the tyre fitting process.`,
+          `We accept payment by debit or credit card, PayPal, and bank transfer.`,
+          `Card payments are processed through a secure, PCI-compliant provider using 3D Secure authentication. We do not store your card details in an unsecured or unauthorised way.`,
+          `We take payment when your order is confirmed. Taking payment does not affect your statutory rights to a refund, including the cancellation rights described in section 5.`,
+          `By ordering, you confirm you are the legitimate cardholder or are otherwise authorised to use the payment method, and you authorise us to take payment for the amount due.`,
+          `Bank transfers must be made to our registered business bank account, quoting your order number as the reference.`,
         ],
       },
     ],
   },
   {
     number: 8,
-    title: 'Motorway Services',
+    title: 'Ownership and Risk',
     clauses: [
       {
-        list: [
-          `Wheel balancing services are not carried out on motorway hard shoulders, motorway service areas, or any other location where balancing equipment cannot be safely operated.`,
-          `Where balancing cannot be safely completed at the roadside, the Customer will be advised to have the wheel balanced at a suitable location once it is safe to do so. The Company shall not be liable for any inconvenience, cost, or delay arising from this restriction.`,
+        paragraphs: [
+          `For consumers, the tyres remain at our risk until they are fitted to your vehicle or otherwise handed to you, in line with section 29 of the Consumer Rights Act 2015. Ownership passes to you once the tyres are fitted or handed over and payment has been made.`,
+          `For business customers, risk and ownership pass on delivery or fitting, in accordance with the Sale of Goods Act 1979.`,
         ],
       },
     ],
   },
   {
     number: 9,
-    title: 'Limitation of Liability',
+    title: 'Faulty Tyres and Warranty',
     clauses: [
       {
-        list: [
-          `Where a party fails to fulfil its obligations under this contract, and that failure is not considered final, the affected party will only be entitled to claim damages if it has first given the defaulting party notice of the failure and a reasonable opportunity to remedy it.`,
-          `A party responsible for a failure to perform, or for delay, may be liable for resulting damages unless it can demonstrate that the failure or delay was caused by circumstances beyond its reasonable control.`,
-          `Liability is limited to losses that were reasonably foreseeable at the time the contract was formed, except in cases of gross negligence or fraud. Even in such cases, liability is limited to the direct and immediate losses arising from the failure to perform.`,
-          `Nothing in these Terms excludes or limits liability for death or personal injury caused by negligence, for fraud or fraudulent misrepresentation, or for any other liability which cannot lawfully be excluded or limited under the laws of England and Wales.`,
-          `Nothing in these Terms affects the Customer's statutory rights under the Consumer Rights Act 2015 or any other applicable consumer protection legislation.`,
+        paragraphs: [
+          `The tyres we supply must be of satisfactory quality, fit for purpose and as described. If a tyre we supplied is faulty, you have rights against us as the seller under the Consumer Rights Act 2015, which may include repair, replacement, a price reduction or a refund, depending on the circumstances.`,
+          `Tyres also come with the manufacturer's own warranty, which can offer additional cover (for example for road hazards or a longer period). This warranty is in addition to, and does not replace, your rights against us. You may choose to claim under the manufacturer's warranty, but you do not have to, and doing so does not affect your rights against us.`,
+          `We are not responsible for normal wear, for punctures or other road damage, or for damage caused after fitting (for example by kerbing, impact, or incorrect tyre pressure), as these are not faults in the tyre as supplied.`,
         ],
       },
     ],
   },
   {
     number: 10,
-    title: 'Force Majeure',
+    title: 'Our Workmanship, and Damage to Your Wheel or Vehicle',
     clauses: [
       {
-        list: [
-          `Where a force majeure event creates a permanent obstacle to performance for either party, the contract will terminate automatically, and both parties will be released from their obligations under it.`,
-          `Where a force majeure event creates a temporary obstacle, performance of the affected obligation will be suspended unless the resulting delay is significant enough to justify termination of the contract by either party.`,
-          `Where a party is unable to fulfil a contractual obligation due to force majeure, it will be released from liability to the extent that the obstacle is caused by that event, provided it has not otherwise agreed to bear that risk or been given prior notice to perform.`,
+        subheading: '10.1 Problems with our workmanship',
+        paragraphs: [
+          `If you think there is a problem with our fitting or workmanship, please tell us as soon as reasonably practicable after you notice it, so we can put it right quickly. Reporting promptly helps us resolve the issue, but it does not affect the statutory time limits for bringing a claim. Where we are responsible for a fitting error, we will provide an appropriate remedy under the Consumer Rights Act 2015. Any goodwill gesture we may offer does not reduce your statutory rights.`,
+        ],
+      },
+      {
+        subheading: '10.2 Damage to your wheel or vehicle',
+        paragraphs: [
+          `If we damage your wheel or vehicle because we failed to use reasonable care and skill, we are responsible for putting that right. Please check your wheels straight after fitting and tell us about any damage as soon as possible, and ideally within 24 hours, so we can verify and resolve it quickly.`,
+          `The sooner you report damage, the easier it is for us to establish that it happened during our work. If damage is reported later, it may be harder to show that it was caused by us rather than by later use, and we may reasonably ask you for evidence.`,
+          `We are not responsible for pre-existing damage, corrosion, cosmetic defects or wear that was present before we started work. Nothing in this section limits our liability for death or personal injury caused by our negligence.`,
         ],
       },
     ],
   },
   {
     number: 11,
-    title: 'Complaints and Dispute Resolution',
+    title: 'Wheel and Vehicle Safety',
     clauses: [
       {
-        paragraphs: [
-          `Any complaint regarding these Terms or the services provided should, in the first instance, be raised directly with the Company using the contact details set out above. The Company will make reasonable efforts to resolve any complaint promptly and fairly.`,
+        list: [
+          `We may refuse to carry out fitting where a wheel is cracked, damaged, or otherwise unsafe. Where we have told you about the call-out fee in advance, that fee remains payable, together with any other costs you agreed.`,
+          `If we cannot safely complete fitting because of a fault with, or an unsafe condition of, your wheel or vehicle, we will give you the tyre we have sourced so it can be fitted at a suitable garage once the issue is resolved. Because you receive the tyre, it is not refundable in these circumstances.`,
+          `We remain responsible for any damage caused by our own failure to use reasonable care and skill (see section 10). We are not responsible for pre-existing wheel damage, corrosion or wear present before we began work.`,
         ],
       },
     ],
   },
   {
     number: 12,
+    title: 'Roadside and Motorway Limitations',
+    clauses: [
+      {
+        list: [
+          `For safety reasons, we cannot balance wheels on motorway hard shoulders, in motorway service areas, or anywhere balancing equipment cannot be operated safely.`,
+          `Where balancing cannot be safely completed at the roadside, we will advise you to have the wheel balanced at a safe location as soon as possible. This restriction exists for your safety and for reasons beyond our control, and does not exclude any liability arising from our own failure to use reasonable care and skill.`,
+        ],
+      },
+    ],
+  },
+  {
+    number: 13,
+    title: 'Our Responsibility to You',
+    clauses: [
+      {
+        paragraphs: [
+          `If we fail to meet our obligations, we are responsible for loss or damage you suffer that is a foreseeable result of our breach or of our failing to use reasonable care and skill. Loss is foreseeable if it is an obvious consequence of our breach, or if it was contemplated by you and us when the contract was formed.`,
+          `We do not exclude or limit our liability in any way where it would be unlawful to do so. This includes liability for death or personal injury caused by our negligence, for fraud or fraudulent misrepresentation, and for breach of your statutory rights under the Consumer Rights Act 2015.`,
+          `We are not liable for loss or damage that is not foreseeable, or that is caused by events beyond our reasonable control (see section 14). Nothing in these Terms affects your statutory rights. Business customers should also read section 18.`,
+        ],
+      },
+    ],
+  },
+  {
+    number: 14,
+    title: 'Events Beyond Our Control',
+    clauses: [
+      {
+        paragraphs: [
+          `Sometimes we may be prevented from, or delayed in, providing the service by events beyond our reasonable control, for example severe weather, accidents, road closures, civil emergencies, or failures of utilities or networks. These do not include matters within our control, such as our own staffing or equipment.`,
+          `If such an event happens, we will contact you as soon as we can and agree a new time. If the delay is significant, you may cancel and receive a full refund for any work not yet done. We will not be liable for delays or failures caused by such events, but this does not affect your statutory rights.`,
+        ],
+      },
+    ],
+  },
+  {
+    number: 15,
+    title: 'Changes to These Terms',
+    clauses: [
+      {
+        paragraphs: [
+          `We may change these Terms where we have a valid reason, for example to reflect changes in the law or regulation, or to reflect changes in how we provide our service. The Terms that apply to your order are those in force when you place that order.`,
+          `We will publish any updated Terms on our website with a new "last updated" date. If we make a change that would significantly disadvantage you under an ongoing arrangement, we will give you reasonable notice and you may end that arrangement without penalty if you do not accept the change.`,
+        ],
+      },
+    ],
+  },
+  {
+    number: 16,
+    title: 'Complaints and Dispute Resolution',
+    clauses: [
+      {
+        paragraphs: [
+          `If you are unhappy with our service, please contact us first on ${PHONE_NUMBER} or at ${SUPPORT_EMAIL}. We aim to acknowledge complaints within 5 working days and to resolve them promptly and fairly.`,
+          `Alternative Dispute Resolution (ADR): we are not currently members of, and do not use, an ADR scheme. If we cannot resolve your complaint, you can obtain free, independent advice from Citizens Advice. Using our complaints process does not affect your right to take a claim to court.`,
+        ],
+      },
+    ],
+  },
+  {
+    number: 17,
+    title: 'Your Privacy and Data',
+    clauses: [
+      {
+        paragraphs: [
+          `We handle your personal information in accordance with the UK GDPR and the Data Protection Act 2018, and any marketing in accordance with the Privacy and Electronic Communications Regulations. We only use your information as described in our Privacy Policy, which explains what we collect, why, and your rights over your data. Payment information is processed securely by our payment provider.`,
+        ],
+      },
+    ],
+  },
+  {
+    number: 18,
+    title: 'Business and Fleet Customers',
+    clauses: [
+      {
+        paragraphs: [
+          `This section applies where you order as a business customer rather than as a consumer. Where it conflicts with other sections, this section prevails for business customers.`,
+        ],
+        list: [
+          `The consumer protections in these Terms, including the 14-day cancellation right in section 5.1 and the consumer rights summarised in section 6, do not apply to business customers. Cancellation charges for business customers are those set out in section 5.2.`,
+          `Our total liability to a business customer arising out of or in connection with a contract, whether in contract, tort (including negligence) or otherwise, is limited to the price paid for the order concerned. We are not liable to business customers for loss of profit, loss of business, or any indirect or consequential loss. Nothing limits our liability for death or personal injury caused by our negligence, for fraud, or for anything that cannot lawfully be limited.`,
+          `Approved fleet and business accounts may be offered 30-day credit terms. We may charge interest on overdue invoices under the Late Payment of Commercial Debts (Interest) Act 1998.`,
+          `Business customers confirm they are not acting as a consumer and that they are authorised to bind their organisation to these Terms.`,
+        ],
+      },
+    ],
+  },
+  {
+    number: 19,
+    title: 'General',
+    clauses: [
+      {
+        list: [
+          `Each of these Terms operates separately. If any court or authority decides that any of them is unlawful or unfair, the remaining Terms will remain in full force and effect.`,
+          `These Terms are between you and us. No other person has any right to enforce any of them under the Contracts (Rights of Third Parties) Act 1999.`,
+          `We may transfer our rights and obligations under a contract to another organisation, but this will not reduce your rights under these Terms; where it would, we will tell you and you may cancel and receive a refund for any work not yet done. You may transfer your rights to another person only with our written agreement.`,
+          `These Terms, together with the order details and any information we confirm to you before you order, make up the whole agreement between us. This does not exclude any representation we have made to you that you relied on when ordering.`,
+          `The contract and all communications between us will be in English.`,
+        ],
+      },
+    ],
+  },
+  {
+    number: 20,
     title: 'Governing Law and Jurisdiction',
     clauses: [
       {
         paragraphs: [
-          `These Terms are governed by, and construed in accordance with, the laws of England and Wales. Any disputes arising out of, or in connection with, these Terms shall be subject to the exclusive jurisdiction of the courts of England and Wales.`,
+          `These Terms are governed by the law of England and Wales. If you are a consumer, this does not deprive you of the protection of the consumer-protection law of the part of the UK where you live.`,
+          `If you are a consumer, you can bring court proceedings about these Terms in the courts of the part of the UK where you live; if you live in a different part of the UK from where the Company is based, you may instead choose to bring proceedings in the courts where the Company is based. For business customers, the courts of England and Wales have exclusive jurisdiction.`,
         ],
       },
     ],
@@ -304,7 +415,7 @@ export default function TermsConditions() {
           <p className="mb-8 text-xs text-[#6a6a6a]" style={{ fontFamily: 'JetBrains Mono' }}>Last updated: {LAST_UPDATED}</p>
 
           {/* Intro */}
-          <div className="mb-10 space-y-4 text-base leading-relaxed text-[#6a6a6a]">
+          <div className="mb-8 space-y-4 text-base leading-relaxed text-[#6a6a6a]">
             <p>
               {COMPANY_LEGAL_NAME} ("we", "us", "our", the "Company") is a UK-based company providing emergency mobile tyre fitting services throughout the United Kingdom via{' '}
               <a href={SITE_URL} className="font-semibold text-[#d92a1d] hover:text-[#b82418]">{SITE_URL.replace('https://', '')}</a>. We are registered with{' '}
@@ -312,8 +423,22 @@ export default function TermsConditions() {
               under number {COMPANY_NUMBER}, and under the Companies Act 2006 as a private limited company, with our registered office at {REGISTERED_OFFICE}.
             </p>
             <p>
-              These general terms of sale (the "Terms") govern all transactions for the sale of products and services to any customer, whether a natural or legal person, and whether acting in a professional or personal capacity (the "Customer"), where an order is placed by telephone, email, message, our mobile application, or via our website. These Terms establish the binding contractual framework between the Customer and the Company. By placing an order, the Customer confirms that they have read, understood, and agree to be bound by these Terms.
+              These terms of sale (the "Terms") govern the sale of our products and services to any customer, whether a consumer or a business (the "Customer"), where an order is placed by telephone, email, message, our mobile application, or our website. Before you place an order, we will draw the key terms below to your attention. By placing an order, you agree to these Terms, which are available to read in full at any time on our website.
             </p>
+          </div>
+
+          {/* Key points (prominence for onerous/important terms) */}
+          <div className="mb-10 rounded-xl border border-[#d92a1d]/30 bg-[#d92a1d]/5 p-6">
+            <h2 className="mb-3 text-base font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>Key points at a glance</h2>
+            <ul className="space-y-2">
+              {keyPoints.map((point, i) => (
+                <li key={i} className="flex gap-3 text-sm leading-relaxed text-[#1a1a1a]">
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#d92a1d]" />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-xs text-[#6a6a6a]">This summary highlights important terms. It does not replace the full Terms below.</p>
           </div>
 
           {/* Sections */}

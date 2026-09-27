@@ -12,6 +12,24 @@
 
 ---
 
+## Implementation status — updated 27 September 2026
+
+The client confirmed the business inputs below, and the new Terms have been **drafted into `src/pages/TermsConditions.tsx`** accordingly (20 sections, awaiting the client's final go-ahead to publish to the live site).
+
+**Confirmed business decisions:**
+- **Call-out fee:** standard **£120**; higher for remote/distant locations, **confirmed to the customer at booking** (required for enforceability — CCRs reg 40).
+- **Cancellation charges (stage-based, cost-reflective):** nothing before any cost is incurred → **£50** once the tyre is sourced/job booked (pre-dispatch) → **£150** once a fitter is en route → **full £120 call-out + tyre cost** once a fitter has arrived (tyre given to the customer) → **full refund** whenever we cannot source the tyre. Framed on the 14-day distance-cancellation right + the emergency-service mechanism (CCRs reg 36/37).
+- **ADR:** the client uses **no ADR scheme**. The Terms state this plainly and point consumers to Citizens Advice (compliant — the duty is to disclose either way; ADR Regs 2015 reg 19).
+- **Business/fleet:** **30-day credit terms** offered; **Late Payment of Commercial Debts (Interest) Act 1998** interest may apply; UCTA-reasonable liability cap (contract price).
+
+**Two client requests adjusted for legality (client agreed):**
+1. **Tyre warranty** — the client wanted "no warranty on new tyres; go to the manufacturer." That would unlawfully exclude the consumer's statutory rights against the *seller* (CRA 2015 s.31; CMA37 §6.16). Implemented instead: faulty tyres are dealt with by the Company under CRA 2015, the manufacturer warranty is *additional*, and the Company is **not** liable for wear/punctures/post-fitting damage (which are not tyre faults) — giving the client the same commercial protection lawfully.
+2. **24-hour damage cut-off** — the client wanted "damage not reported within 24 hours = not liable." An absolute short cut-off is unfair/unenforceable (CMA37 §6.28 treats even 7 days as unlikely to be fair). Implemented instead: report **as soon as possible, ideally within 24 hours**, as a strong recommendation, with the point made that late reports are harder to prove were caused by the Company (the causation burden already sits with the customer) — same practical protection, lawfully.
+
+**Final section structure implemented (20 sections):** 1 Definitions · 2 Scope & Formation · 3 Services & Products · 4 Placing an Order · 5 Right to Cancel & Cancellation Charges · 6 Your Statutory Rights · 7 Prices & Payment · 8 Ownership & Risk · 9 Faulty Tyres & Warranty · 10 Workmanship & Damage · 11 Wheel & Vehicle Safety · 12 Roadside & Motorway Limitations · 13 Our Responsibility to You · 14 Events Beyond Our Control · 15 Changes to These Terms · 16 Complaints & Dispute Resolution · 17 Your Privacy & Data · 18 Business & Fleet Customers · 19 General (severability, third-party rights, assignment, entire agreement, language) · 20 Governing Law & Jurisdiction. Plus a prominent "key points at a glance" box at the top (transparency — CMA37 Ch 4).
+
+---
+
 ## How UK unfair-terms law works (the test every clause must pass)
 
 Three gates from CRA 2015 Part 2, as explained in CMA37:
