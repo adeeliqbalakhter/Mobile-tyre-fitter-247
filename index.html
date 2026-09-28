@@ -100,6 +100,26 @@
     </script>
 
     <!--
+      Google Ads (gtag.js) for conversion tracking and remarketing.
+      The gtag.js library is already loaded above for GA4, so we reuse it and
+      only add the Ads destination (loading it separately only if GA4 is off).
+      Consent Mode v2 above governs ad storage until the visitor opts in.
+    -->
+    <script>
+      window.GOOGLE_ADS_ID = 'AW-18374323554'; // Google Ads tag ID
+      if (window.GOOGLE_ADS_ID) {
+        if (!window.GA_MEASUREMENT_ID) {
+          var adsScript = document.createElement('script');
+          adsScript.async = true;
+          adsScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GOOGLE_ADS_ID;
+          document.head.appendChild(adsScript);
+          gtag('js', new Date());
+        }
+        gtag('config', window.GOOGLE_ADS_ID);
+      }
+    </script>
+
+    <!--
       Core business + services structured data (static, so search engines and
       AI crawlers that don't run JavaScript still get the full picture).
     -->
