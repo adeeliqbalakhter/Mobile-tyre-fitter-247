@@ -120,6 +120,22 @@
     </script>
 
     <!--
+      Google Ads call-from-website conversion ("Call on Number").
+      This phone snippet swaps the displayed number for a Google forwarding
+      number so calls placed from the site can be measured as conversions
+      (a call of 60+ seconds counts). The value after the slash is the
+      conversion label. Keep phone_conversion_number in sync with
+      PHONE_NUMBER in src/lib/config.ts (currently 0800 058 4106).
+    -->
+    <script>
+      if (window.GOOGLE_ADS_ID) {
+        gtag('config', 'AW-18374323554/6ahpCIOxiokdEOLax7lE', {
+          'phone_conversion_number': '0800 058 4106'
+        });
+      }
+    </script>
+
+    <!--
       Core business + services structured data (static, so search engines and
       AI crawlers that don't run JavaScript still get the full picture).
     -->
