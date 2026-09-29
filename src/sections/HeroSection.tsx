@@ -70,7 +70,7 @@ export default function HeroSection() {
           >
             ROADSIDE TYRE REPLACEMENT
             <br />
-            IN <span className="text-[#ff4444]">30 MINUTES</span>
+            IN <span className="text-[#ff4444]">30-45 MINUTES</span>
           </h1>
 
           <p className="animate-fade-up mb-8 max-w-xl text-base font-medium leading-relaxed text-white sm:text-lg" style={{ opacity: 0, animationDelay: '0.25s', textShadow: '0 2px 10px rgba(0,0,0,0.7)' }}>

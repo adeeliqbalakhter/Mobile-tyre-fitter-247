@@ -65,7 +65,7 @@ const emergencyScenarios = [
 ]
 
 const whyChoose = [
-  { title: "Fastest Response Times", description: "30-45 minute average response across the UK, with sub-30-minute times in major cities. We understand that time is critical in an emergency." },
+  { title: "Fastest Response Times", description: "30-45 minute average response across the UK, with 25-35 minute times in major cities. We understand that time is critical in an emergency." },
   { title: "Upfront Pricing", description: "We give you a clear, all-inclusive quote over the phone before any work begins. The price we quote is the price you pay, guaranteed." },
   { title: "Fully Stocked Vans", description: "Our mobile vans carry over 70,000 tyre options including premium, mid-range, and budget brands. In most cases, we fix it on the first visit." },
   { title: "24/7 Real Human Support", description: "When you call, you speak to a UK-based operator, not an automated system. We understand your stress and act immediately." },
