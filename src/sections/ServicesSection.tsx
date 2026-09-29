@@ -59,7 +59,7 @@ export default function ServicesSection() {
             >
               {service.image && (
                 <div className="relative h-44 overflow-hidden">
-                  <img src={service.image} alt={service.title} width={400} height={240} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                  <img src={service.image} srcSet={`${service.image.replace('.webp', '-400w.webp')} 400w, ${service.image.replace('.webp', '-800w.webp')} 800w`} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px" alt={service.title} width={400} height={240} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                   {service.badge && (
                     <span className="absolute top-3 right-3 rounded bg-[#d92a1d] px-2 py-0.5 text-[10px] font-bold tracking-wider text-white" style={{ fontFamily: 'JetBrains Mono' }}>
                       {service.badge}

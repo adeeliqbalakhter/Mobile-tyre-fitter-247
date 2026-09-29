@@ -36,7 +36,7 @@ export default function CoverageGrid() {
           {cities.map((city) => (
             <Link key={city.name} to={`/mobile-tyre-fitting-${city.slug}`} className="group relative overflow-hidden rounded-lg aspect-[4/3]"
               onMouseEnter={() => setHoveredCity(city.name)} onMouseLeave={() => setHoveredCity(null)}>
-              <img src={city.image} alt={`${city.name} mobile tyre fitting coverage`} width={400} height={300} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+              <img src={city.image} srcSet={`${city.image.replace('.webp', '-400w.webp')} 400w, ${city.image.replace('.webp', '-800w.webp')} 800w`} sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 340px" alt={`${city.name} mobile tyre fitting coverage`} width={400} height={300} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/5 to-transparent" />
               <div className="absolute inset-0 bg-[#d92a1d]/0 transition-colors duration-300 group-hover:bg-[#d92a1d]/15" />
               <div className="absolute bottom-0 left-0 right-0 p-4">

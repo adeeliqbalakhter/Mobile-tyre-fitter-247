@@ -68,7 +68,7 @@ export default function HeroSection() {
             className="animate-fade-up mb-4 max-w-3xl text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl drop-shadow-lg"
             style={{ fontFamily: 'Space Grotesk', opacity: 0, animationDelay: '0.15s' }}
           >
-            ROADSIDE TYRE REPLACEMENT
+            MOBILE TYRE FITTING
             <br />
             IN <span className="text-[#ff4444]">30-45 MINUTES</span>
           </h1>
