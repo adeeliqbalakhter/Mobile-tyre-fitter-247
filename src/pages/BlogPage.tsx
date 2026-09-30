@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 import { blogPosts } from '../data/blogPosts'
 
 const blogSchema = {
@@ -64,6 +65,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )

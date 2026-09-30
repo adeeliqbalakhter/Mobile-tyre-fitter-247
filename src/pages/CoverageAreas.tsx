@@ -4,6 +4,7 @@ import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 import { cityData } from '../data/cities'
 
 // Derive the city count from the data so it never goes stale as cities are added.
@@ -117,6 +118,7 @@ export default function CoverageAreas() {
 
         </div>
       </section>
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )

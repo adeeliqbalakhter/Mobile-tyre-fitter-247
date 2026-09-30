@@ -5,6 +5,7 @@ import SEOHead, { SITE_URL } from '../components/SEOHead'
 import { PHONE_NUMBER, WHATSAPP_NUMBER, COMPANY_LEGAL_NAME, COMPANY_NUMBER, SUPPORT_EMAIL } from '../lib/config'
 import { trackEvent } from '../lib/tracking'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 import RelatedPagesSection from '../components/RelatedPagesSection'
 
 const schema = {
@@ -163,6 +164,7 @@ export default function ContactPage() {
         ]}
       />
 
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )

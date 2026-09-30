@@ -8,6 +8,7 @@ import { BUSINESS_PROVIDER } from '../lib/schema'
 import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 import { cityData, cityPath } from '../data/cities'
 
 const steps = [
@@ -225,6 +226,7 @@ export default function NearMe() {
         </div>
       </section>
 
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )

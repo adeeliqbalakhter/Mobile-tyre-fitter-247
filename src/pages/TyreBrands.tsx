@@ -3,6 +3,7 @@ import { Gauge, Snowflake, Mountain, Truck, Zap, CircleDot } from 'lucide-react'
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import RelatedPagesSection from '../components/RelatedPagesSection'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 import { brandTiers as tiers } from '../data/brands'
 
 const brandsSchema = {
@@ -106,6 +107,7 @@ export default function TyreBrands() {
         ]}
       />
 
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )

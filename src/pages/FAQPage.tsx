@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import SEOHead from '../components/SEOHead'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 
 const faqs = [
   { q: 'How quickly can you get to me?', a: 'Our average response time is 30-45 minutes, depending on your location. In major cities like London, Manchester, and Birmingham, we typically arrive within 25-35 minutes. When you call, we\'ll give you an exact ETA based on your postcode and current fitter availability.' },
@@ -49,6 +50,7 @@ export default function FAQPage() {
           </Accordion>
         </div>
       </section>
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )

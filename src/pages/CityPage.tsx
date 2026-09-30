@@ -8,6 +8,7 @@ import { BUSINESS_PROVIDER } from '../lib/schema'
 import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 import NotFound from './NotFound'
 import { cityData, CITY_URL_PREFIX } from '../data/cities'
 import { cityContent } from '../data/cityContent'
@@ -322,6 +323,7 @@ export default function CityPage() {
         </div>
       </section>
 
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )

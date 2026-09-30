@@ -11,6 +11,7 @@ import { BUSINESS_PROVIDER } from '../lib/schema'
 import PhoneButton from './PhoneButton'
 import WhatsAppButton from './WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 import { cityData, cityPath } from '../data/cities'
 
 // Major cities linked from every service page so authority flows from the
@@ -332,6 +333,7 @@ export default function ServicePageTemplate({
         </div>
       </section>
 
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )

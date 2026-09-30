@@ -5,6 +5,7 @@ import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import PhoneButton from '../components/PhoneButton'
 import WhatsAppButton from '../components/WhatsAppButton'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 import { getPostBySlug, blogPosts } from '../data/blogPosts'
 
 /**
@@ -208,6 +209,7 @@ export default function BlogPostPage() {
         </section>
       </article>
 
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )

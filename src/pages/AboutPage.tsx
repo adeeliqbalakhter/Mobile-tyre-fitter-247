@@ -3,6 +3,7 @@ import { Shield, Clock, Truck, BadgeCheck, MapPin, Building2, Target, HeartHands
 import SEOHead, { SITE_URL, SITE_NAME } from '../components/SEOHead'
 import RelatedPagesSection from '../components/RelatedPagesSection'
 import EmergencyCTA from '../sections/EmergencyCTA'
+import ReviewsSection from '../sections/ReviewsSection'
 import { COMPANY_LEGAL_NAME, COMPANY_NUMBER, REGISTERED_OFFICE } from '../lib/config'
 
 const milestones = [
@@ -222,6 +223,7 @@ export default function AboutPage() {
         ]}
       />
 
+      <ReviewsSection />
       <EmergencyCTA />
     </>
   )
