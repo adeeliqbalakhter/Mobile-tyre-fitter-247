@@ -68,9 +68,9 @@ export default function NearMe() {
   return (
     <>
       <SEOHead
-        title="Mobile Tyre Fitting Near Me - 24/7 Fitters Near You"
-        description="Looking for mobile tyre fitting near you? We come to your location anywhere in the UK, 24/7, with a 30-45 minute average response. Get an instant quote."
-        keywords="mobile tyre fitting near me, tyre fitter near me, local tyre fitting, 24/7 tyre repair near me, emergency tyre near me"
+        title="Mobile Tyre Fitting Near Me | Local Tyre Fitters 24/7"
+        description="Mobile tyre fitting, replacement and change near you, 24/7. Local mobile tyre fitters come to your home, work or roadside across the UK, often within 30-45 minutes. Get an instant quote."
+        keywords="mobile tyre fitting near me, mobile tyre fitter near me, mobile tyre service near me, mobile tyre change near me, local mobile tyre fitters, local tyre fitters, emergency tyre service near me"
         schema={schema}
       />
 
@@ -94,7 +94,7 @@ export default function NearMe() {
                 Mobile Tyre Fitting <span className="text-[#ff4444]">Near Me</span>
               </h1>
               <p className="mb-6 max-w-xl text-base leading-relaxed text-white/85 lg:text-lg">
-                Need a tyre fitter near you? We bring the workshop to your door, anywhere in the UK, 24 hours a day, with an average response of just 30-45 minutes.
+                Need a mobile tyre fitter near you? Our local fitters bring the workshop to your door for tyre fitting, replacement, or a quick tyre change, anywhere in the UK, 24/7, often within 30-45 minutes.
               </p>
               <div className="mb-8 flex flex-wrap gap-2">
                 {[{ icon: Clock, text: '30-45 min response' }, { icon: Shield, text: 'Fully insured' }, { icon: Star, text: '4.9★ rated' }, { icon: MapPin, text: 'UK-wide coverage' }].map(({ icon: Icon, text }) => (
@@ -125,7 +125,7 @@ export default function NearMe() {
       <section className="py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-[800px] px-4 lg:px-6">
           <h2 className="mb-4 text-2xl font-bold text-[#1a1a1a]" style={{ fontFamily: 'Space Grotesk' }}>How Mobile Tyre Fitting <span className="text-[#d92a1d]">Near You</span> Works</h2>
-          <p className="mb-4 text-lg leading-relaxed text-[#1a1a1a]">When you search for "mobile tyre fitting near me", you want one thing: someone to come to you, fast. That is exactly what we do.</p>
+          <p className="mb-4 text-lg leading-relaxed text-[#1a1a1a]">When you search for "mobile tyre fitting near me", "mobile tyre service near me", or "local tyre fitters", you want one thing: someone to come to you, fast, whether it is a planned tyre change or an emergency. That is exactly what we do.</p>
           <p className="mb-4 text-base leading-relaxed text-[#6a6a6a]">Instead of driving on a flat or damaged tyre to a garage and waiting around, you call us and we send the nearest available mobile fitter straight to your location. Our fitters work right across the UK in rotating shifts, so wherever you are, and whatever the time, there is usually a fully-equipped van close by.</p>
           <p className="text-base leading-relaxed text-[#6a6a6a]">Every van carries a wide range of tyres and the equipment to supply, fit, and balance your new tyre on the spot. The price we quote includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre, with no hidden fees.</p>
         </div>
