@@ -1,10 +1,10 @@
 import ServicePageTemplate from '../components/ServicePageTemplate'
 
 const features = [
-  "Emergency response within 30-45 minutes anywhere in the UK",
-  "Available 24 hours a day, 7 days a week, 365 days a year",
-  "Roadside, home, or workplace fitting, we come to you",
-  "All tyre brands and sizes stocked in our mobile vans",
+  "Emergency tyre fitting and replacement, often within 30-45 minutes",
+  "Emergency tyre call-out near you, 24 hours a day, 365 days a year",
+  "We come to you, roadside, home, or workplace, anywhere in the UK",
+  "On-the-spot emergency tyre change, all brands and sizes stocked",
   "Professional fitting, balancing, and new valve included",
   "Fully insured technicians with years of experience",
   "Old tyre disposal included at no extra cost",
@@ -29,6 +29,13 @@ const contentBlocks = [
     ],
   },
   {
+    heading: "Emergency Tyre Call-Out & Replacement Near You",
+    paragraphs: [
+      "Searching for an emergency tyre call-out near you? Wherever you are in the UK, our mobile fitters are positioned across every major city, town, and motorway, so there is almost always a fully-stocked van close by. Whether you need an emergency tyre change on your driveway, a fast tyre replacement at the roadside, or a call-out to your workplace car park, we come to you. There is no need to drive anywhere or wait hours for recovery, just call, tell us your postcode, and we dispatch the nearest fitter with the right tyre.",
+      "Because our vans carry a full range of tyres, most emergency call-outs are completed in a single visit. From a sudden flat before the school run to a blowout on the motorway, our emergency tyre fitting and replacement service is built to reach you quickly and get you safely back on the road, day or night.",
+    ],
+  },
+  {
     heading: "What Counts As A Tyre Emergency?",
     paragraphs: [
       "A tyre emergency can take many forms. The most common is a flat tyre or blowout caused by nails, screws, sharp debris, or potholes on the road. When a tyre loses pressure rapidly or suffers structural damage, replacement is the only safe option. Driving on a damaged or flat tyre can cause serious damage to your wheel rims and suspension, and is extremely dangerous at speed.",
@@ -46,6 +53,8 @@ const contentBlocks = [
 
 const serviceFaqs = [
   { question: "How quickly can you reach me in an emergency?", answer: "Our average response time is 30-45 minutes, depending on your exact location and current demand. In major cities such as London, Birmingham, and Manchester, we typically arrive within 25-35 minutes. When you call, we will give you an accurate ETA based on the location of your nearest available fitter." },
+  { question: "Do you offer an emergency tyre call-out near me?", answer: "Yes. We provide emergency tyre call-out across the whole of the UK, so wherever you are there is usually a mobile fitter near you. Call us with your postcode and we will dispatch the nearest available van, often reaching you within 30-45 minutes." },
+  { question: "Can you do an emergency tyre change on the spot?", answer: "Yes. Our vans carry the tyres, tools, and balancing equipment to complete an emergency tyre change or replacement at your location, roadside, home, or work, in most cases on the first visit, with no tow or garage trip needed." },
   { question: "How is the price worked out?", answer: "When you call, we give you a clear, all-inclusive quote based on your tyre size and brand choice before any work begins. The price we quote over the phone is the price you pay. Our pricing includes the tyre, fitting, balancing, a new valve, and disposal of your old tyre. We believe in complete transparency." },
   { question: "Do I need a new tyre, or can my flat tyre be fixed?", answer: "In most cases, a flat or damaged tyre will need to be replaced with a new one for safety. If the damage is limited to the central tread area and is very small (under 6mm), a repair may be possible. However, damage to the sidewall, any blowout, or significant tread damage always requires a full replacement. We will assess your tyre on arrival and advise honestly, we never replace a tyre unless it is genuinely necessary." },
   { question: "What areas do you cover for emergency tyre fitting?", answer: "We cover the entire United Kingdom, including England, Scotland, Wales, and Northern Ireland. Our mobile fitters are positioned strategically across major cities and motorways to ensure the fastest possible response times wherever you are." },
@@ -85,9 +94,9 @@ export default function EmergencyTyreFitting() {
     <ServicePageTemplate
       title="Emergency Mobile"
       titleHighlight="Tyre Fitting"
-      description="Stranded with a flat tyre or blowout? Our emergency mobile tyre fitting service reaches you within 30-45 minutes anywhere in the UK. Available 24/7, same day, every day of the year. Call 0800 058 4106 now for immediate assistance."
-      metaTitle="Emergency Mobile Tyre Fitting UK - 24 Hour Roadside Service"
-      metaDescription="Emergency mobile tyre fitting across the UK. 24/7 roadside tyre replacement with 30-45 min response. We come to you at home, work, or the roadside. All brands stocked. Call 0800 058 4106 now."
+      description="Flat tyre or blowout? Our emergency mobile tyre fitting service comes to you, home, work or roadside, often within 30-45 minutes, 24/7. Fast emergency tyre replacement and call-out near you, right across the UK. Call 0800 058 4106 now for immediate help."
+      metaTitle="Emergency Mobile Tyre Fitting & Replacement | 24/7 Callout"
+      metaDescription="Emergency mobile tyre fitting, replacement & call-out near you, 24/7. We come to your home, work or roadside, often within 30-45 minutes. Call 0800 058 4106."
       heroImage="/images/service-emergency.webp"
       features={features}
       whatToExpect={whatToExpect}
